@@ -1,0 +1,3 @@
+interface testInterface {
+  x: string;
+}
