@@ -4,26 +4,43 @@ import { parseProperty } from "./property";
 import { parseConstructor } from "./constructor";
 import { parseGetAccessor } from "./getter";
 import { parseSetAccessor } from "./setter";
+import { ClassDeclaration, ClassMember, ClassModifier } from "../../../model";
+import { extractModifiers } from "../../helper";
 
 const routeClassMember = (member: ts.ClassElement, checker: ts.TypeChecker) => {
   if (ts.isMethodDeclaration(member)) return parseMethod(member, checker);
   if (ts.isPropertyDeclaration(member)) return parseProperty(member, checker);
-  if (ts.isConstructorDeclaration(member))
-    return parseConstructor(member, checker);
+  if (ts.isConstructorDeclaration(member)) return parseConstructor(member);
   if (ts.isGetAccessorDeclaration(member))
     return parseGetAccessor(member, checker);
-  if (ts.isSetAccessorDeclaration(member))
-    return parseSetAccessor(member, checker);
+  if (ts.isSetAccessorDeclaration(member)) return parseSetAccessor(member);
 };
 
 export const parseClass = (
   node: ts.ClassDeclaration,
   checker: ts.TypeChecker,
-) => {
-  if (node.name) {
-    console.log(`Class: ${node.name.text}`);
-  }
+): ClassDeclaration | null => {
+  if (!node.name) return null;
+
+  console.log(`Class: ${node.name.text}`);
+  const name = node.name.text;
+  const modifiers = extractModifiers<ClassModifier>(node.modifiers);
+
+  let members: ClassMember[] = [];
+
   if (node.members) {
-    node.members.forEach((member) => routeClassMember(member, checker));
+    members = node.members
+      .map((member) => routeClassMember(member, checker))
+      .filter((m) => m !== null) as ClassMember[];
   }
+
+  const classDeclaration: ClassDeclaration = {
+    name,
+    modifiers,
+    members,
+    kind: "class",
+  };
+
+  console.log(classDeclaration);
+  return classDeclaration;
 };

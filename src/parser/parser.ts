@@ -14,9 +14,9 @@ function routeNode(node: ts.Node, checker: ts.TypeChecker) {
   if (ts.isFunctionDeclaration(node)) return parseFunction(node, checker);
   if (ts.isVariableStatement(node)) return parseVariable(node, checker);
   if (ts.isClassDeclaration(node)) return parseClass(node, checker);
-  if (ts.isInterfaceDeclaration(node)) return parseInterface(node, checker);
+  if (ts.isInterfaceDeclaration(node)) return parseInterface(node);
   if (ts.isEnumDeclaration(node)) return parseEnum(node);
-  if (ts.isTypeAliasDeclaration(node)) return parseTypeAlias(node, checker);
+  if (ts.isTypeAliasDeclaration(node)) return parseTypeAlias(node);
   if (ts.isExportDeclaration(node)) return parseExportDeclaration(node);
   if (ts.isExportAssignment(node)) return parseExportAssignment(node);
 }

@@ -18,19 +18,11 @@ export function remove(x: number, y?: number) {
   return x < 5 ? "too small" : x - (y || 1);
 }
 
-export function sum(...x: number[]) {
-  return x.reduce((acc, curr) => acc + curr, 0);
-}
-
-export function multiply(x: number, y: number = 1) {
-  return x * y;
-}
-
 export const x = 1;
 
 export interface Point {
   x: number;
-  y: number;
+  y?: number;
 }
 
 export class A {
