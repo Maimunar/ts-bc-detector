@@ -7,8 +7,24 @@ export const outerFunction = () => {
     return "inner function";
   };
 
-  return true;
+  return innerFunction();
 };
+
+export function add(x: number, y: number): number | string {
+  return x > 5 ? "too big" : x + y;
+}
+
+export function remove(x: number, y?: number) {
+  return x < 5 ? "too small" : x - (y || 1);
+}
+
+export function sum(...x: number[]) {
+  return x.reduce((acc, curr) => acc + curr, 0);
+}
+
+export function multiply(x: number, y: number = 1) {
+  return x * y;
+}
 
 export const x = 1;
 
@@ -44,15 +60,19 @@ export class A {
 export enum Direction {
   Up = 0,
   Down = 1,
-  Left = 2,
-  Right = 3,
+  Left = "left",
+  Right = "right",
+}
+
+export enum One {
+  one,
 }
 
 const pos = "left";
 
-export { pos as position };
+export { type Point2D, pos as position };
 
-export type Point2D = {
+type Point2D = {
   x: number;
   y: number;
 };
