@@ -1,7 +1,7 @@
 // Utils
-type Type = string;
+export type Type = string;
 
-type Parameter = {
+export type Parameter = {
   name: string;
   type: Type;
   extraOperator: "rest" | "optional" | "initializer" | "none";
@@ -9,38 +9,42 @@ type Parameter = {
 };
 
 // Enum
-type EnumModifier = "export" | "declare" | "const";
-type EnumMember = { name: string; initializer?: string | number };
+export type EnumModifier = "export" | "declare" | "const";
+export type EnumMember = { name: string; initializer?: string | number };
 
-export interface Enum {
+export interface EnumDeclaration {
+  kind: "enum";
   modifiers: EnumModifier[];
-  name: string[];
+  name: string;
   members: EnumMember[];
 }
 
 // Export Assignment
 export interface ExportAssignment {
+  kind: "exportAssignment";
   value: string;
 }
 
 // Export Declaration
-type ExportSpecifier = {
+export type ExportSpecifier = {
   isTypeOnly: boolean;
   name: string;
   propertyName?: string;
 };
-type NamedExport = { specifiers: ExportSpecifier[]; type: "named" };
-type NamespaceExport = { name?: string; type: "namespace" };
+export type NamedExport = { specifiers: ExportSpecifier[]; type: "named" };
+export type NamespaceExport = { name?: string; type: "namespace" };
 
 export interface ExportDeclaration {
+  kind: "exportDeclaration";
   isTypeOnly: boolean;
   exportClause: NamedExport | NamespaceExport;
   moduleSpecifier?: string;
 }
 
 // Function Declaration
-type FunctionModifier = "export" | "default" | "async";
+export type FunctionModifier = "export" | "default" | "async";
 export interface FunctionDeclaration {
+  kind: "function";
   modifiers: FunctionModifier[];
   name: string;
   parameters: Parameter[];
@@ -48,35 +52,38 @@ export interface FunctionDeclaration {
 }
 
 // Interface Declaration
-type InterfaceModifier = "export" | "declare" | "default";
-interface InterfaceMember {
+export type InterfaceModifier = "export" | "declare" | "default";
+export interface InterfaceMember {
   name: string;
   optional: boolean;
   type: Type;
 }
 
 export interface InterfaceDeclaration {
+  kind: "interface";
   modifiers: InterfaceModifier[];
   name: string;
   members: InterfaceMember[];
 }
 
 // Type Alias Declaration
-type TypeAliasModifier = "export" | "declare";
+export type TypeAliasModifier = "export" | "declare";
 
 export interface TypeAliasDeclaration {
+  kind: "typeAlias";
   modifiers: TypeAliasModifier[];
   name: string;
   type: Type;
 }
 
 // Variable Declaration
-type VariableModifier = "export" | "declare";
-type VariableDeclaration = {
+export type VariableModifier = "export" | "declare";
+export type VariableDeclaration = {
   name: string;
   type: Type;
 };
 export interface VariableStatement {
+  kind: "variable";
   modifiers: VariableModifier[];
   declarationType: "const" | "let" | "var";
   declarations: VariableDeclaration[];
@@ -86,19 +93,20 @@ export interface VariableStatement {
  * Class Declaration
  */
 
-type AccessibilityModifier = "public" | "private" | "protected";
+export type AccessibilityModifier = "public" | "private" | "protected";
 
 // Setter
-type SetterModifier = "static" | AccessibilityModifier;
+export type SetterModifier = "static" | AccessibilityModifier;
 
 export interface SetterDeclaration {
+  kind: "setter";
   modifiers: SetterModifier[];
   name: string;
   parameters: { name: string; type: Type }[];
 }
 
 // Property
-type PropertyModifier =
+export type PropertyModifier =
   | "static"
   | "readonly"
   | "abstract"
@@ -106,14 +114,21 @@ type PropertyModifier =
   | AccessibilityModifier;
 
 export interface PropertyDeclaration {
+  kind: "property";
   modifiers: PropertyModifier[];
   name: string;
   type: Type;
 }
 
 // Method
-type MethodModifier = "static" | "abstract" | "async" | AccessibilityModifier;
+export type MethodModifier =
+  | "static"
+  | "abstract"
+  | "async"
+  | AccessibilityModifier;
+
 export interface MethodDeclaration {
+  kind: "method";
   modifiers: MethodModifier[];
   name: string;
   parameters: Parameter[];
@@ -121,8 +136,9 @@ export interface MethodDeclaration {
 }
 
 // Getter
-type GetterModifier = "static" | AccessibilityModifier;
+export type GetterModifier = "static" | AccessibilityModifier;
 export interface GetterDeclaration {
+  kind: "getter";
   modifiers: GetterModifier[];
   name: string;
   returnType?: Type;
@@ -130,12 +146,13 @@ export interface GetterDeclaration {
 
 // Constructor
 export interface ConstructorDeclaration {
+  kind: "constructor";
   parameters: Parameter[];
 }
 
 // Class
-type ClassModifier = "export" | "default" | "declare" | "abstract";
-type ClassMember =
+export type ClassModifier = "export" | "default" | "declare" | "abstract";
+export type ClassMember =
   | ConstructorDeclaration
   | MethodDeclaration
   | PropertyDeclaration
@@ -143,6 +160,7 @@ type ClassMember =
   | SetterDeclaration;
 
 export interface ClassDeclaration {
+  kind: "class";
   modifiers: ClassModifier[];
   name: string;
   members: ClassMember[];
