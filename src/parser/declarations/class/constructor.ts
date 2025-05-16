@@ -1,5 +1,5 @@
 import ts from "typescript";
 
-export const handleConstructor = (node: ts.ConstructorDeclaration) => {
+export const parseConstructor = (node: ts.ConstructorDeclaration) => {
   console.log(`  Constructor`);
 };

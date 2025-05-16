@@ -87,7 +87,6 @@ STEPS:
   a. Setter
     - Modifiers - static, accessibility (public, private, protected)
       - Name
-      - Type (return type)
       - Parameters - (name, type)\*
   b. Property
     - Modifiers - readonly, abstract, static, declare, accessibility (public, private, protected)
@@ -110,7 +109,6 @@ STEPS:
       - Name
       - Type
       - Extra operator - dotdotdot, question, initalizer (with expression), or no extra operator
-    - Return Type
 
 ## Types
 

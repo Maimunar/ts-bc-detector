@@ -1,5 +1,5 @@
 import ts from "typescript";
 
-export const handleEnum = (node: ts.EnumDeclaration) => {
+export const parseEnum = (node: ts.EnumDeclaration) => {
   console.log(`Enum: ${node.name.text}`);
 };

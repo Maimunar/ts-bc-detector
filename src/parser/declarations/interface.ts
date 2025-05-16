@@ -1,5 +1,5 @@
 import ts from "typescript";
 
-export const handleInterface = (node: ts.InterfaceDeclaration) => {
+export const parseInterface = (node: ts.InterfaceDeclaration) => {
   console.log(`Interface: ${node.name.text}`);
 };

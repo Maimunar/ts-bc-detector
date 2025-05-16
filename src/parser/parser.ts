@@ -1,14 +1,14 @@
 import ts from "typescript";
 import fs from "fs";
 import {
-  handleClass,
-  handleEnum,
-  handleFunction,
-  handleInterface,
-  handleTypeAlias,
-  handleVariable,
-  handleExportDeclaration,
-  handleExportAssignment,
+  parseClass,
+  parseEnum,
+  parseFunction,
+  parseInterface,
+  parseTypeAlias,
+  parseVariable,
+  parseExportDeclaration,
+  parseExportAssignment,
 } from "./declarations";
 
 const fileName = process.argv[2]; // Change this as needed
@@ -22,14 +22,14 @@ const sourceFile = ts.createSourceFile(
 );
 
 function routeNode(node: ts.Node) {
-  if (ts.isFunctionDeclaration(node)) return handleFunction(node);
-  if (ts.isVariableStatement(node)) return handleVariable(node);
-  if (ts.isClassDeclaration(node)) return handleClass(node);
-  if (ts.isInterfaceDeclaration(node)) return handleInterface(node);
-  if (ts.isEnumDeclaration(node)) return handleEnum(node);
-  if (ts.isTypeAliasDeclaration(node)) return handleTypeAlias(node);
-  if (ts.isExportDeclaration(node)) return handleExportDeclaration(node);
-  if (ts.isExportAssignment(node)) return handleExportAssignment(node);
+  if (ts.isFunctionDeclaration(node)) return parseFunction(node);
+  if (ts.isVariableStatement(node)) return parseVariable(node);
+  if (ts.isClassDeclaration(node)) return parseClass(node);
+  if (ts.isInterfaceDeclaration(node)) return parseInterface(node);
+  if (ts.isEnumDeclaration(node)) return parseEnum(node);
+  if (ts.isTypeAliasDeclaration(node)) return parseTypeAlias(node);
+  if (ts.isExportDeclaration(node)) return parseExportDeclaration(node);
+  if (ts.isExportAssignment(node)) return parseExportAssignment(node);
 }
 
 function visit(node: ts.Node) {

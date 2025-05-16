@@ -1,6 +1,6 @@
 import ts from "typescript";
 
-export const handleSetAccessor = (node: ts.SetAccessorDeclaration) => {
+export const parseSetAccessor = (node: ts.SetAccessorDeclaration) => {
   if (node.name) {
     console.log(`  Setter: ${node.name.getText()}`);
   }
