@@ -1,0 +1,14 @@
+[
+    {
+        "name": "addOne",
+        "type": "(x: number) => number",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "number"
+            }
+        ],
+        "returnType": "number",
+        "exported": true
+    }
+]
