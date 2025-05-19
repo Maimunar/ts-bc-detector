@@ -4,10 +4,11 @@ import {
   InterfaceMember,
   InterfaceModifier,
 } from "../../model";
-import { extractModifiers } from "../helper";
+import { extractModifiers, fallbackAny, getNodeTypeOrAny } from "../helper";
 
 export const parseInterface = (
   node: ts.InterfaceDeclaration,
+  checker: ts.TypeChecker,
 ): InterfaceDeclaration => {
   const name = node.name.text;
   const modifiers = extractModifiers<InterfaceModifier>(node.modifiers);
@@ -17,7 +18,7 @@ export const parseInterface = (
     .map((member) => {
       const memberName = (member.name as ts.Identifier).text;
       const optional = Boolean(member.questionToken);
-      const type = member.type ? member.type.getText() : "any";
+      const type = getNodeTypeOrAny(member, checker);
 
       return { name: memberName, optional, type };
     });

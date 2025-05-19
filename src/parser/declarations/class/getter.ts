@@ -1,5 +1,5 @@
 import ts from "typescript";
-import { extractModifiers } from "../../helper";
+import { extractModifiers, getReturnTypeOrAny } from "../../helper";
 import { GetterDeclaration, GetterModifier } from "../../../model";
 
 export const parseGetAccessor = (
@@ -10,20 +10,7 @@ export const parseGetAccessor = (
 
   const name = node.name.getText();
   const modifiers = extractModifiers<GetterModifier>(node.modifiers);
-
-  let returnType: string | undefined;
-
-  if (node.type) {
-    // Explicit return type
-    returnType = node.type.getText();
-  } else {
-    // Inferred return type
-    const signature = checker.getSignatureFromDeclaration(node);
-    if (signature) {
-      const returnT = checker.getReturnTypeOfSignature(signature);
-      returnType = checker.typeToString(returnT);
-    }
-  }
+  const returnType = getReturnTypeOrAny(node, checker);
 
   const getterDeclaration: GetterDeclaration = {
     name,

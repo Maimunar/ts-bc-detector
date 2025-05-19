@@ -1,6 +1,6 @@
 import ts from "typescript";
 import { VariableModifier, VariableStatement } from "../../model";
-import { extractModifiers } from "../helper";
+import { extractModifiers, getNodeTypeOrAny } from "../helper";
 
 function getDeclarationType(
   declList: ts.VariableDeclarationList,
@@ -20,13 +20,7 @@ export function parseVariable(
   const declarations = node.declarationList.declarations.map((decl) => {
     const name = decl.name.getText();
 
-    let type = "any";
-    if (decl.type) {
-      type = decl.type.getText();
-    } else if (decl.initializer) {
-      const inferredType = checker.getTypeAtLocation(decl.initializer);
-      type = checker.typeToString(inferredType);
-    }
+    const type = getNodeTypeOrAny(decl, checker);
 
     return { name, type };
   });

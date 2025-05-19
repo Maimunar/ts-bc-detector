@@ -1,6 +1,6 @@
 import ts from "typescript";
 import { PropertyDeclaration, PropertyModifier } from "../../../model";
-import { extractModifiers } from "../../helper";
+import { extractModifiers, getNodeTypeOrAny } from "../../helper";
 
 export const parseProperty = (
   node: ts.PropertyDeclaration,
@@ -10,14 +10,7 @@ export const parseProperty = (
 
   const name = node.name.getText();
   const modifiers = extractModifiers<PropertyModifier>(node.modifiers);
-
-  let type = "any";
-  if (node.type) {
-    type = node.type.getText();
-  } else if (node.initializer) {
-    const inferredType = checker.getTypeAtLocation(node.initializer);
-    type = checker.typeToString(inferredType);
-  }
+  const type = getNodeTypeOrAny(node, checker);
 
   const propertyDeclaration: PropertyDeclaration = {
     name,

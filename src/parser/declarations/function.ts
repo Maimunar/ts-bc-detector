@@ -1,6 +1,10 @@
 import ts from "typescript";
 import { FunctionDeclaration, FunctionModifier } from "../../model";
-import { extractModifiers, parseParameter } from "../helper";
+import {
+  extractModifiers,
+  getReturnTypeOrAny,
+  parseParameter,
+} from "../helper";
 
 export function parseFunction(
   node: ts.FunctionDeclaration,
@@ -10,21 +14,11 @@ export function parseFunction(
 
   const name = node.name.text;
   const modifiers = extractModifiers<FunctionModifier>(node.modifiers);
-  const parameters = node.parameters.map(parseParameter);
+  const parameters = node.parameters.map((param) =>
+    parseParameter(param, checker),
+  );
 
-  let returnType: string | undefined;
-
-  if (node.type) {
-    // Explicit return type
-    returnType = node.type.getText();
-  } else {
-    // Inferred return type
-    const signature = checker.getSignatureFromDeclaration(node);
-    if (signature) {
-      const returnT = checker.getReturnTypeOfSignature(signature);
-      returnType = checker.typeToString(returnT);
-    }
-  }
+  const returnType = getReturnTypeOrAny(node, checker);
 
   const functionDeclaration: FunctionDeclaration = {
     name,

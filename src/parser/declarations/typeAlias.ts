@@ -1,11 +1,14 @@
 import ts from "typescript";
-import { extractModifiers } from "../helper";
+import { extractModifiers, getNodeTypeOrAny } from "../helper";
 import { TypeAliasDeclaration, TypeAliasModifier } from "../../model";
 
-export const parseTypeAlias = (node: ts.TypeAliasDeclaration) => {
+export const parseTypeAlias = (
+  node: ts.TypeAliasDeclaration,
+  checker: ts.TypeChecker,
+) => {
   const name = node.name.text;
   const modifiers = extractModifiers<TypeAliasModifier>(node.modifiers);
-  const type = node.type.getText();
+  const type = getNodeTypeOrAny(node, checker);
 
   const typeAliasDeclaration: TypeAliasDeclaration = {
     name,

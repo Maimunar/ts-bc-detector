@@ -10,10 +10,12 @@ import { extractModifiers } from "../../helper";
 const routeClassMember = (member: ts.ClassElement, checker: ts.TypeChecker) => {
   if (ts.isMethodDeclaration(member)) return parseMethod(member, checker);
   if (ts.isPropertyDeclaration(member)) return parseProperty(member, checker);
-  if (ts.isConstructorDeclaration(member)) return parseConstructor(member);
+  if (ts.isConstructorDeclaration(member))
+    return parseConstructor(member, checker);
   if (ts.isGetAccessorDeclaration(member))
     return parseGetAccessor(member, checker);
-  if (ts.isSetAccessorDeclaration(member)) return parseSetAccessor(member);
+  if (ts.isSetAccessorDeclaration(member))
+    return parseSetAccessor(member, checker);
 };
 
 export const parseClass = (

@@ -4,12 +4,15 @@ import { extractModifiers, parseParameter } from "../../helper";
 
 export const parseSetAccessor = (
   node: ts.SetAccessorDeclaration,
+  checker: ts.TypeChecker,
 ): SetterDeclaration | null => {
   if (!node.name) return null;
 
   const name = node.name.getText();
   const modifiers = extractModifiers<SetterModifier>(node.modifiers);
-  const parameters = node.parameters.map(parseParameter);
+  const parameters = node.parameters.map((param) =>
+    parseParameter(param, checker),
+  );
 
   const setterDeclaration: SetterDeclaration = {
     name,

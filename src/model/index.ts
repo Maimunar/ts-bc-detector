@@ -1,5 +1,7 @@
+import ts from "typescript";
+
 // Utils
-export type Type = string;
+export type Type = ts.Type;
 
 export type Parameter = {
   name: string;
@@ -165,3 +167,13 @@ export interface ClassDeclaration {
   name: string;
   members: ClassMember[];
 }
+
+export type Declaration =
+  | ClassDeclaration
+  | EnumDeclaration
+  | FunctionDeclaration
+  | InterfaceDeclaration
+  | TypeAliasDeclaration
+  | VariableStatement
+  | ExportDeclaration
+  | ExportAssignment;
