@@ -27,6 +27,5 @@ export const parseMethod = (
     kind: "method",
   };
 
-  console.log(methodDeclaration);
   return methodDeclaration;
 };

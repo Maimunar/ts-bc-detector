@@ -19,6 +19,5 @@ export const parseGetAccessor = (
     kind: "getter",
   };
 
-  console.log(getterDeclaration);
   return getterDeclaration;
 };

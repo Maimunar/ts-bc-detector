@@ -11,7 +11,5 @@ export const parseExportAssignment = (
     value,
   };
 
-  console.log(exportAssignment);
-
   return exportAssignment;
 };

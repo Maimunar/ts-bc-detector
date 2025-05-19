@@ -19,6 +19,5 @@ export const parseProperty = (
     kind: "property",
   };
 
-  console.log(propertyDeclaration);
   return propertyDeclaration;
 };

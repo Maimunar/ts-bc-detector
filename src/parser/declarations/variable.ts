@@ -32,6 +32,5 @@ export function parseVariable(
     kind: "variable",
   };
 
-  console.log(variableStatement);
   return variableStatement;
 }

@@ -28,7 +28,5 @@ export function parseEnum(node: ts.EnumDeclaration): EnumDeclaration {
     kind: "enum",
   };
 
-  console.log(enumDeclaration);
-
   return enumDeclaration;
 }

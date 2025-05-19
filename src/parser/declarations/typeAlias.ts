@@ -17,6 +17,5 @@ export const parseTypeAlias = (
     kind: "typeAlias",
   };
 
-  console.log(typeAliasDeclaration);
   return typeAliasDeclaration;
 };

@@ -44,11 +44,5 @@ export function parseExportDeclaration(
   if (node.moduleSpecifier)
     exportDeclaration.moduleSpecifier = node.moduleSpecifier.getText();
 
-  console.log(
-    exportDeclaration,
-    exportDeclaration.exportClause.type === "named" &&
-      exportDeclaration.exportClause.specifiers,
-  );
-
   return exportDeclaration;
 }

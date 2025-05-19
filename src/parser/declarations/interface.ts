@@ -30,6 +30,5 @@ export const parseInterface = (
     kind: "interface",
   };
 
-  console.log(interfaceDeclaration);
   return interfaceDeclaration;
 };

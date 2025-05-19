@@ -24,7 +24,6 @@ export const parseClass = (
 ): ClassDeclaration | null => {
   if (!node.name) return null;
 
-  console.log(`Class: ${node.name.text}`);
   const name = node.name.text;
   const modifiers = extractModifiers<ClassModifier>(node.modifiers);
 
@@ -43,6 +42,5 @@ export const parseClass = (
     kind: "class",
   };
 
-  console.log(classDeclaration);
   return classDeclaration;
 };

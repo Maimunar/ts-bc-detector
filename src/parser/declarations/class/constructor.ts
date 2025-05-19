@@ -15,6 +15,5 @@ export const parseConstructor = (
     parameters,
   };
 
-  console.log(constructorDeclaration);
   return constructorDeclaration;
 };

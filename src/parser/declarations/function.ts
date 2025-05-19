@@ -28,7 +28,5 @@ export function parseFunction(
     kind: "function",
   };
 
-  console.log(functionDeclaration);
-
   return functionDeclaration;
 }

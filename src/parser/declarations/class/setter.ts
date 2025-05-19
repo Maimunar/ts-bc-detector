@@ -21,6 +21,5 @@ export const parseSetAccessor = (
     kind: "setter",
   };
 
-  console.log(setterDeclaration);
   return setterDeclaration;
 };
