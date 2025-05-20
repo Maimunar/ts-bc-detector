@@ -6,4 +6,5 @@ export interface BreakingChange {
 
 export const BC = {
   removedDeclaration: "Removed Declaration",
+  removedClassMember: "Removed Class Member",
 };
