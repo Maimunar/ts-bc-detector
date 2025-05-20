@@ -147,26 +147,30 @@ function findV2Declaration(v1Decl: Declaration, v2: DeclarationFile) {
               v1Spec.propertyName &&
               v2Spec.propertyName &&
               v1Spec.propertyName === v2Spec.propertyName
-            )
+            ) {
               return true;
+            }
             if (
               v1Spec.propertyName &&
               !v2Spec.propertyName &&
               v1Spec.propertyName === v2Spec.name
-            )
+            ) {
               return true;
+            }
             if (
               !v1Spec.propertyName &&
               v2Spec.propertyName &&
               v1Spec.name === v2Spec.propertyName
-            )
+            ) {
               return true;
+            }
             if (
               !v1Spec.propertyName &&
               !v2Spec.propertyName &&
               v1Spec.name === v2Spec.name
-            )
+            ) {
               return true;
+            }
           }
         }
       }
