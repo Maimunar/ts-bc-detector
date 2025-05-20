@@ -10,6 +10,7 @@ import {
   parseExportAssignment,
 } from "./declarations";
 import { Declaration } from "../model";
+import { printDeclarations } from "./helper";
 
 function routeNode(node: ts.Node, checker: ts.TypeChecker) {
   if (ts.isFunctionDeclaration(node)) return parseFunction(node, checker);
@@ -26,21 +27,23 @@ function visit(node: ts.Node, checker: ts.TypeChecker) {
   return routeNode(node, checker);
 }
 
-const declarations: Declaration[] = [];
+export function parseFile(fileName: string): Declaration[] {
+  const declarations: Declaration[] = [];
 
-const fileName = process.argv[2]; // Change this as needed
+  const program = ts.createProgram([fileName], {});
+  const checker = program.getTypeChecker();
 
-const program = ts.createProgram([fileName], {});
-const checker = program.getTypeChecker();
+  const sourceFile = program.getSourceFile(fileName)!;
 
-const sourceFile = program.getSourceFile(fileName)!;
+  // Traverse only top-level nodes
+  sourceFile.statements.forEach((node) => {
+    const declaration = visit(node, checker);
+    if (declaration) {
+      declarations.push(declaration);
+    }
+  });
 
-// Traverse only top-level nodes
-sourceFile.statements.forEach((node) => {
-  const declaration = visit(node, checker);
-  if (declaration) {
-    declarations.push(declaration);
-  }
-});
+  printDeclarations(declarations, checker);
 
-console.log(declarations);
+  return declarations;
+}

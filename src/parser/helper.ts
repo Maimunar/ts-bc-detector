@@ -1,5 +1,5 @@
 import ts from "typescript";
-import { Parameter } from "../model";
+import { Parameter, Declaration } from "../model";
 
 export function parseParameter(
   param: ts.ParameterDeclaration,
@@ -75,4 +75,51 @@ export function getNodeTypeOrAny(
 
   // Case 3: Fallback to `any`
   return fallbackAny(checker);
+}
+
+// For debugging purposes
+function declarationToSerializable(
+  decl: Declaration,
+  checker: ts.TypeChecker,
+): any {
+  const clone = { ...decl }; // or deep clone another way
+
+  const replaceTypes = (obj: any): any => {
+    if (Array.isArray(obj)) {
+      return obj.map(replaceTypes);
+    }
+
+    if (obj && typeof obj === "object") {
+      const newObj: any = {};
+      for (const [key, value] of Object.entries(obj)) {
+        if (isTsType(value)) {
+          newObj[key] = checker.typeToString(value as ts.Type);
+        } else {
+          newObj[key] = replaceTypes(value);
+        }
+      }
+      return newObj;
+    }
+
+    return obj;
+  };
+
+  return replaceTypes(clone);
+}
+
+function isTsType(value: any): value is ts.Type {
+  // Basic heuristic — not foolproof but usually good enough
+  return (
+    value && typeof value === "object" && typeof value.getSymbol === "function"
+  );
+}
+
+export function printDeclarations(
+  declarations: Declaration[],
+  checker: ts.TypeChecker,
+) {
+  const parsedDeclarations = declarations.map((declaration) =>
+    declarationToSerializable(declaration, checker),
+  );
+  console.log(JSON.stringify(parsedDeclarations, null, 2));
 }
