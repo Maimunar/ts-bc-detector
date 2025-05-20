@@ -75,12 +75,9 @@ const parseV2Declaration = (
   v2Decl: Declaration | undefined,
   BCCreate: (description: string) => BreakingChange,
 ): BreakingChange[] => {
-  const breakingChanges: BreakingChange[] = [];
-
   if (!v2Decl) {
     // Declaration was removed
-    breakingChanges.push(BCCreate(BC.removedDeclaration));
-    return breakingChanges;
+    return [BCCreate(BC.removedDeclaration)];
   }
 
   if (v1Decl.kind !== v2Decl.kind) {
@@ -88,7 +85,7 @@ const parseV2Declaration = (
     console.error("BUG: Declaration kind mismatch");
   }
 
-  return breakingChanges;
+  return [];
 };
 
 export const createBCCreator = (
@@ -214,6 +211,7 @@ export function watchForBCs(
 
     const parseV2BCs = parseV2Declaration(v1Decl, v2Decl, BCCreate);
 
+    // If this is true, there was either a bug somewhere or a declaration was removed - no need to check for rules
     if (parseV2BCs.length > 0) {
       breakingChanges.push(...parseV2BCs);
       continue;
