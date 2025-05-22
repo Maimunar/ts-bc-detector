@@ -10,3 +10,5 @@ export const createBC =
       description,
     };
   };
+
+export type BCCreateType = (description: string) => BreakingChange;

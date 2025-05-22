@@ -8,8 +8,7 @@ export const checkExportAssignmentRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Export Assignment rules are being checked");
-  console.log(v1Decl.value, v2Decl.value);
+  console.log("Export Assignment rules are being checked", v1Decl.value);
 
   return breakingChanges;
 };

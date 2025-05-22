@@ -88,8 +88,7 @@ export const checkClassRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Class rules are being checked");
-  console.log(v1Class.name, v2Class.name);
+  console.log("Class rules are being checked", v1Class.name);
 
   for (const v1Member of v1Class.members) {
     const v2Member = findV2Member(v1Member, v2Class);

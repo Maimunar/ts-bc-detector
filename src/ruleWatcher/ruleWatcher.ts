@@ -1,3 +1,4 @@
+import ts from "typescript";
 import {
   ClassDeclaration,
   Declaration,
@@ -16,19 +17,22 @@ import { checkExportAssignmentRules } from "./rules/exportAssignment";
 import { checkExportDeclarationRules } from "./rules/exportDeclaration";
 import { checkFunctionRules } from "./rules/function";
 import { checkInterfaceRules } from "./rules/interface";
-import { checkTypeAliasRules } from "./rules/type";
+import { checkTypeAliasRules } from "./rules/typeAlias";
 import { checkVariableRules } from "./rules/variable";
 import { createBC } from "./utils";
 
 interface DeclarationFile {
   file: string;
   declarations: Declaration[];
+  checker: ts.TypeChecker;
 }
 
 function routeDeclarationRules(
   v1Decl: Declaration,
   v2Decl: Declaration | undefined,
   BCCreate: (description: string) => BreakingChange,
+  v1Checker: ts.TypeChecker,
+  v2Checker: ts.TypeChecker,
 ): BreakingChange[] {
   switch (v1Decl.kind) {
     case "enum":
@@ -38,6 +42,8 @@ function routeDeclarationRules(
         v1Decl,
         v2Decl as FunctionDeclaration,
         BCCreate,
+        v1Checker,
+        v2Checker,
       );
     case "interface":
       return checkInterfaceRules(
@@ -217,7 +223,13 @@ export function watchForBCs(
       continue;
     }
 
-    const bcsForDeclaration = routeDeclarationRules(v1Decl, v2Decl, BCCreate);
+    const bcsForDeclaration = routeDeclarationRules(
+      v1Decl,
+      v2Decl,
+      BCCreate,
+      v1.checker,
+      v2.checker,
+    );
     breakingChanges.push(...bcsForDeclaration);
   }
   return breakingChanges;

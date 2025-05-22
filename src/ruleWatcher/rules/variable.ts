@@ -8,8 +8,10 @@ export const checkVariableRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Variable Declaration rules are being checked");
-  console.log(v1Decl.declarations[0].name, v2Decl.declarations[0].name);
+  console.log(
+    "Variable Declaration rules are being checked",
+    v1Decl.declarations[0].name,
+  );
 
   return breakingChanges;
 };

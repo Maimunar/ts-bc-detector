@@ -8,8 +8,7 @@ export const checkTypeAliasRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Type Alias Declaration rules are being checked");
-  console.log(v1Decl.name, v2Decl.name);
+  console.log("Type Alias Declaration rules are being checked", v1Decl.name);
 
   return breakingChanges;
 };
