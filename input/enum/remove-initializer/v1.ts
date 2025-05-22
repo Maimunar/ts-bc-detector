@@ -1,3 +1,3 @@
 export enum testEnum {
-  x,
+  x = 1,
 }
