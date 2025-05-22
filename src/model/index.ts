@@ -50,7 +50,7 @@ export interface FunctionDeclaration {
   modifiers: FunctionModifier[];
   name: string;
   parameters: Parameter[];
-  returnType?: Type;
+  returnType: Type;
 }
 
 // Interface Declaration

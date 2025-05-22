@@ -27,7 +27,10 @@ function visit(node: ts.Node, checker: ts.TypeChecker) {
   return routeNode(node, checker);
 }
 
-export function parseFile(fileName: string): Declaration[] {
+export function parseFile(
+  fileName: string,
+  debug: boolean,
+): { declarations: Declaration[]; checker: ts.TypeChecker } {
   const declarations: Declaration[] = [];
 
   const program = ts.createProgram([fileName], {});
@@ -43,7 +46,7 @@ export function parseFile(fileName: string): Declaration[] {
     }
   });
 
-  printDeclarations(declarations, checker);
+  if (debug) printDeclarations(declarations, checker);
 
-  return declarations;
+  return { declarations, checker };
 }
