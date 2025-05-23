@@ -14,8 +14,6 @@ export const checkConstructorRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Constructor rules are being checked");
-
   const paramAddedBreakingChanges = checkParamAdded(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...paramAddedBreakingChanges);
 

@@ -134,8 +134,6 @@ export const checkClassRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Class rules are being checked", v1Class.name);
-
   // Check modifiers
   const modifierBCs = checkModifiers(v1Class, v2Class, BCCreate);
   breakingChanges.push(...modifierBCs);

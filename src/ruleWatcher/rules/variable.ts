@@ -61,11 +61,6 @@ export const checkVariableRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log(
-    "Variable Declaration rules are being checked",
-    v1Decl.declarations[0].name,
-  );
-
   const modifiersBC = checkModifiers(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...modifiersBC);
 

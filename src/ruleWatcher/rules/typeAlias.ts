@@ -28,8 +28,6 @@ export const checkTypeAliasRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Type Alias Declaration rules are being checked", v1Decl.name);
-
   const modifiersBC = checkModifiers(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...modifiersBC);
 

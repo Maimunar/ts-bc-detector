@@ -16,7 +16,6 @@ export const checkSetterRules = (
   const accessibilityBCs = checkAccessibilityBCs(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...accessibilityBCs);
 
-  console.log("Setter rules are being checked", v1Decl.name);
   // Check if the param types have changed
   const paramTypeBCs = checkTypeRules(
     v1Decl.parameter.type,

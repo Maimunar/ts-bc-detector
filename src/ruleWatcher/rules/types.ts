@@ -12,7 +12,5 @@ export const checkTypeRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Type rules are being checked");
-
   return breakingChanges;
 };

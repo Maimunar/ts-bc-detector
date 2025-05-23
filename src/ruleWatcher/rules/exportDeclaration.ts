@@ -87,8 +87,6 @@ export const checkExportDeclarationRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Export Declaration rules are being checked");
-
   const modifiersBC = checkTypeModifier(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...modifiersBC);
 

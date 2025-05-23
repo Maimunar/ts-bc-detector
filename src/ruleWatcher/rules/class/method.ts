@@ -50,8 +50,6 @@ export const checkMethodRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Method rules are being checked", v1Decl.name);
-
   // Check accessibility
   const accessibilityBCs = checkAccessibilityBCs(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...accessibilityBCs);

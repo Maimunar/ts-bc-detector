@@ -60,8 +60,6 @@ export const checkPropertyRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Property rules are being checked", v1Decl.name);
-
   // Check accessibility
   const accessibilityBCs = checkAccessibilityBCs(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...accessibilityBCs);

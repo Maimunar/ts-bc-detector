@@ -36,8 +36,6 @@ export const checkFunctionRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Function Declaration rules are being checked", v1Decl.name);
-
   const modifierBreakingChanges = checkModifiers(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...modifierBreakingChanges);
 

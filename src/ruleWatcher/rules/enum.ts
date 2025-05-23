@@ -40,8 +40,6 @@ export const checkEnumRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Enum rules are being checked for", v1Decl.name);
-
   const removedEnumMemberBCs = checkRemovedEnumMember(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...removedEnumMemberBCs);
 

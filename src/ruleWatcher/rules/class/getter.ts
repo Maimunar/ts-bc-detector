@@ -17,8 +17,6 @@ export const checkGetterRules = (
   const modifiersBC = checkAccessibilityBCs(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...modifiersBC);
 
-  console.log("Getter rules are being checked", v1Decl.name);
-
   // Check if the return type has changed
   const returnTypeBCs = checkTypeRules(
     v1Decl.returnType,

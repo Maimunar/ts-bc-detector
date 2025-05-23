@@ -93,8 +93,6 @@ export const checkInterfaceRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Interface Declaration rules are being checked", v1Decl.name);
-
   const modifiersBC = checkModifiers(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...modifiersBC);
 

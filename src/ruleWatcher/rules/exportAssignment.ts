@@ -9,8 +9,6 @@ export const checkExportAssignmentRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
-  console.log("Export Assignment rules are being checked", v1Decl.value);
-
   // Check if the value changed - this is definitely not perfect but it will do the trick
   if (v1Decl.value !== v2Decl.value) {
     breakingChanges.push(
