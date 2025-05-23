@@ -50,12 +50,16 @@ function routeDeclarationRules(
         v1Decl,
         v2Decl as InterfaceDeclaration,
         BCCreate,
+        v1Checker,
+        v2Checker,
       );
     case "typeAlias":
       return checkTypeAliasRules(
         v1Decl,
         v2Decl as TypeAliasDeclaration,
         BCCreate,
+        v1Checker,
+        v2Checker,
       );
     case "exportAssignment":
       return checkExportAssignmentRules(
@@ -70,9 +74,21 @@ function routeDeclarationRules(
         BCCreate,
       );
     case "variable":
-      return checkVariableRules(v1Decl, v2Decl as VariableStatement, BCCreate);
+      return checkVariableRules(
+        v1Decl,
+        v2Decl as VariableStatement,
+        BCCreate,
+        v1Checker,
+        v2Checker,
+      );
     case "class":
-      return checkClassRules(v1Decl, v2Decl as ClassDeclaration, BCCreate);
+      return checkClassRules(
+        v1Decl,
+        v2Decl as ClassDeclaration,
+        BCCreate,
+        v1Checker,
+        v2Checker,
+      );
   }
 }
 

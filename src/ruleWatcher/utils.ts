@@ -3,12 +3,14 @@ import { BreakingChange } from "../model/bcs";
 export const createBC =
   (file: string) =>
   (declaration: string) =>
-  (description: string): BreakingChange => {
-    return {
-      file,
-      declaration,
-      description,
-    };
+  (description: string, warning?: boolean): BreakingChange => {
+    const bc: BreakingChange = { file, declaration, description };
+    if (warning) bc.warning = true;
+
+    return bc;
   };
 
-export type BCCreateType = (description: string) => BreakingChange;
+export type BCCreateType = (
+  description: string,
+  warning?: boolean,
+) => BreakingChange;
