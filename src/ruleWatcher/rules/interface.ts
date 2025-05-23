@@ -3,28 +3,27 @@ import { InterfaceDeclaration } from "../../model";
 import { BC, BreakingChange } from "../../model/bcs";
 import { BCCreateType } from "../utils";
 import { checkTypeRules } from "./types";
+import { hasModifier } from "./utils";
 
 const checkModifiers = (
   v1Decl: InterfaceDeclaration,
   v2Decl: InterfaceDeclaration,
   BCCreate: BCCreateType,
 ): BreakingChange[] => {
+  const hasExport = hasModifier("export");
   //Removing export is a BC
-  if (v1Decl.modifiers?.some((m) => m === "export")) {
-    if (!v2Decl.modifiers?.some((m) => m === "export")) {
-      return [BCCreate(BC.modifiers.removedExport)];
-    }
+  if (hasExport(v1Decl) && !hasExport(v2Decl)) {
+    return [BCCreate(BC.modifiers.removedExport)];
   }
 
+  const hasDefault = hasModifier("default");
   //Adding or removing the default modifier keyword is always a BC.
-  if (v1Decl.modifiers?.some((m) => m === "default")) {
-    if (!v2Decl.modifiers?.some((m) => m === "default")) {
-      return [BCCreate(BC.modifiers.removedDefault)];
-    }
-  } else {
-    if (v2Decl.modifiers?.some((m) => m === "default")) {
-      return [BCCreate(BC.modifiers.addedDefault)];
-    }
+  if (hasDefault(v1Decl) && !hasDefault(v2Decl)) {
+    return [BCCreate(BC.modifiers.removedDefault)];
+  }
+
+  if (!hasDefault(v1Decl) && hasDefault(v2Decl)) {
+    return [BCCreate(BC.modifiers.addedDefault)];
   }
 
   return [];

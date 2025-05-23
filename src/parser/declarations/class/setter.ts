@@ -10,14 +10,11 @@ export const parseSetAccessor = (
 
   const name = node.name.getText();
   const modifiers = extractModifiers<SetterModifier>(node.modifiers);
-  const parameters = node.parameters.map((param) =>
-    parseParameter(param, checker),
-  );
-
+  const parameter = parseParameter(node.parameters[0], checker);
   const setterDeclaration: SetterDeclaration = {
     name,
     modifiers,
-    parameters,
+    parameter,
     kind: "setter",
   };
 

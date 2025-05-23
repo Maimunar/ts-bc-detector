@@ -2,7 +2,7 @@ import ts from "typescript";
 import { ConstructorDeclaration } from "../../../model";
 import { BreakingChange } from "../../../model/bcs";
 import { BCCreateType } from "../../utils";
-import { checkParam, checkParamAdded } from "../paramUtils";
+import { checkParam, checkParamAdded } from "../utils";
 
 //1. Adding and removing a parameter with its rules is following the function analysis in terms of BCs and operators
 export const checkConstructorRules = (

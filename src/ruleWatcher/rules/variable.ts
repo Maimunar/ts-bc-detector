@@ -3,6 +3,7 @@ import { VariableStatement } from "../../model";
 import { BC, BreakingChange } from "../../model/bcs";
 import { BCCreateType } from "../utils";
 import { checkTypeRules } from "./types";
+import { hasModifier } from "./utils";
 
 // remove export check
 const checkModifiers = (
@@ -10,10 +11,10 @@ const checkModifiers = (
   v2Decl: VariableStatement,
   BCCreate: BCCreateType,
 ): BreakingChange[] => {
-  if (v1Decl.modifiers?.some((m) => m === "export")) {
-    if (!v2Decl.modifiers?.some((m) => m === "export")) {
-      return [BCCreate(BC.modifiers.removedExport)];
-    }
+  const hasExport = hasModifier("export");
+
+  if (hasExport(v1Decl) && !hasExport(v2Decl)) {
+    return [BCCreate(BC.modifiers.removedExport)];
   }
   return [];
 };

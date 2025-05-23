@@ -1,6 +1,7 @@
 import { EnumDeclaration } from "../../model";
 import { BC, BreakingChange } from "../../model/bcs";
 import { BCCreateType } from "../utils";
+import { hasModifier } from "./utils";
 
 const checkRemovedEnumMember = (
   v1Decl: EnumDeclaration,
@@ -24,10 +25,9 @@ const checkRemovedExport = (
   v2Decl: EnumDeclaration,
   BCCreate: BCCreateType,
 ): BreakingChange[] => {
-  if (v1Decl.modifiers.includes("export")) {
-    if (!v2Decl.modifiers.includes("export")) {
-      return [BCCreate(BC.enum.removedExport)];
-    }
+  const hasExport = hasModifier("export");
+  if (hasExport(v1Decl) && !hasExport(v2Decl)) {
+    return [BCCreate(BC.enum.removedExport)];
   }
 
   return [];

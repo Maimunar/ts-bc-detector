@@ -16,6 +16,7 @@ import { checkMethodRules } from "./method";
 import { checkPropertyRules } from "./property";
 import { checkSetterRules } from "./setter";
 import { bcConstructorAdded, isConstructorBC } from "./utils";
+import { hasModifier } from "../utils";
 
 export const routeMemberRules = (
   v1Member: ClassMember,
@@ -81,72 +82,44 @@ export const findV2Member = (
   );
 };
 
-export const parseV2Member = (
-  v1Member: ClassMember,
-  v2Member: ClassMember | undefined,
-  BCCreate: (description: string) => BreakingChange,
-): BreakingChange[] => {
-  if (!v2Member) {
-    if (v1Member.kind !== "constructor") {
-      if (
-        v1Member.modifiers?.some((m) => m === "public" || m === "protected")
-      ) {
-        return [BCCreate(BC.removedClassMember)];
-      }
-    }
-    return [BCCreate(BC.removedClassMember)];
-  }
-
-  if (v1Member.kind !== v2Member.kind) {
-    // Bug
-    console.error("Bug: Member kind mismatch");
-  }
-
-  return [];
-};
-
 const checkModifiers = (
   v1Class: ClassDeclaration,
   v2Class: ClassDeclaration,
   BCCreate: BCCreateType,
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
+  const hasExport = hasModifier("export");
+
   // removing the export keyword
-  if (v1Class.modifiers?.some((m) => m === "export")) {
-    if (!v2Class.modifiers?.some((m) => m === "export")) {
-      breakingChanges.push(BCCreate(BC.modifiers.removedExport));
-    }
+  if (hasExport(v1Class) && !hasExport(v2Class)) {
+    breakingChanges.push(BCCreate(BC.modifiers.removedExport));
   }
 
+  const hasDefault = hasModifier("default");
   // removing the default keyword
-  if (v1Class.modifiers?.some((m) => m === "default")) {
-    if (!v2Class.modifiers?.some((m) => m === "default")) {
-      breakingChanges.push(BCCreate(BC.modifiers.removedDefault));
-    }
+  if (hasDefault(v1Class) && !hasDefault(v2Class)) {
+    breakingChanges.push(BCCreate(BC.modifiers.removedDefault));
   }
+
   // adding the default keyword
-  if (!v1Class.modifiers?.some((m) => m === "default")) {
-    if (v2Class.modifiers?.some((m) => m === "default")) {
-      breakingChanges.push(BCCreate(BC.modifiers.addedDefault));
-    }
+  if (!hasDefault(v1Class) && hasDefault(v2Class)) {
+    breakingChanges.push(BCCreate(BC.modifiers.addedDefault));
   }
+
+  const hasDeclare = hasModifier("declare");
   // removing the declare keyword
-  if (v1Class.modifiers?.some((m) => m === "declare")) {
-    if (!v2Class.modifiers?.some((m) => m === "declare")) {
-      breakingChanges.push(BCCreate(BC.modifiers.removedDeclare));
-    }
+  if (hasDeclare(v1Class) && !hasDeclare(v2Class)) {
+    breakingChanges.push(BCCreate(BC.modifiers.removedDeclare));
   }
   // adding the declare keyword
-  if (!v1Class.modifiers?.some((m) => m === "declare")) {
-    if (v2Class.modifiers?.some((m) => m === "declare")) {
-      breakingChanges.push(BCCreate(BC.modifiers.addedDeclare));
-    }
+  if (!hasDeclare(v1Class) && hasDeclare(v2Class)) {
+    breakingChanges.push(BCCreate(BC.modifiers.addedDeclare));
   }
+
+  const hasAbstract = hasModifier("abstract");
   // adding the abstract keyword
-  if (!v1Class.modifiers?.some((m) => m === "abstract")) {
-    if (v2Class.modifiers?.some((m) => m === "abstract")) {
-      breakingChanges.push(BCCreate(BC.modifiers.addedAbstract));
-    }
+  if (!hasAbstract(v1Class) && hasAbstract(v2Class)) {
+    breakingChanges.push(BCCreate(BC.modifiers.addedAbstract));
   }
 
   return breakingChanges;
@@ -174,19 +147,20 @@ export const checkClassRules = (
 
   for (const v1Member of v1Class.members) {
     const v2Member = findV2Member(v1Member, v2Class);
+
     if (!v2Member) {
-      // Constructor removed can be not a BC
-      if (v1Member.kind === "constructor" && isConstructorBC(v1Member)) {
-        breakingChanges.push(BCCreate(BC.class.constructor.removed));
+      if (v1Member.kind === "constructor") {
+        if (isConstructorBC(v1Member)) {
+          breakingChanges.push(BCCreate(BC.class.constructor.removed));
+        }
         continue;
       }
-      breakingChanges.push(BCCreate(BC.removedClassMember));
-      continue;
-    }
 
-    const parseV2BCs = parseV2Member(v1Member, v2Member, BCCreate);
-    if (parseV2BCs.length > 0) {
-      breakingChanges.push(...parseV2BCs);
+      if (
+        v1Member.modifiers?.some((m) => m === "public" || m === "protected")
+      ) {
+        breakingChanges.push(BCCreate(BC.removedClassMember));
+      }
       continue;
     }
 

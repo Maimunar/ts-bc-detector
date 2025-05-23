@@ -1,6 +1,8 @@
 import ts from "typescript";
 import { GetterDeclaration } from "../../../model";
 import { BreakingChange } from "../../../model/bcs";
+import { checkTypeRules } from "../types";
+import { checkAccessibilityBCs } from "./utils";
 
 // Check return type
 export const checkGetterRules = (
@@ -12,7 +14,20 @@ export const checkGetterRules = (
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
+  const modifiersBC = checkAccessibilityBCs(v1Decl, v2Decl, BCCreate);
+  breakingChanges.push(...modifiersBC);
+
   console.log("Getter rules are being checked", v1Decl.name);
+
+  // Check if the return type has changed
+  const returnTypeBCs = checkTypeRules(
+    v1Decl.returnType,
+    v2Decl.returnType,
+    BCCreate,
+    v1Checker,
+    v2Checker,
+  );
+  breakingChanges.push(...returnTypeBCs);
 
   return breakingChanges;
 };

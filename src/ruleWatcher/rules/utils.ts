@@ -2,7 +2,9 @@ import ts from "typescript";
 import { BC, BreakingChange } from "../../model/bcs";
 import { BCCreateType } from "../utils";
 import {
+  ClassMember,
   ConstructorDeclaration,
+  Declaration,
   FunctionDeclaration,
   MethodDeclaration,
 } from "../../model";
@@ -97,3 +99,14 @@ export const checkParam = (
 
   return breakingChanges;
 };
+
+interface Modifiered {
+  modifiers: string[];
+}
+interface WithModifiers extends Modifiered {}
+
+export const hasModifier =
+  (modifier: string) =>
+  (decl: (Declaration | ClassMember) & WithModifiers): boolean => {
+    return !!decl.modifiers?.some((m) => m === modifier);
+  };

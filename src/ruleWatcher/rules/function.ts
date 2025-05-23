@@ -3,27 +3,25 @@ import { FunctionDeclaration } from "../../model";
 import { BC, BreakingChange } from "../../model/bcs";
 import { BCCreateType } from "../utils";
 import { checkTypeRules } from "./types";
-import { checkParam, checkParamAdded } from "./paramUtils";
+import { checkParam, checkParamAdded, hasModifier } from "./utils";
 
 const checkModifiers = (
   v1Decl: FunctionDeclaration,
   v2Decl: FunctionDeclaration,
   BCCreate: BCCreateType,
 ): BreakingChange[] => {
-  if (v1Decl.modifiers?.some((m) => m === "export")) {
-    if (!v2Decl.modifiers?.some((m) => m === "export")) {
-      return [BCCreate(BC.modifiers.removedExport)];
-    }
+  const hasExport = hasModifier("export");
+  if (hasExport(v1Decl) && !hasExport(v2Decl)) {
+    return [BCCreate(BC.modifiers.removedExport)];
   }
 
-  if (v1Decl.modifiers?.some((m) => m === "default")) {
-    if (!v2Decl.modifiers?.some((m) => m === "default")) {
-      return [BCCreate(BC.modifiers.removedDefault)];
-    }
-  } else {
-    if (v2Decl.modifiers?.some((m) => m === "default")) {
-      return [BCCreate(BC.modifiers.addedDefault)];
-    }
+  const hasDefault = hasModifier("default");
+  if (hasDefault(v1Decl) && !hasDefault(v2Decl)) {
+    return [BCCreate(BC.modifiers.removedDefault)];
+  }
+
+  if (!hasDefault(v1Decl) && hasDefault(v2Decl)) {
+    return [BCCreate(BC.modifiers.addedDefault)];
   }
 
   return [];

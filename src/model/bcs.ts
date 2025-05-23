@@ -60,6 +60,18 @@ export const BC = {
       `Removed Variable Declaration: ${name}`,
   },
   class: {
+    modifiers: {
+      publicToPrivate: "Changed Public Modifier to Private",
+      publicToProtected: "Changed Public Modifier to Protected",
+      protectedToPrivate: "Changed Protected Modifier to Private",
+      addedStatic: "Added Static Modifier",
+      removedStatic: "Removed Static Modifier",
+      addedAbstract: "Added Abstract Modifier",
+      removedAbstract: "Removed Abstract Modifier",
+      addedReadonly: "Added Readonly Modifier",
+      addedDeclare: "Added Declare Modifier",
+      removedDeclare: "Removed Declare Modifier",
+    },
     constructor: {
       added: "Constructor with required parameters added",
       removed: "Constructor with required parameters removed",

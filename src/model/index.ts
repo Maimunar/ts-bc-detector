@@ -104,7 +104,7 @@ export interface SetterDeclaration {
   kind: "setter";
   modifiers: SetterModifier[];
   name: string;
-  parameters: { name: string; type: Type }[];
+  parameter: { name: string; type: Type };
 }
 
 // Property
@@ -134,7 +134,7 @@ export interface MethodDeclaration {
   modifiers: MethodModifier[];
   name: string;
   parameters: Parameter[];
-  returnType?: Type;
+  returnType: Type;
 }
 
 // Getter
@@ -143,7 +143,7 @@ export interface GetterDeclaration {
   kind: "getter";
   modifiers: GetterModifier[];
   name: string;
-  returnType?: Type;
+  returnType: Type;
 }
 
 // Constructor
