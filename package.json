@@ -13,6 +13,7 @@
   "devDependencies": {
     "@types/cli-progress": "^3.11.6",
     "@types/node": "^22.15.18",
+    "@types/yargs": "17",
     "eslint": "^9.26.0",
     "globals": "^16.1.0",
     "typescript-eslint": "^8.32.1"
@@ -20,6 +21,7 @@
   "dependencies": {
     "cli-progress": "^3.12.0",
     "typescript": "^5.8.3",
+    "yargs": "17",
     "zod": "^3.24.4"
   }
 }

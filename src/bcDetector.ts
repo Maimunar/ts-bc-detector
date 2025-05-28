@@ -4,6 +4,8 @@ import { watchForBCs } from "./ruleWatcher/ruleWatcher";
 import fs from "fs";
 import * as path from "path";
 import cliProgress, { Presets } from "cli-progress";
+import yargs from "yargs";
+import { hideBin } from "yargs/helpers";
 
 function detectBCsFiles(v1File: string, v2File: string, debug: boolean) {
   const v1Declaration = {
@@ -37,16 +39,22 @@ function readFileSafe(filePath: string): string | null {
   }
 }
 
-function findChangedFiles(v1Root: string, v2Root: string): string[] {
+function findChangedFiles(
+  v1Root: string,
+  v2Root: string,
+  ignoredDirs: string[],
+): string[] {
   const changedFiles: string[] = [];
   const absV1Root = path.resolve(v1Root);
   const absV2Root = path.resolve(v2Root);
+
+  ignoredDirs.push("node_modules");
 
   function walkV1(dir: string) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
 
     for (const entry of entries) {
-      if (entry.name === "node_modules") continue;
+      if (ignoredDirs.includes(entry.name)) continue;
 
       const v1Path = path.join(dir, entry.name);
       const relativePath = path.relative(absV1Root, v1Path);
@@ -72,17 +80,81 @@ function findChangedFiles(v1Root: string, v2Root: string): string[] {
   return changedFiles;
 }
 
-function detectBCs(debug: boolean = false) {
-  const v1Dir = process.argv[2];
-  const v2Dir = process.argv[3];
-  if (!v1Dir || !v2Dir) {
-    console.error("Please provide two directory paths as arguments.");
+function outputBreakingChanges(
+  breakingChanges: BreakingChange[],
+  dir: string,
+  debug: boolean,
+) {
+  if (debug) console.log("Breaking Changes:", breakingChanges);
+
+  // Save the breaking changes to a file
+  // filter out any occurrences of ../ in dir
+  const safeDir = dir.replace(/\.\.\//g, "");
+  const fileDir = path.join("output", safeDir);
+  if (!fs.existsSync(fileDir)) {
+    fs.mkdirSync(fileDir, { recursive: true });
+  }
+  const bcs: BreakingChange[] = [];
+  const warnings: BreakingChange[] = [];
+
+  for (const bc of breakingChanges) {
+    if (bc.warning) warnings.push(bc);
+    else bcs.push(bc);
+  }
+
+  const bcsOutput = path.join(fileDir, "breakingChanges.json");
+  const warningsOutput = path.join(fileDir, "warnings.json");
+  fs.writeFileSync(bcsOutput, JSON.stringify(bcs, null, 2));
+  fs.writeFileSync(
+    warningsOutput,
+    JSON.stringify(
+      warnings.map((w) => ({
+        file: w.file,
+        declaration: w.declaration,
+        description: w.description,
+      })),
+      null,
+      2,
+    ),
+  );
+
+  console.log("Total Breaking Changes:", bcs.length);
+  console.log(`Breaking changes saved to: ${bcsOutput}`);
+  console.log("Total Warnings:", warnings.length);
+  console.log(`Warnings saved to: ${warningsOutput}`);
+}
+
+function detectBCs() {
+  const dir = process.argv[2];
+  if (!dir) {
+    console.error("Please provide a directory path as an argument.");
     return;
   }
-  const changedFiles = findChangedFiles(v1Dir, v2Dir);
-  if (debug) {
-    console.log("Changed files:", changedFiles);
-  }
+  const v1Dir = path.join(dir, "v1");
+  const v2Dir = path.join(dir, "v2");
+
+  const argv = yargs(hideBin(process.argv))
+    .option("ignoreDirs", {
+      alias: "i",
+      type: "array",
+      description: "List of directories to ignore",
+      default: [],
+    })
+    .option("debug", {
+      alias: "d",
+      type: "boolean",
+      description: "Enable debug mode",
+      default: false,
+    })
+    .parseSync();
+
+  const changedFiles = findChangedFiles(
+    v1Dir,
+    v2Dir,
+    argv.ignoreDirs as string[],
+  );
+
+  if (argv.debug) console.log("Changed files:", changedFiles);
 
   const progressBar = getProgressBar();
 
@@ -99,14 +171,13 @@ function detectBCs(debug: boolean = false) {
       continue;
     }
 
-    breakingChanges.push(...detectBCsFiles(v1File, v2File, debug));
+    breakingChanges.push(...detectBCsFiles(v1File, v2File, argv.debug));
 
     progressBar.increment();
   }
   progressBar.stop();
 
-  console.log("Breaking Changes:", breakingChanges);
-  console.log("Total Breaking Changes Found:", breakingChanges.length);
+  outputBreakingChanges(breakingChanges, dir, argv.debug);
 
   return breakingChanges;
 }

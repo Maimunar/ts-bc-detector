@@ -239,6 +239,15 @@ export function watchForBCs(
       continue;
     }
 
+    // If item is not exported, we are not checking it
+    if (
+      v1Decl.kind !== "exportDeclaration" &&
+      v1Decl.kind !== "exportAssignment" &&
+      !v1Decl.modifiers.includes("export")
+    ) {
+      continue;
+    }
+
     const bcsForDeclaration = routeDeclarationRules(
       v1Decl,
       v2Decl,

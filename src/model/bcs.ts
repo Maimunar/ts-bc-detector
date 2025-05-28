@@ -77,4 +77,17 @@ export const BC = {
       removed: "Constructor with required parameters removed",
     },
   },
+  types: {
+    typeLiteral: {
+      property: {
+        removed: (name: string) => `Removed Type Literal Property: ${name}`,
+        optionalToRequired: (name: string) =>
+          `Changed Optional Type Literal Property to Required: ${name}`,
+        changed: (from: string, to: string) =>
+          `Changed Type Literal Property Type from '${from}' to '${to}'`,
+        added: (name: string) =>
+          `Added Required Type Literal Property: ${name}`,
+      },
+    },
+  },
 };
