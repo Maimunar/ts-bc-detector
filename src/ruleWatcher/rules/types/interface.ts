@@ -21,8 +21,6 @@ export function compareInterfaceTypes(
 ): BreakingChange[] {
   const bcs: BreakingChange[] = [];
 
-  console.log(BCCreate("Interface"));
-
   if (!isTypeLiteralType(typeB)) {
     if (isObjectKeyword(typeB, checkerB) || isAnyOrUnknown(typeB)) return [];
 
@@ -43,13 +41,11 @@ export function compareInterfaceTypes(
     bcs.push(BCCreate(BC.types.typeLiteral.removed, warningFlag));
     return bcs;
   }
-  console.log("survived 1");
 
   if (!isTypeLiteralType(typeA)) {
     bcs.push(BCCreate(BC.types.typeLiteral.added, warningFlag));
     return bcs;
   }
-  console.log("survived 2");
 
   const propsA = checkerA.getPropertiesOfType(typeA);
   const propsB = checkerB.getPropertiesOfType(typeB);

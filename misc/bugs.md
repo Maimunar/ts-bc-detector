@@ -16,7 +16,6 @@ enum/initializer-string-to-number
 enum/remove-initializer
 export-declaration/change-named-to-namespace
 export-declaration/remove-type
-function/add-async
 function/change-param-name
 function/change-param-none-to-dotdotdot
 interface/add-member-optional
@@ -84,10 +83,14 @@ enum/change-name
 enum/remove-export
 enum/remove-member
 export-assignment/change-expression
+export-assignment/change-type-export
 export-assignment/remove-export-assignment
+export-declaration/add-alias
+export-declaration/remove-alias
 export-declaration/remove-named-export
 export-declaration/remove-namespace-export
 export-declaration/remove-specifier
+function/add-async
 function/add-default
 function/change-param-dotdotdot-to-none
 function/change-param-initializer-to-none
@@ -111,9 +114,11 @@ types/constructor/indexed-number-to-string
 types/constructor/literal-to-string-bc
 types/constructor/string-to-number
 types/function/add-function-type
+types/function/add-param-optional
 types/function/add-param-required
 types/function/make-param-required
 types/function/remove-param
+types/intersection/add-intersection
 types/tuple/add-item
 types/tuple/add-tuple-type
 types/tuple/remove-item
@@ -122,29 +127,18 @@ types/type-literal/add-mapped-type
 types/type-literal/add-property-sig
 types/type-literal/make-property-sig-required
 types/union-type/remove-union
+types/type-reference/add-promise
+types/type-reference/remove-promise
 variable/remove-declaration
 variable/remove-variable
 
 ### Issues
 
-- types/function/add-function-type - this is a warning for overload, should be a BC for the return type changed
-- export-assignment/change-type-export - we're not checking the type most likely
-- export-declaration/add-alias and export-declaration/remove-alias - we probably didnt add alias logic
-- function/change-param-none-to-dotdotdot - this is triggering a type error because an array type was added, but that is not necessarily a problem here, not a BC
-- types/array/remove-array-from-object-array - probably got fixed, run it again to make sure
+1. These 3 are not BCs, but should be, check the index type logic:
+   types/type-literal/index-sig-number-to-index-sig-string
+   types/type-literal/index-sig-string-to-index-sig-number
+   types/type-literal/index-sig-string-to-index-sig-template-literal
 
-- types/build/tuple-type-to-array-type-same - this shoud not be aproblem, but we get a array type added error. make an exception for it
-- types/intersection/add-intersection-number-on-literal-array and types/intersection-object-on-array - we get an array type removed error here, make sure that is covered as an exception as that is not a problem here
+2. indexed-number-to-string and types/function/add-param-optional and types/function/make-param-optional - the primitive type thing is catching these, should fix it
 
-- indexed-number-to-string - this gives an error that an unexported interface was removed as a declaration, but that shouldnt be an issue. make sure we get that error only for exported things
-- types/type-literal/mapped-type-to-index-sig-string - this is not actually a problem, but we get a removed declaration, so this is probably just the non-exported decl getting removed
-
-- types/function/add-param-optional - this thinks that the added param was required. make it work
-- types/intersection/add-intersection - no errors triggered here, but they shouldve. might be it going to never or something, make sure thats in the primitive types
-
-- These 3 are not BCs, but should be, check the index type logic:
-  types/type-literal/index-sig-number-to-index-sig-string
-  types/type-literal/index-sig-string-to-index-sig-number
-  types/type-literal/index-sig-string-to-index-sig-template-literal
-
-- types/type-reference/add-promise and types/type-reference/remove-promise - we're not checking for that, add it
+3. add-item and remove-item from tuples no longer giving error
