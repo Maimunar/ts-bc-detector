@@ -20,7 +20,7 @@ function routeNode(node: ts.Node, checker: ts.TypeChecker) {
   if (ts.isEnumDeclaration(node)) return parseEnum(node);
   if (ts.isTypeAliasDeclaration(node)) return parseTypeAlias(node, checker);
   if (ts.isExportDeclaration(node)) return parseExportDeclaration(node);
-  if (ts.isExportAssignment(node)) return parseExportAssignment(node);
+  if (ts.isExportAssignment(node)) return parseExportAssignment(node, checker);
 }
 
 function visit(node: ts.Node, checker: ts.TypeChecker) {
