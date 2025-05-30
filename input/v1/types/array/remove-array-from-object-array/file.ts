@@ -1,1 +1,1 @@
-export const x: number[] = [];
+export const x: object[] = [];
