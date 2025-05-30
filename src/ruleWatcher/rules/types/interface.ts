@@ -2,7 +2,14 @@ import ts from "typescript";
 import { Type } from "../../../model";
 import { BCCreateType } from "../../utils";
 import { BC, BreakingChange } from "../../../model/bcs";
-import { isEffectivelyEqual } from "./utils";
+import {
+  isAnyOrUnknown,
+  isEffectivelyEqual,
+  isObjectKeyword,
+  isOptional,
+  isStringKeyword,
+  isTypeLiteralType,
+} from "./utils";
 
 export function compareInterfaceTypes(
   typeA: Type,
@@ -13,6 +20,36 @@ export function compareInterfaceTypes(
   warningFlag: boolean,
 ): BreakingChange[] {
   const bcs: BreakingChange[] = [];
+
+  console.log(BCCreate("Interface"));
+
+  if (!isTypeLiteralType(typeB)) {
+    if (isObjectKeyword(typeB, checkerB) || isAnyOrUnknown(typeB)) return [];
+
+    if (isStringKeyword(typeB)) {
+      const props = checkerA.getPropertiesOfType(typeA);
+      let isKeyNumberStringValue = false;
+      props.forEach((sym) => {
+        const decl = getRelevantDeclaration(sym);
+        const typeAProp = checkerA.getTypeOfSymbolAtLocation(sym, decl);
+        if (hasNumberToStringIndexSignature(typeAProp, checkerA)) {
+          isKeyNumberStringValue = true;
+        }
+      });
+
+      if (isKeyNumberStringValue) return [];
+    }
+
+    bcs.push(BCCreate(BC.types.typeLiteral.removed, warningFlag));
+    return bcs;
+  }
+  console.log("survived 1");
+
+  if (!isTypeLiteralType(typeA)) {
+    bcs.push(BCCreate(BC.types.typeLiteral.added, warningFlag));
+    return bcs;
+  }
+  console.log("survived 2");
 
   const propsA = checkerA.getPropertiesOfType(typeA);
   const propsB = checkerB.getPropertiesOfType(typeB);
@@ -95,10 +132,6 @@ export function compareInterfaceTypes(
   return bcs;
 }
 
-function isOptional(sym: ts.Symbol): boolean {
-  return (sym.getFlags() & ts.SymbolFlags.Optional) !== 0;
-}
-
 function getRelevantDeclaration(sym: ts.Symbol): ts.Declaration {
   // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
   return sym.getDeclarations()?.[0]!;
@@ -140,4 +173,21 @@ function isIndexKeyRelaxedToString(
   return (
     allowedTypes.includes(kindA) && kindB === "string" && kindA !== "string"
   );
+}
+
+export function hasNumberToStringIndexSignature(
+  type: ts.Type,
+  checker: ts.TypeChecker,
+): boolean {
+  if (!(type.flags & ts.TypeFlags.Object)) {
+    return false;
+  }
+
+  const indexType = checker.getIndexInfoOfType(type, ts.IndexKind.Number);
+  if (!indexType || !indexType.type) return false;
+
+  const valueType = indexType.type;
+  const valueTypeStr = checker.typeToString(valueType);
+
+  return valueTypeStr === "string";
 }

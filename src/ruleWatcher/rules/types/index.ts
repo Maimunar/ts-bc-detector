@@ -1,10 +1,20 @@
 import ts from "typescript";
 import { Type } from "../../../model";
-import { BreakingChange } from "../../../model/bcs";
+import { BC, BreakingChange } from "../../../model/bcs";
 import { BCCreateType } from "../../utils";
-import { isEffectivelyEqual, isGenericType, isTypeLiteralType } from "./utils";
+import {
+  isEffectivelyEqual,
+  isGenericType,
+  isPrimitiveType,
+  isTypeLiteralType,
+} from "./utils";
 import { compareInterfaceTypes } from "./interface";
 import { compareFunctionTypes } from "./function";
+import { compareTupleTypes } from "./tuple";
+import { compareArrayTypes } from "./array";
+import { compareUnionTypes } from "./union";
+import { compareIntersectionTypes } from "./intersection";
+import { checkWrappedInGenerics } from "./generics";
 
 export function checkTypeRules(
   typeA: Type,
@@ -14,18 +24,72 @@ export function checkTypeRules(
   checkerB: ts.TypeChecker,
 ): BreakingChange[] {
   const bcs: BreakingChange[] = [];
-  if (isEffectivelyEqual(typeA, typeB, checkerA, checkerB)) {
-    return [];
-  }
+
+  if (isEffectivelyEqual(typeA, typeB, checkerA, checkerB)) return [];
 
   // The system is limited due to generics, this makes BCs a warning if a generic type is involved
   const wFlag = isGenericType(typeA) || isGenericType(typeB);
   if (wFlag) console.log("Generic caught", typeA, typeB);
 
-  // Interface/Object
-  if (isTypeLiteralType(typeA) && isTypeLiteralType(typeB)) {
+  // Function
+  const signatureA = getFunctionSignaturesFromType(typeA, checkerA);
+  const signatureB = getFunctionSignaturesFromType(typeB, checkerB);
+  const atleastOneIsFunction = signatureA.length > 0 || signatureB.length > 0;
+  if (atleastOneIsFunction) {
     bcs.push(
-      ...compareInterfaceTypes(
+      ...compareFunctionTypes(
+        signatureA,
+        checkerA,
+        signatureB,
+        checkerB,
+        BCCreate,
+        wFlag,
+      ),
+    );
+  }
+
+  // Tuples
+  if (checkerA.isTupleType(typeA) || checkerB.isTupleType(typeB)) {
+    bcs.push(
+      ...compareTupleTypes(typeA, typeB, checkerA, checkerB, BCCreate, wFlag),
+    );
+  }
+
+  // Arrays
+  if (checkerA.isArrayType(typeA) || checkerB.isArrayType(typeB)) {
+    bcs.push(
+      ...compareArrayTypes(typeA, typeB, checkerA, checkerB, BCCreate, wFlag),
+    );
+  }
+
+  // Interface/Object
+  if (isTypeLiteralType(typeA) || isTypeLiteralType(typeB)) {
+    // Function goes in here
+    if (!atleastOneIsFunction) {
+      bcs.push(
+        ...compareInterfaceTypes(
+          typeA,
+          typeB,
+          checkerA,
+          checkerB,
+          BCCreate,
+          wFlag,
+        ),
+      );
+    }
+  }
+
+  // Unions
+  if (typeA.isUnion() || typeB.isUnion()) {
+    bcs.push(
+      ...compareUnionTypes(typeA, typeB, checkerA, checkerB, BCCreate, wFlag),
+    );
+  }
+
+  // Intersections
+  if (typeA.isIntersection() || typeB.isIntersection()) {
+    bcs.push(
+      ...compareIntersectionTypes(
         typeA,
         typeB,
         checkerA,
@@ -36,34 +100,25 @@ export function checkTypeRules(
     );
   }
 
-  // Function
-  const signatureA = getFunctionSignaturesFromType(typeA, checkerA);
-  const signatureB = getFunctionSignaturesFromType(typeB, checkerB);
-  if (signatureA.length > 0 || signatureB.length > 0) {
+  // We check for any builtin types like promise through generics changed
+  const genericsChangedBC = checkWrappedInGenerics(typeA, typeB, BCCreate);
+  if (genericsChangedBC) bcs.push(genericsChangedBC);
+
+  // Here just check if the types substantially change
+  if (
+    isPrimitiveType(typeA) &&
+    isPrimitiveType(typeB) &&
+    !isEffectivelyEqual(typeA, typeB, checkerA, checkerB)
+  ) {
     bcs.push(
-      ...compareFunctionTypes(signatureA, checkerA, signatureB, checkerB),
+      BCCreate(
+        BC.types.changed(
+          checkerA.typeToString(typeA),
+          checkerB.typeToString(typeB),
+        ),
+      ),
     );
   }
-  //
-  //// Tuples
-  //if (checkerA.isTupleType(typeA) && checkerB.isTupleType(typeB)) {
-  //  messages.push(...compareTupleTypes(typeA, checkerA, typeB, checkerB));
-  //}
-  //
-  //// Arrays
-  //if (checkerA.isArrayType(typeA) && checkerB.isArrayType(typeB)) {
-  //  messages.push(...compareArrayTypes(typeA, checkerA, typeB, checkerB));
-  //}
-  //
-  //if (typeA.isUnion() && typeB.isUnion()) {
-  //  messages.push(...compareUnionTypes(typeA, checkerA, typeB, checkerB));
-  //}
-  //
-  //if (typeA.isIntersection() && typeB.isIntersection()) {
-  //  messages.push(
-  //    ...compareIntersectionTypes(typeA, checkerA, typeB, checkerB),
-  //  );
-  //}
 
   return bcs;
 }
@@ -93,21 +148,4 @@ function getFunctionSignaturesFromType(
   }
 
   return signatures;
-}
-
-function getImplementationSignature(
-  type: ts.Type,
-  checker: ts.TypeChecker,
-): ts.Signature | undefined {
-  const callSignatures = checker.getSignaturesOfType(
-    type,
-    ts.SignatureKind.Call,
-  );
-
-  // Implementation signature typically has a declaration with a body
-  return callSignatures.find((sig) => {
-    const decl = sig.getDeclaration();
-    // @ts-expect-error stuff
-    return decl && ts.isFunctionLike(decl) && !!decl.body;
-  });
 }

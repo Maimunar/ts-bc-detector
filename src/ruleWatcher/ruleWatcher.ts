@@ -66,6 +66,8 @@ function routeDeclarationRules(
         v1Decl,
         v2Decl as ExportAssignment,
         BCCreate,
+        v1Checker,
+        v2Checker,
       );
     case "exportDeclaration":
       return checkExportDeclarationRules(
@@ -91,24 +93,6 @@ function routeDeclarationRules(
       );
   }
 }
-
-const parseV2Declaration = (
-  v1Decl: Declaration,
-  v2Decl: Declaration | undefined,
-  BCCreate: (description: string) => BreakingChange,
-): BreakingChange[] => {
-  if (!v2Decl) {
-    // Declaration was removed
-    return [BCCreate(BC.removedDeclaration)];
-  }
-
-  if (v1Decl.kind !== v2Decl.kind) {
-    // Bug
-    console.error("BUG: Declaration kind mismatch");
-  }
-
-  return [];
-};
 
 export const createBCCreator = (
   v1Decl: Declaration,
@@ -229,22 +213,20 @@ export function watchForBCs(
 
   for (const v1Decl of v1.declarations) {
     const BCCreate = createBCCreator(v1Decl, bcCreateDeclaration);
-    const v2Decl = findV2Declaration(v1Decl, v2);
-
-    const parseV2BCs = parseV2Declaration(v1Decl, v2Decl, BCCreate);
-
-    // If this is true, there was either a bug somewhere or a declaration was removed - no need to check for rules
-    if (parseV2BCs.length > 0) {
-      breakingChanges.push(...parseV2BCs);
-      continue;
-    }
-
     // If item is not exported, we are not checking it
     if (
       v1Decl.kind !== "exportDeclaration" &&
       v1Decl.kind !== "exportAssignment" &&
       !v1Decl.modifiers.includes("export")
     ) {
+      continue;
+    }
+
+    const v2Decl = findV2Declaration(v1Decl, v2);
+
+    // Declaration was removed
+    if (!v2Decl) {
+      breakingChanges.push(BCCreate(BC.removedDeclaration));
       continue;
     }
 

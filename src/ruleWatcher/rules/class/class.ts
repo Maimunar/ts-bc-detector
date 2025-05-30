@@ -144,6 +144,12 @@ export const checkClassRules = (
   }
 
   for (const v1Member of v1Class.members) {
+    const hasPrivate = hasModifier("private");
+
+    if (v1Member.kind !== "constructor") {
+      // We're not testing private members
+      if (hasPrivate(v1Member)) continue;
+    }
     const v2Member = findV2Member(v1Member, v2Class);
 
     if (!v2Member) {
@@ -154,11 +160,11 @@ export const checkClassRules = (
         continue;
       }
 
-      if (
-        v1Member.modifiers?.some((m) => m === "public" || m === "protected")
-      ) {
+      // No accessibility = public, so we only skip if it is private
+      if (!hasPrivate(v1Member)) {
         breakingChanges.push(BCCreate(BC.removedClassMember));
       }
+
       continue;
     }
 

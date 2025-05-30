@@ -7,6 +7,7 @@ import {
   Declaration,
   FunctionDeclaration,
   MethodDeclaration,
+  Parameter,
 } from "../../model";
 import { checkTypeRules } from "./types";
 
@@ -87,9 +88,12 @@ export const checkParam = (
     }
 
     // Check Types
+    const v1Type = getParameterType(v1Param, v1Checker);
+    const v2Type = getParameterType(v2Param, v1Checker);
+
     const typeBCs = checkTypeRules(
-      v1Param.type,
-      v2Param.type,
+      v1Type,
+      v2Type,
       BCCreate,
       v1Checker,
       v2Checker,
@@ -110,3 +114,16 @@ export const hasModifier =
   (decl: (Declaration | ClassMember) & WithModifiers): boolean => {
     return !!decl.modifiers?.some((m) => m === modifier);
   };
+
+function getParameterType(param: Parameter, checker: ts.TypeChecker): ts.Type {
+  const { extraOperator, type } = param;
+
+  if (extraOperator === "rest") {
+    if (checker.isArrayType(type)) {
+      const typeArgs = checker.getTypeArguments(type as ts.TypeReference);
+      return typeArgs[0];
+    }
+  }
+
+  return type;
+}

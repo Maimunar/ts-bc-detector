@@ -47,8 +47,10 @@ export const checkAccessibilityBCs = (
   const hasPublic = hasModifier("public");
   const hasPrivate = hasModifier("private");
   const hasProtected = hasModifier("protected");
+  const v1NoAccessibilityModifier =
+    !hasPublic(v1Decl) && !hasProtected(v1Decl) && !hasPrivate(v1Decl);
 
-  if (hasPublic(v1Decl)) {
+  if (hasPublic(v1Decl) || v1NoAccessibilityModifier) {
     if (hasPrivate(v2Decl)) {
       return [BCCreate(BC.class.modifiers.publicToPrivate)];
     }
@@ -58,7 +60,7 @@ export const checkAccessibilityBCs = (
   }
   if (hasProtected(v1Decl)) {
     // if it is private or it doesnt have a keyword
-    if (hasPrivate(v2Decl) || !(hasPublic(v2Decl) || hasProtected(v2Decl))) {
+    if (hasPrivate(v2Decl)) {
       return [BCCreate(BC.class.modifiers.protectedToPrivate)];
     }
   }

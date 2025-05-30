@@ -12,10 +12,68 @@ export function isEffectivelyEqual(
   const strB = checkerB.typeToString(typeB);
   if (strA === strB) return true;
 
-  // Use assignability one-way
-  const assignable = checkerA.isTypeAssignableTo(typeA, typeB);
+  if (!typeA || !typeB) return false;
 
-  return assignable;
+  // Special case: breaking changes for index keys
+  if (isBreakingIndexedType(typeA, typeB, checkerA, checkerB)) return true;
+
+  // Use assignability one-way
+  return checkerA.isTypeAssignableTo(typeA, typeB);
+}
+
+const isBreakingIndexedType = (
+  typeA: ts.Type,
+  typeB: ts.Type,
+  checkerA: ts.TypeChecker,
+  checkerB: ts.TypeChecker,
+): boolean => {
+  const indexInfoA = checkerA.getIndexInfosOfType(typeA)[0];
+  const indexInfoB = checkerB.getIndexInfosOfType(typeB)[0];
+
+  if (!indexInfoA || !indexInfoB) return false;
+
+  const keyKindA = getIndexKeyKind(indexInfoA);
+  const keyKindB = getIndexKeyKind(indexInfoB);
+
+  const isNumberToString = keyKindA === "number" && keyKindB === "string";
+  const isTemplateToString = keyKindA === "template" && keyKindB === "string";
+  const isNotBreaking = isNumberToString || isTemplateToString;
+
+  const valueA = indexInfoA.type;
+  const valueB = indexInfoB.type;
+  const aString = checkerA.typeToString(typeA);
+  const bString = checkerB.typeToString(typeB);
+
+  const sameValueType =
+    aString === bString || checkerA.isTypeAssignableTo(valueA, valueB);
+
+  if (isNotBreaking && sameValueType) return false;
+
+  return true;
+};
+
+function getIndexKeyKind(
+  info: ts.IndexInfo,
+): "string" | "number" | "symbol" | "template" | "unknown" {
+  const keyType = info.keyType;
+  if (!keyType) return "unknown";
+
+  const flags = keyType.flags;
+
+  if ((flags & ts.TypeFlags.TemplateLiteral) !== 0) {
+    return "template";
+  }
+  if ((flags & ts.TypeFlags.StringLike) !== 0) {
+    return "string";
+  }
+  if ((flags & ts.TypeFlags.NumberLike) !== 0) {
+    return "number";
+  }
+  if ((flags & ts.TypeFlags.ESSymbolLike) !== 0) {
+    return "symbol";
+  }
+
+  return "unknown";
 }
 
 export function isGenericType(type: ts.Type): boolean {
@@ -63,4 +121,106 @@ export function isObjectType(t: ts.Type): t is ts.ObjectType {
 
 export function isTypeLiteralType(t: ts.Type): boolean {
   return isObjectType(t) && (t.objectFlags & ts.ObjectFlags.Anonymous) !== 0;
+}
+
+export function isOptionalParameter(sym: ts.Symbol): boolean {
+  const decl = sym.valueDeclaration ?? sym.declarations?.[0];
+  if (!decl || !ts.isParameter(decl)) return false;
+
+  return (
+    !!decl.questionToken || // param?: T
+    !!decl.initializer // param = defaultValue
+  );
+}
+
+export function isOptional(sym: ts.Symbol): boolean {
+  return (sym.getFlags() & ts.SymbolFlags.Optional) !== 0;
+}
+
+export function isAnyOrUnknown(type: ts.Type): boolean {
+  return (
+    (type.flags & ts.TypeFlags.Any) !== 0 ||
+    (type.flags & ts.TypeFlags.Unknown) !== 0
+  );
+}
+
+export function isNumberKeyword(type: ts.Type): boolean {
+  return (type.flags & ts.TypeFlags.Number) !== 0;
+}
+
+export function isNumberLiteral(type: ts.Type): boolean {
+  return (type.flags & ts.TypeFlags.NumberLiteral) !== 0;
+}
+
+export function isStringKeyword(type: ts.Type): boolean {
+  return (type.flags & ts.TypeFlags.String) !== 0;
+}
+
+export function isStringLiteral(type: ts.Type): boolean {
+  return (type.flags & ts.TypeFlags.StringLiteral) !== 0;
+}
+
+export function isBooleanKeyword(type: ts.Type): boolean {
+  return (type.flags & ts.TypeFlags.Boolean) !== 0;
+}
+
+export function isBooleanLiteral(type: ts.Type): boolean {
+  return (type.flags & ts.TypeFlags.BooleanLiteral) !== 0;
+}
+
+export function isObjectKeyword(
+  type: ts.Type,
+  checker: ts.TypeChecker,
+): boolean {
+  return checker.typeToString(type) === "object";
+}
+
+export function isTupleType(type: ts.Type): boolean {
+  return (
+    (type.getFlags() & ts.TypeFlags.Object) !== 0 &&
+    ((type as ts.ObjectType).objectFlags & ts.ObjectFlags.Tuple) !== 0
+  );
+}
+
+export function isFunctionType(type: ts.Type): boolean {
+  return type.getCallSignatures().length > 0;
+}
+
+export function isTypeLiteral(type: ts.Type): boolean {
+  return (
+    (type.flags & ts.TypeFlags.Object) !== 0 &&
+    !!((type as ts.ObjectType).objectFlags & ts.ObjectFlags.Anonymous)
+  );
+}
+
+export function isArrayType(type: ts.Type): boolean {
+  return (
+    (type.symbol?.name === "Array" || type.symbol?.escapedName === "Array") &&
+    !!(type as ts.TypeReference).typeArguments
+  );
+}
+
+export function isPrimitiveType(type: ts.Type): boolean {
+  const flags = ts.TypeFlags;
+  return (
+    (type.flags & flags.String) !== 0 ||
+    (type.flags & flags.Number) !== 0 ||
+    (type.flags & flags.Boolean) !== 0 ||
+    (type.flags & flags.BigInt) !== 0 ||
+    (type.flags & flags.ESSymbol) !== 0 ||
+    (type.flags & flags.UniqueESSymbol) !== 0 ||
+    (type.flags & flags.Null) !== 0 ||
+    (type.flags & flags.Undefined) !== 0 ||
+    (type.flags & flags.Never) !== 0 ||
+    (type.flags & flags.Void) !== 0 ||
+    (type.flags & flags.Any) !== 0 ||
+    (type.flags & flags.Unknown) !== 0 ||
+    (type.flags & flags.Object) !== 0 ||
+    (type.flags & flags.StringLiteral) !== 0 ||
+    (type.flags & flags.NumberLiteral) !== 0 ||
+    (type.flags & flags.BooleanLiteral) !== 0 ||
+    (type.flags & flags.BigIntLiteral) !== 0 ||
+    (type.flags & flags.TemplateLiteral) !== 0 ||
+    (type.flags & flags.Literal) !== 0 // includes other literal-like types
+  );
 }

@@ -1,5 +1,5 @@
 import ts from "typescript";
-import { PropertyDeclaration } from "../../../model";
+import { MethodDeclaration, PropertyDeclaration } from "../../../model";
 import { BC, BreakingChange } from "../../../model/bcs";
 import { checkAccessibilityBCs } from "./utils";
 import { BCCreateType } from "../../utils";
@@ -53,13 +53,20 @@ const checkModifiers = (
 
 export const checkPropertyRules = (
   v1Decl: PropertyDeclaration,
-  v2Decl: PropertyDeclaration,
+  v2Decl: PropertyDeclaration | MethodDeclaration,
   BCCreate: (description: string) => BreakingChange,
   v1Checker: ts.TypeChecker,
   v2Checker: ts.TypeChecker,
 ): BreakingChange[] => {
   const breakingChanges: BreakingChange[] = [];
 
+  // This is an edge case of an abstract method (treated as a property) changing to a method with an implementation
+  if (v2Decl.kind === "method") {
+    breakingChanges.push(
+      BCCreate(BC.class.property.changedToMethod(v1Decl.name)),
+    );
+    return breakingChanges;
+  }
   // Check accessibility
   const accessibilityBCs = checkAccessibilityBCs(v1Decl, v2Decl, BCCreate);
   breakingChanges.push(...accessibilityBCs);

@@ -37,6 +37,18 @@ const checkSpecifiers = (
         );
       }
 
+      // Adding alias
+      if (!v1Specifier.propertyName && v2Specifier?.propertyName) {
+        breakingChanges.push(
+          BCCreate(BC.exportDeclaration.addedAlias(v1Specifier.name)),
+        );
+      }
+      // Removing alias
+      if (v1Specifier.propertyName && !v2Specifier?.propertyName) {
+        breakingChanges.push(
+          BCCreate(BC.exportDeclaration.removedAlias(v1Specifier.name)),
+        );
+      }
       // Check type added
       if (!v1Specifier.isTypeOnly && v2Specifier?.isTypeOnly) {
         breakingChanges.push(
@@ -80,6 +92,29 @@ const checkTypeOfExportDeclaration = (
   }
   return [];
 };
+const checkNamespaceAlias = (
+  v1Decl: ExportDeclaration,
+  v2Decl: ExportDeclaration,
+  BCCreate: BCCreateType,
+): BreakingChange[] => {
+  if (
+    v1Decl.exportClause.type !== "namespace" ||
+    v2Decl.exportClause.type !== "namespace"
+  ) {
+    return [];
+  }
+  if (v1Decl.exportClause.name !== v2Decl.exportClause.name) {
+    return [
+      BCCreate(
+        BC.exportDeclaration.addedAlias(
+          v1Decl.exportClause.name || v2Decl.exportClause.name || "unknown", // It can never be unknown
+        ),
+      ),
+    ];
+  }
+  return [];
+};
+
 export const checkExportDeclarationRules = (
   v1Decl: ExportDeclaration,
   v2Decl: ExportDeclaration,
@@ -98,5 +133,4 @@ export const checkExportDeclarationRules = (
 
   return breakingChanges;
 };
-
 //- Adding or removing an alias (from clause or a specifier or a namespace) is a BC.
