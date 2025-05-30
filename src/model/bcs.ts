@@ -54,6 +54,8 @@ export const BC = {
     addedTypeKeywordToExportSpecifier: (name: string) =>
       `Added Type Keyword to Export Specifier: ${name}`,
     namespaceToNamed: "Changed Namespace Export to Named Export",
+    addedAlias: (name: string) => `Added Alias: ${name}`,
+    removedAlias: (name: string) => `Removed Alias: ${name}`,
   },
   variable: {
     removedDeclaration: (name: string) =>
@@ -76,9 +78,22 @@ export const BC = {
       added: "Constructor with required parameters added",
       removed: "Constructor with required parameters removed",
     },
+    method: {
+      changedToProperty: (name: string) =>
+        `Changed Method to Property: ${name}`,
+    },
+    property: {
+      changedToMethod: (name: string) => `Changed Property to Method: ${name}`,
+    },
   },
   types: {
+    generic: {
+      added: "Added Generic Type",
+      removed: "Removed Generic Type",
+    },
     typeLiteral: {
+      added: "Added Type Literal",
+      removed: "Removed Type Literal",
       property: {
         removed: (name: string) => `Removed Type Literal Property: ${name}`,
         optionalToRequired: (name: string) =>
@@ -89,5 +104,38 @@ export const BC = {
           `Added Required Type Literal Property: ${name}`,
       },
     },
+    function: {
+      removed: "Removed Function Type",
+      added: "Added Function Type",
+      addParameter: (name: string) => `Added required parameter: ${name}`,
+      removeParameter: (name: string) => `Removed parameter: ${name}`,
+      parameterTypeChanged: (name: string) =>
+        `Changed type of parameter: ${name}`,
+      returnTypeChanged: "Return type of function changed",
+      makeParameterRequired: (name: string) =>
+        `Optional parameter to required: ${name}`,
+      overload: "The overload signatures of the function have changed",
+    },
+    tuple: {
+      added: "Added Tuple",
+      removed: "Removed Tuple",
+      itemAdded: `Added tuple item(s)`,
+      itemRemoved: `Removed tuple item(s)`,
+      itemTypeChanged: (idx: number) =>
+        `Changed tuple item type at index ${idx}`,
+    },
+    array: {
+      added: "Array Type added",
+      removed: "Array Type removed",
+      baseTypeChanged: "Array Base Type is changed",
+    },
+    union: {
+      memberRemoved: (name: string) => `Removed Union Member: ${name}`,
+    },
+    intersection: {
+      memberAdded: (name: string) => `Added Intersection Member: ${name}`,
+    },
+    changed: (from: string, to: string) =>
+      `Changed primitive type from '${from}' to '${to}'`,
   },
 };

@@ -25,6 +25,7 @@ export interface EnumDeclaration {
 export interface ExportAssignment {
   kind: "exportAssignment";
   value: string;
+  type?: Type;
 }
 
 // Export Declaration
