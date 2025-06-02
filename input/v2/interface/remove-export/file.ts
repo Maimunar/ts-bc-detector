@@ -1,3 +1,0 @@
-interface testInterface {
-  x: string;
-}
