@@ -206,6 +206,7 @@ function findV2Declaration(v1Decl: Declaration, v2: DeclarationFile) {
 export function watchForBCs(
   v1: DeclarationFile,
   v2: DeclarationFile,
+  debug: boolean,
 ): BreakingChange[] {
   const breakingChanges: BreakingChange[] = [];
 
@@ -213,6 +214,7 @@ export function watchForBCs(
 
   for (const v1Decl of v1.declarations) {
     const BCCreate = createBCCreator(v1Decl, bcCreateDeclaration);
+    if (debug) console.log(BCCreate("Debug"));
     // If item is not exported, we are not checking it
     if (
       v1Decl.kind !== "exportDeclaration" &&

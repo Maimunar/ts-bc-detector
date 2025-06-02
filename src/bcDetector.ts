@@ -18,7 +18,7 @@ function detectBCsFiles(v1File: string, v2File: string, debug: boolean) {
     ...parseFile(v2File, debug),
   };
 
-  const breakingChanges = watchForBCs(v1Declaration, v2Declaration);
+  const breakingChanges = watchForBCs(v1Declaration, v2Declaration, debug);
 
   return breakingChanges;
 }
