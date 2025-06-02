@@ -29,6 +29,7 @@ types/constructor/number-to-any
 types/constructor/string-to-unknown
 types/constructor/undefined-to-void
 types/function/make-param-optional
+types/function/add-param-optional
 types/intersection/remove-intersection
 types/intersection/add-intersection-any
 types/intersection/add-intersection-same-type
@@ -38,6 +39,7 @@ types/intersection/add-intersection-object-on-array
 types/tuple/remove-tuple-type-to-any
 types/type-literal/add-index-sig
 types/type-literal/change-to-object
+types/type-literal/index-sig-number-to-index-sig-string
 types/type-literal/index-sig-template-literal-to-index-sig-string
 types/type-literal/indexed-sig-number-val-string-to-string
 types/type-literal/make-property-sig-optional
@@ -114,7 +116,6 @@ types/constructor/indexed-number-to-string
 types/constructor/literal-to-string-bc
 types/constructor/string-to-number
 types/function/add-function-type
-types/function/add-param-optional
 types/function/add-param-required
 types/function/make-param-required
 types/function/remove-param
@@ -125,20 +126,11 @@ types/tuple/remove-item
 types/tuple/remove-tuple-type
 types/type-literal/add-mapped-type
 types/type-literal/add-property-sig
+types/type-literal/index-sig-string-to-index-sig-number
+types/type-literal/index-sig-string-to-index-sig-template-literal
 types/type-literal/make-property-sig-required
-types/union-type/remove-union
 types/type-reference/add-promise
 types/type-reference/remove-promise
+types/union-type/remove-union
 variable/remove-declaration
 variable/remove-variable
-
-### Issues
-
-1. These 3 are not BCs, but should be, check the index type logic:
-   types/type-literal/index-sig-number-to-index-sig-string
-   types/type-literal/index-sig-string-to-index-sig-number
-   types/type-literal/index-sig-string-to-index-sig-template-literal
-
-2. indexed-number-to-string and types/function/add-param-optional and types/function/make-param-optional - the primitive type thing is catching these, should fix it
-
-3. add-item and remove-item from tuples no longer giving error
