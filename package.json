@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "bc-detector": "dist/bcDetector.js"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "ts-node src/bcDetector.ts"
   },
   "keywords": [],
   "author": "",
