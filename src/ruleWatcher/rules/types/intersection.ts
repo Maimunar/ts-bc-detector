@@ -1,6 +1,7 @@
 import ts from "typescript";
 import { BCCreateType } from "../../utils";
 import { BC, BreakingChange } from "../../../model/bcs";
+import { isTypeLiteralType } from "./utils";
 
 export function compareIntersectionTypes(
   typeA: ts.Type,
@@ -29,7 +30,7 @@ export function compareIntersectionTypes(
       aTypes.some(
         (t) =>
           isFunctionLike(t, checkerA) ||
-          isTypeLiteral(t) ||
+          isTypeLiteralType(t) ||
           isArrayOrTuple(t, checkerA),
       )
     ) {
@@ -59,14 +60,6 @@ export function compareIntersectionTypes(
 // Helper: Checks if a type is a function
 function isFunctionLike(type: ts.Type, checker: ts.TypeChecker): boolean {
   return checker.getSignaturesOfType(type, ts.SignatureKind.Call).length > 0;
-}
-
-// Helper: Type literal detection
-function isTypeLiteral(type: ts.Type): boolean {
-  return (
-    (type.flags & ts.TypeFlags.Object) !== 0 &&
-    !!((type as ts.ObjectType).objectFlags & ts.ObjectFlags.Anonymous)
-  );
 }
 
 // Helper: Array or Tuple

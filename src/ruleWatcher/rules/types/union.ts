@@ -13,7 +13,7 @@ import {
   isStringKeyword,
   isStringLiteral,
   isTupleType,
-  isTypeLiteral,
+  isTypeLiteralType,
 } from "./utils";
 
 export function compareUnionTypes(
@@ -66,7 +66,7 @@ function isCoveredByBroaderType(
     isObjectKeyword(broader, broaderChecker) &&
     (isTupleType(removed) ||
       isFunctionType(removed) ||
-      isTypeLiteral(removed) ||
+      isTypeLiteralType(removed) ||
       isArrayType(removed))
   ) {
     return true;

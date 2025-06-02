@@ -12,6 +12,7 @@ export function compareTupleTypes(
   warningFlag: boolean,
 ): BreakingChange[] {
   const breakingChanges: BreakingChange[] = [];
+
   if (!checkerA.isTupleType(typeA)) {
     return [BCCreate(BC.types.tuple.added, warningFlag)];
   }

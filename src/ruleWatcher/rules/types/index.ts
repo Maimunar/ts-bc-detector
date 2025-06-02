@@ -101,13 +101,19 @@ export function checkTypeRules(
   }
 
   // We check for any builtin types like promise through generics changed
-  const genericsChangedBC = checkWrappedInGenerics(typeA, typeB, BCCreate);
+  const genericsChangedBC = checkWrappedInGenerics(
+    typeA,
+    typeB,
+    checkerA,
+    checkerB,
+    BCCreate,
+  );
   if (genericsChangedBC) bcs.push(genericsChangedBC);
 
   // Here just check if the types substantially change
   if (
-    isPrimitiveType(typeA) &&
-    isPrimitiveType(typeB) &&
+    isPrimitiveType(typeA, checkerA) &&
+    isPrimitiveType(typeB, checkerB) &&
     !isEffectivelyEqual(typeA, typeB, checkerA, checkerB)
   ) {
     bcs.push(

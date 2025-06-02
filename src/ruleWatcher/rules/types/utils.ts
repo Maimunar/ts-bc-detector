@@ -14,6 +14,9 @@ export function isEffectivelyEqual(
 
   if (!typeA || !typeB) return false;
 
+  // If it is a type literal return false
+  if (isTypeLiteralType(typeA) && isTypeLiteralType(typeB)) return false;
+
   // Special case: breaking changes for index keys
   if (isBreakingIndexedType(typeA, typeB, checkerA, checkerB)) return true;
 
@@ -27,6 +30,14 @@ const isBreakingIndexedType = (
   checkerA: ts.TypeChecker,
   checkerB: ts.TypeChecker,
 ): boolean => {
+  if (
+    checkerA.isTupleType(typeA) ||
+    checkerB.isTupleType(typeB) ||
+    checkerA.isArrayType(typeA) ||
+    checkerB.isArrayType(typeB)
+  )
+    return false;
+
   const indexInfoA = checkerA.getIndexInfosOfType(typeA)[0];
   const indexInfoB = checkerB.getIndexInfosOfType(typeB)[0];
 
@@ -120,7 +131,11 @@ export function isObjectType(t: ts.Type): t is ts.ObjectType {
 }
 
 export function isTypeLiteralType(t: ts.Type): boolean {
-  return isObjectType(t) && (t.objectFlags & ts.ObjectFlags.Anonymous) !== 0;
+  return (
+    isObjectType(t) &&
+    ((t.objectFlags & ts.ObjectFlags.Anonymous) !== 0 ||
+      (t.objectFlags & ts.ObjectFlags.Mapped) !== 0)
+  );
 }
 
 export function isOptionalParameter(sym: ts.Symbol): boolean {
@@ -186,13 +201,6 @@ export function isFunctionType(type: ts.Type): boolean {
   return type.getCallSignatures().length > 0;
 }
 
-export function isTypeLiteral(type: ts.Type): boolean {
-  return (
-    (type.flags & ts.TypeFlags.Object) !== 0 &&
-    !!((type as ts.ObjectType).objectFlags & ts.ObjectFlags.Anonymous)
-  );
-}
-
 export function isArrayType(type: ts.Type): boolean {
   return (
     (type.symbol?.name === "Array" || type.symbol?.escapedName === "Array") &&
@@ -200,7 +208,10 @@ export function isArrayType(type: ts.Type): boolean {
   );
 }
 
-export function isPrimitiveType(type: ts.Type): boolean {
+export function isPrimitiveType(
+  type: ts.Type,
+  checker: ts.TypeChecker,
+): boolean {
   const flags = ts.TypeFlags;
   return (
     (type.flags & flags.String) !== 0 ||
@@ -208,14 +219,15 @@ export function isPrimitiveType(type: ts.Type): boolean {
     (type.flags & flags.Boolean) !== 0 ||
     (type.flags & flags.BigInt) !== 0 ||
     (type.flags & flags.ESSymbol) !== 0 ||
-    (type.flags & flags.UniqueESSymbol) !== 0 ||
     (type.flags & flags.Null) !== 0 ||
     (type.flags & flags.Undefined) !== 0 ||
     (type.flags & flags.Never) !== 0 ||
     (type.flags & flags.Void) !== 0 ||
     (type.flags & flags.Any) !== 0 ||
     (type.flags & flags.Unknown) !== 0 ||
-    (type.flags & flags.Object) !== 0 ||
+    (!isTypeLiteralType(type) &&
+      !checker.isArrayLikeType(type) &&
+      (type.flags & flags.Object) !== 0) ||
     (type.flags & flags.StringLiteral) !== 0 ||
     (type.flags & flags.NumberLiteral) !== 0 ||
     (type.flags & flags.BooleanLiteral) !== 0 ||

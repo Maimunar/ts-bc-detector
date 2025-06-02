@@ -15,11 +15,7 @@ export function compareArrayTypes(
   if (!checkerA.isArrayType(typeA)) {
     // If a tuple to an array, the logic is handled in the tuple rules
     if (checkerA.isTupleType(typeA)) return [];
-    if (
-      (typeA.isUnion() || typeA.isIntersection()) &&
-      typeA.types.some((t) => checkerA.isArrayType(t))
-    )
-      return [];
+    if (typeA.isUnion() || typeA.isIntersection()) return [];
 
     return [BCCreate(BC.types.array.added)];
   }
@@ -28,11 +24,7 @@ export function compareArrayTypes(
   if (!checkerB.isArrayType(typeB)) {
     if (isAnyOrUnknown(typeB)) return [];
     if (isObjectKeyword(typeB, checkerB)) return [];
-    if (
-      (typeA.isUnion() || typeA.isIntersection()) &&
-      typeA.types.some((t) => checkerA.isArrayType(t))
-    )
-      return [];
+    if (typeB.isUnion() || typeB.isIntersection()) return [];
 
     return [BCCreate(BC.types.array.removed)];
   }

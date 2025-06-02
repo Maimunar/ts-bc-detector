@@ -119,10 +119,9 @@ function getParameterType(param: Parameter, checker: ts.TypeChecker): ts.Type {
   const { extraOperator, type } = param;
 
   if (extraOperator === "rest") {
-    if (checker.isArrayType(type)) {
-      const typeArgs = checker.getTypeArguments(type as ts.TypeReference);
-      return typeArgs[0];
-    }
+    // Type is array
+    const typeArgs = checker.getTypeArguments(type as ts.TypeReference);
+    return typeArgs[0];
   }
 
   return type;
