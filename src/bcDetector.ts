@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { BreakingChange } from "./model/bcs";
 import { parseFile } from "./parser/parser";
 import { watchForBCs } from "./ruleWatcher/ruleWatcher";
