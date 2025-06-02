@@ -103,6 +103,13 @@ export const BC = {
         added: (name: string) =>
           `Added Required Type Literal Property: ${name}`,
       },
+      index: {
+        stringToNumber: "Index Key changed from string to number",
+        stringToTemplateLiteral:
+          "Index Key changed from string to template literal",
+        typeChanged: (from: string, to: string) =>
+          `Changed Index Property Type from '${from}' to '${to}'`,
+      },
     },
     function: {
       removed: "Removed Function Type",
