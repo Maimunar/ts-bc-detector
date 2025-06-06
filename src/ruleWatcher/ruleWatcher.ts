@@ -107,8 +107,8 @@ export const createBCCreator = (
     } else {
       return BCFabric(
         v1Decl.exportClause.type === "named"
-          ? v1Decl.exportClause.specifiers[0].propertyName ||
-              v1Decl.exportClause.specifiers[0].name ||
+          ? v1Decl.exportClause.specifiers[0]?.propertyName ||
+              v1Decl.exportClause.specifiers[0]?.name ||
               ""
           : v1Decl.exportClause.name || "",
       );

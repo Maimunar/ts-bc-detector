@@ -16,6 +16,7 @@ const routeClassMember = (member: ts.ClassElement, checker: ts.TypeChecker) => {
     return parseGetAccessor(member, checker);
   if (ts.isSetAccessorDeclaration(member))
     return parseSetAccessor(member, checker);
+  return null;
 };
 
 export const parseClass = (
@@ -32,7 +33,7 @@ export const parseClass = (
   if (node.members) {
     members = node.members
       .map((member) => routeClassMember(member, checker))
-      .filter((m) => m !== null) as ClassMember[];
+      .filter((m) => m !== null && m !== undefined) as ClassMember[];
   }
 
   const classDeclaration: ClassDeclaration = {

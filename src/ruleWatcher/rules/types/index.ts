@@ -29,7 +29,6 @@ export function checkTypeRules(
 
   // The system is limited due to generics, this makes BCs a warning if a generic type is involved
   const wFlag = isGenericType(typeA) || isGenericType(typeB);
-  if (wFlag) console.log("Generic caught", typeA, typeB);
 
   // Function
   const signatureA = getFunctionSignaturesFromType(typeA, checkerA);

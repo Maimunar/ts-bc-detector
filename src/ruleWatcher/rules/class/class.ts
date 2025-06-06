@@ -74,11 +74,11 @@ export const findV2Member = (
   v2Class: ClassDeclaration,
 ) => {
   if (v1Member.kind === "constructor") {
-    return v2Class.members.find((v2Member) => v2Member.kind === "constructor");
+    return v2Class.members.find((v2Member) => v2Member?.kind === "constructor");
   }
   return v2Class.members.find(
     (v2Member) =>
-      v2Member.kind !== "constructor" && v1Member.name === v2Member.name,
+      v2Member?.kind !== "constructor" && v1Member?.name === v2Member.name,
   );
 };
 

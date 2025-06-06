@@ -13,10 +13,10 @@ export const bcConstructorAdded = (
   v1Class: ClassDeclaration,
   v2Class: ClassDeclaration,
 ): boolean => {
-  const v1Constructor = v1Class.members.find((m) => m.kind === "constructor");
+  const v1Constructor = v1Class.members.find((m) => m?.kind === "constructor");
   if (v1Constructor) return false;
 
-  const v2Constructor = v2Class.members.find((m) => m.kind === "constructor");
+  const v2Constructor = v2Class.members.find((m) => m?.kind === "constructor");
   if (!v2Constructor) return false;
 
   if (isConstructorBC(v2Constructor)) return true;

@@ -64,7 +64,11 @@ function findChangedFiles(
 
       if (entry.isDirectory()) {
         walkV1(v1Path);
-      } else if (entry.isFile() && v1Path.endsWith(".ts")) {
+      } else if (
+        entry.isFile() &&
+        v1Path.endsWith(".ts") &&
+        !v1Path.endsWith(".d.ts")
+      ) {
         const v1Content = readFileSafe(v1Path);
         const v2Content = readFileSafe(v2Path);
 
