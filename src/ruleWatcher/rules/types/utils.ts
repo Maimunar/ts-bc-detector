@@ -88,6 +88,7 @@ function getIndexKeyKind(
 }
 
 export function isGenericType(type: ts.Type): boolean {
+  if (!type) return false;
   // Direct type parameter
   if (type.getFlags() & ts.TypeFlags.TypeParameter) {
     return true;
