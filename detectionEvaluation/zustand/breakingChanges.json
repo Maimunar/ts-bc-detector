@@ -1,0 +1,102 @@
+[
+  {
+    "file": "zustand/v2/src/index.ts",
+    "declaration": "'./vanilla'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/index.ts",
+    "declaration": "'./react'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/index.ts",
+    "declaration": "'./vanilla'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/index.ts",
+    "declaration": "'./react'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/middleware/devtools.ts",
+    "declaration": "DevtoolsOptions",
+    "description": "Removed Member: serialize"
+  },
+  {
+    "file": "zustand/v2/src/middleware/devtools.ts",
+    "declaration": "NamedSet",
+    "description": "Changed type of parameter: a"
+  },
+  {
+    "file": "zustand/v2/src/middleware/persist.ts",
+    "declaration": "PersistOptions",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "zustand/v2/src/middleware.ts",
+    "declaration": "'./middleware/redux'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/middleware.ts",
+    "declaration": "'./middleware/devtools'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/middleware.ts",
+    "declaration": "'./middleware/subscribeWithSelector'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/middleware.ts",
+    "declaration": "'./middleware/combine'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/middleware.ts",
+    "declaration": "'./middleware/persist'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/react.ts",
+    "declaration": "useStore",
+    "description": "Removed Parameter: selector"
+  },
+  {
+    "file": "zustand/v2/src/react.ts",
+    "declaration": "useStore",
+    "description": "Removed Parameter: equalityFn"
+  },
+  {
+    "file": "zustand/v2/src/react.ts",
+    "declaration": "useStore",
+    "description": "Removed Parameter: selector"
+  },
+  {
+    "file": "zustand/v2/src/react.ts",
+    "declaration": "useStore",
+    "description": "Removed Parameter: equalityFn"
+  },
+  {
+    "file": "zustand/v2/src/react.ts",
+    "declaration": "create",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/shallow.ts",
+    "declaration": "shallow",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "zustand/v2/src/vanilla.ts",
+    "declaration": "StoreApi",
+    "description": "Added Required Member: getInitialState"
+  },
+  {
+    "file": "zustand/v2/src/vanilla.ts",
+    "declaration": "createStore",
+    "description": "Removed Declaration"
+  }
+]

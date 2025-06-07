@@ -1,0 +1,263 @@
+
+> date-fns@4.1.0 test
+> vitest run
+
+
+ RUN  v1.3.1 /Users/aleksandarivanov/tue/masterProject/projects/date-fns/testingVersion
+
+ ✓ src/differenceInCalendarDays/test.ts  (17 tests) 7ms
+ ✓ src/getOverlappingDaysInIntervals/test.ts  (21 tests) 3ms
+ ✓ src/parseISO/test.ts  (57 tests) 12ms
+ ✓ src/formatDistanceStrict/test.ts  (48 tests) 10ms
+ ✓ src/differenceInDays/test.ts  (16 tests) 4ms
+ ✓ src/intlFormatDistance/test.ts  (89 tests) 20ms
+ ✓ src/areIntervalsOverlapping/test.ts  (19 tests) 2ms
+ ✓ src/eachWeekOfInterval/test.ts  (22 tests) 4ms
+ ✓ src/roundToNearestMinutes/test.ts  (23 tests) 4ms
+ ✓ src/formatDistanceToNowStrict/test.ts  (43 tests) 9ms
+ ✓ src/eachHourOfInterval/test.ts  (21 tests) 2ms
+ ✓ src/format/test.ts  (108 tests) 28ms
+ ✓ src/eachMonthOfInterval/test.ts  (22 tests) 8ms
+ ✓ src/eachDayOfInterval/test.ts  (21 tests) 3ms
+ ✓ src/roundToNearestHours/test.ts  (21 tests) 2ms
+ ✓ src/eachYearOfInterval/test.ts  (21 tests) 4ms
+ ✓ src/formatDistance/test.ts  (30 tests) 6ms
+ ✓ src/intervalToDuration/test.ts  (20 tests) 4ms
+ ✓ src/addMonths/test.ts  (18 tests) 2ms
+ ✓ src/eachQuarterOfInterval/test.ts  (22 tests) 3ms
+ ✓ src/parseJSON/test.ts  (21 tests) 2ms
+ ✓ src/differenceInHours/test.ts  (21 tests) 1ms
+ ✓ src/differenceInCalendarWeeks/test.ts  (20 tests) 3ms
+ ✓ src/differenceInMonths/test.ts  (21 tests) 3ms
+ ✓ src/differenceInQuarters/test.ts  (21 tests) 2ms
+ ✓ src/differenceInWeeks/test.ts  (21 tests) 2ms
+ ✓ src/eachWeekendOfInterval/test.ts  (13 tests) 4ms
+ ✓ src/differenceInYears/test.ts  (20 tests) 2ms
+ ✓ src/formatDistanceToNow/test.ts  (26 tests) 7ms
+ ✓ src/addDays/test.ts  (16 tests) 1ms
+ ✓ src/set/test.ts  (23 tests) 1ms
+ ✓ src/differenceInBusinessDays/test.ts  (19 tests) 2ms
+ ✓ src/differenceInSeconds/test.ts  (18 tests) 1ms
+ ✓ src/differenceInCalendarISOWeekYears/test.ts  (16 tests) 2ms
+ ✓ src/setDay/test.ts  (20 tests) 1ms
+ ✓ src/lastDayOfWeek/test.ts  (15 tests) 1ms
+ ✓ src/differenceInCalendarISOWeeks/test.ts  (16 tests) 1ms
+ ✓ src/startOfWeek/test.ts  (15 tests)
+ ✓ src/endOfWeek/test.ts  (15 tests) 1ms
+ ✓ src/differenceInISOWeekYears/test.ts  (16 tests) 2ms
+ ✓ src/add/test.ts  (14 tests) 1ms
+ ✓ src/differenceInMinutes/test.ts  (16 tests) 2ms
+ ✓ src/formatRelative/test.ts  (16 tests) 2ms
+ ✓ src/differenceInCalendarQuarters/test.ts  (15 tests) 3ms
+ ✓ src/differenceInCalendarMonths/test.ts  (15 tests) 1ms
+ ✓ src/differenceInCalendarYears/test.ts  (15 tests) 1ms
+ ✓ src/startOfWeekYear/test.ts  (11 tests) 3ms
+ ✓ src/addBusinessDays/test.ts  (15 tests) 2ms
+ ✓ src/isWithinInterval/test.ts  (13 tests) 1ms
+ ✓ src/constructFrom/test.ts  (12 tests) 1ms
+ ✓ src/setDefaultOptions/test.ts  (27 tests) 12ms
+ ✓ src/parse/test.ts  (539 tests) 57ms
+ ✓ src/lightFormat/test.ts  (20 tests) 2ms
+ ✓ src/isSameWeek/test.ts  (13 tests) 4ms
+ ✓ src/sub/test.ts  (13 tests) 1ms
+ ✓ src/setWeekYear/test.ts  (13 tests) 4ms
+ ✓ src/setWeek/test.ts  (12 tests) 1ms
+ ✓ src/isSameISOWeekYear/test.ts  (11 tests) 2ms
+ ✓ src/nextDay/test.ts  (11 tests) 1ms
+ ✓ src/closestTo/test.ts  (11 tests) 3ms
+ ✓ src/previousDay/test.ts  (11 tests)
+ ✓ src/getWeekOfMonth/test.ts  (12 tests) 2ms
+ ✓ src/startOfISOWeekYear/test.ts  (10 tests) 1ms
+ ✓ src/setISODay/test.ts  (14 tests) 2ms
+ ✓ src/clamp/test.ts  (9 tests) 2ms
+ ✓ src/setISOWeekYear/test.ts  (11 tests) 1ms
+ ✓ src/startOfYear/test.ts  (9 tests) 1ms
+ ✓ src/isSameQuarter/test.ts  (10 tests) 1ms
+ ✓ src/subBusinessDays/test.ts  (11 tests) 1ms
+ ✓ src/setQuarter/test.ts  (11 tests) 1ms
+ ✓ src/interval/test.ts  (8 tests) 1ms
+ ✓ src/subISOWeekYears/test.ts  (10 tests) 2ms
+ ✓ src/addQuarters/test.ts  (11 tests)
+ ✓ src/setMonth/test.ts  (11 tests) 1ms
+ ✓ src/lastDayOfDecade/test.ts  (9 tests) 2ms
+ ✓ src/eachMinuteOfInterval/test.ts  (20 tests) 396ms
+ ✓ src/subMonths/test.ts  (11 tests) 1ms
+ ✓ src/formatISODuration/test.ts  (10 tests) 1ms
+ ✓ src/endOfMonth/test.ts  (10 tests)
+ ✓ src/subQuarters/test.ts  (11 tests) 1ms
+ ✓ src/isSameISOWeek/test.ts  (10 tests) 2ms
+ ✓ src/intlFormat/test.ts  (5 tests) 1ms
+ ✓ src/setISOWeek/test.ts  (10 tests) 1ms
+ ✓ src/endOfISOWeekYear/test.ts  (9 tests) 1ms
+ ✓ src/formatISO/test.ts  (7 tests) 2ms
+ ✓ src/subYears/test.ts  (11 tests) 1ms
+ ✓ src/addYears/test.ts  (11 tests) 1ms
+ ✓ src/isSameDay/test.ts  (10 tests) 1ms
+ ✓ src/isSameMonth/test.ts  (10 tests) 1ms
+ ✓ src/isSameHour/test.ts  (10 tests) 1ms
+ ✓ src/startOfISOWeek/test.ts  (8 tests) 2ms
+ ✓ src/addISOWeekYears/test.ts  (10 tests) 1ms
+ ✓ src/lastDayOfISOWeekYear/test.ts  (9 tests) 1ms
+ ✓ src/lastDayOfISOWeek/test.ts  (8 tests)
+ ✓ src/eachWeekendOfMonth/test.ts  (6 tests) 2ms
+ ✓ src/getWeek/test.ts  (9 tests) 1ms
+ ✓ src/getWeeksInMonth/test.ts  (9 tests) 2ms
+ ✓ src/getWeekYear/test.ts  (8 tests) 1ms
+ ✓ src/endOfDecade/test.ts  (9 tests) 1ms
+ ✓ src/lastDayOfMonth/test.ts  (10 tests)
+ ✓ src/isDate/test.ts  (5 tests | 1 skipped) 1ms
+ ✓ src/setMilliseconds/test.ts  (9 tests)
+ ✓ src/startOfDecade/test.ts  (9 tests) 1ms
+ ✓ src/addMinutes/test.ts  (9 tests) 1ms
+ ✓ src/setSeconds/test.ts  (9 tests) 1ms
+ ✓ src/min/test.ts  (9 tests) 1ms
+ ✓ src/eachWeekendOfYear/test.ts  (6 tests) 15ms
+ ✓ src/max/test.ts  (9 tests)
+ ✓ src/addMilliseconds/test.ts  (9 tests) 1ms
+ ✓ src/previousWednesday/test.ts  (6 tests) 1ms
+ ✓ src/addHours/test.ts  (9 tests) 1ms
+ ✓ src/subMilliseconds/test.ts  (9 tests) 1ms
+ ✓ src/nextWednesday/test.ts  (6 tests)
+ ✓ src/constructNow/test.ts  (8 tests) 1ms
+ ✓ src/setMinutes/test.ts  (9 tests) 1ms
+ ✓ src/nextThursday/test.ts  (6 tests) 1ms
+ ✓ src/nextSaturday/test.ts  (6 tests)
+ ✓ src/getISOWeek/test.ts  (11 tests)
+ ✓ src/nextTuesday/test.ts  (6 tests)
+ ✓ src/subHours/test.ts  (9 tests) 1ms
+ ✓ src/nextFriday/test.ts  (6 tests) 1ms
+ ✓ src/previousSaturday/test.ts  (6 tests) 1ms
+ ✓ src/nextMonday/test.ts  (6 tests) 1ms
+ ✓ src/nextSunday/test.ts  (6 tests) 1ms
+ ✓ src/setDayOfYear/test.ts  (9 tests)
+ ✓ src/previousThursday/test.ts  (6 tests) 1ms
+ ✓ src/endOfISOWeek/test.ts  (8 tests)
+ ✓ src/endOfQuarter/test.ts  (8 tests) 1ms
+ ✓ src/setHours/test.ts  (9 tests) 1ms
+ ✓ src/setDate/test.ts  (9 tests) 1ms
+ ✓ src/subDays/test.ts  (9 tests) 1ms
+ ✓ src/endOfYear/test.ts  (8 tests)
+ ✓ src/startOfMinute/test.ts  (8 tests)
+ ✓ src/addSeconds/test.ts  (9 tests)
+ ✓ src/subSeconds/test.ts  (9 tests) 1ms
+ ✓ src/previousTuesday/test.ts  (6 tests)
+ ✓ src/subWeeks/test.ts  (9 tests) 1ms
+ ✓ src/lastDayOfQuarter/test.ts  (8 tests) 1ms
+ ✓ src/previousMonday/test.ts  (6 tests)
+ ✓ src/setYear/test.ts  (9 tests)
+ ✓ src/previousFriday/test.ts  (6 tests) 1ms
+ ✓ src/startOfMonth/test.ts  (8 tests) 1ms
+ ✓ src/previousSunday/test.ts  (6 tests) 1ms
+ ✓ src/startOfHour/test.ts  (8 tests)
+ ✓ src/startOfDay/test.ts  (8 tests)
+ ✓ src/startOfSecond/test.ts  (8 tests) 1ms
+ ✓ src/lastDayOfYear/test.ts  (8 tests) 1ms
+ ✓ src/subMinutes/test.ts  (9 tests) 1ms
+ ✓ src/endOfDay/test.ts  (8 tests) 1ms
+ ✓ src/startOfQuarter/test.ts  (8 tests) 1ms
+ ✓ src/endOfSecond/test.ts  (8 tests)
+ ✓ src/endOfMinute/test.ts  (8 tests) 1ms
+ ✓ src/toDate/test.ts  (8 tests) 1ms
+ ✓ src/endOfHour/test.ts  (8 tests) 1ms
+ ✓ src/isSameYear/test.ts  (8 tests)
+ ✓ src/endOfYesterday/test.ts  (5 tests) 2ms
+ ✓ src/compareDesc/test.ts  (8 tests) 1ms
+ ✓ src/startOfYesterday/test.ts  (5 tests) 2ms
+ ✓ src/startOfTomorrow/test.ts  (5 tests) 1ms
+ ✓ src/formatRFC3339/test.ts  (6 tests) 2ms
+ ✓ src/compareAsc/test.ts  (8 tests)
+ ✓ src/differenceInMilliseconds/test.ts  (7 tests)
+ ✓ src/_lib/getRoundingMethod/test.ts  (6 tests)
+ ✓ src/getISOWeeksInYear/test.ts  (7 tests) 1ms
+ ✓ src/closestIndexTo/test.ts  (6 tests)
+ ✓ src/getISOWeekYear/test.ts  (6 tests)
+ ✓ src/formatISO9075/test.ts  (7 tests)
+ ✓ src/isThisWeek/test.ts  (7 tests) 1ms
+ ✓ src/isFirstDayOfMonth/test.ts  (6 tests)
+ ✓ src/isLastDayOfMonth/test.ts  (6 tests)
+ ✓ src/addWeeks/test.ts  (7 tests)
+ ✓ src/getDefaultOptions/test.ts  (4 tests) 1ms
+ ✓ src/isLeapYear/test.ts  (8 tests) 1ms
+ ✓ src/getDaysInYear/test.ts  (8 tests)
+ ✓ src/getDaysInMonth/test.ts  (7 tests)
+ ✓ src/isThisQuarter/test.ts  (6 tests) 1ms
+ ✓ src/endOfTomorrow/test.ts  (5 tests) 2ms
+ ✓ src/isSaturday/test.ts  (6 tests)
+ ✓ src/isWeekend/test.ts  (6 tests)
+ ✓ src/isThisHour/test.ts  (6 tests) 1ms
+ ✓ src/isThisMonth/test.ts  (6 tests) 1ms
+ ✓ src/isThisISOWeek/test.ts  (6 tests) 2ms
+ ✓ src/isTuesday/test.ts  (6 tests)
+ ✓ src/isMonday/test.ts  (6 tests)
+ ✓ src/isSunday/test.ts  (6 tests)
+ ✓ src/isFriday/test.ts  (6 tests) 1ms
+ ✓ src/isThisYear/test.ts  (6 tests) 1ms
+ ✓ src/startOfToday/test.ts  (4 tests)
+ ✓ src/milliseconds/test.ts  (10 tests) 1ms
+ ✓ src/getDayOfYear/test.ts  (6 tests) 1ms
+ ✓ src/isYesterday/test.ts  (6 tests) 1ms
+ ✓ src/isTomorrow/test.ts  (6 tests) 1ms
+ ✓ src/getYear/test.ts  (5 tests)
+ ✓ src/isBefore/test.ts  (7 tests)
+ ✓ src/getQuarter/test.ts  (5 tests)
+ ✓ src/isWednesday/test.ts  (6 tests)
+ ✓ src/isAfter/test.ts  (7 tests)
+ ✓ src/getISODay/test.ts  (6 tests) 1ms
+ ✓ src/formatDuration/test.ts  (6 tests)
+ ✓ src/getMonth/test.ts  (5 tests)
+ ✓ src/isThursday/test.ts  (6 tests) 1ms
+ ✓ src/isSameSecond/test.ts  (6 tests)
+ ✓ src/isToday/test.ts  (5 tests) 1ms
+ ✓ src/isSameMinute/test.ts  (6 tests)
+ ✓ src/endOfToday/test.ts  (4 tests)
+ ✓ src/getDecade/test.ts  (6 tests)
+ ✓ src/getMinutes/test.ts  (5 tests) 1ms
+ ✓ src/getDate/test.ts  (5 tests)
+ ✓ src/getHours/test.ts  (5 tests) 1ms
+ ✓ src/fromUnixTime/test.ts  (5 tests)
+ ✓ src/isEqual/test.ts  (6 tests) 1ms
+ ✓ src/getDay/test.ts  (5 tests)
+ ✓ src/_lib/getTimezoneOffsetInMilliseconds/test.ts  (3 tests)
+ ✓ src/isThisSecond/test.ts  (4 tests)
+ ✓ src/isThisMinute/test.ts  (4 tests)
+ ✓ src/daysToWeeks/test.ts  (4 tests) 1ms
+ ✓ src/isFuture/test.ts  (4 tests) 1ms
+ ✓ src/isPast/test.ts  (4 tests)
+ ✓ src/getUnixTime/test.ts  (4 tests) 1ms
+ ✓ src/millisecondsToMinutes/test.ts  (4 tests)
+ ✓ src/millisecondsToSeconds/test.ts  (4 tests)
+ ✓ src/millisecondsToHours/test.ts  (4 tests) 1ms
+ ✓ src/locale/fr/test.ts  (2 tests) 1ms
+ ✓ src/hoursToSeconds/test.ts  (4 tests)
+ ✓ src/minutesToMilliseconds/test.ts  (4 tests) 1ms
+ ✓ src/hoursToMilliseconds/test.ts  (4 tests)
+ ✓ src/hoursToMinutes/test.ts  (4 tests)
+ ✓ src/secondsToMinutes/test.ts  (4 tests)
+ ✓ src/transpose/test.ts  (1 test) 1ms
+ ✓ src/quartersToMonths/test.ts  (4 tests)
+ ✓ src/isValid/test.ts  (4 tests) 1ms
+ ✓ src/monthsToQuarters/test.ts  (4 tests)
+ ✓ src/secondsToHours/test.ts  (4 tests)
+ ✓ src/minutesToHours/test.ts  (4 tests) 1ms
+ ✓ src/yearsToQuarters/test.ts  (4 tests)
+ ✓ src/quartersToYears/test.ts  (4 tests)
+ ✓ src/getMilliseconds/test.ts  (3 tests)
+ ✓ src/yearsToMonths/test.ts  (4 tests)
+ ✓ src/monthsToYears/test.ts  (4 tests) 1ms
+ ✓ src/yearsToDays/test.ts  (4 tests)
+ ✓ src/minutesToSeconds/test.ts  (4 tests)
+ ✓ src/weeksToDays/test.ts  (4 tests)
+ ✓ src/getTime/test.ts  (3 tests)
+ ✓ src/formatRFC7231/test.ts  (3 tests)
+ ✓ src/_lib/addLeadingZeros/test.ts  (1 test)
+ ✓ src/getSeconds/test.ts  (3 tests) 1ms
+ ✓ src/secondsToMilliseconds/test.ts  (2 tests)
+ ✓ src/isExists/test.ts  (2 tests)
+ ✓ src/isMatch/test.ts  (3 tests) 1ms
+ ✓ src/fp/_lib/convertToFP/test.ts  (13 tests) 1ms
+
+ Test Files  250 passed (250)
+      Tests  3157 passed | 1 skipped (3158)
+   Start at  18:16:45
+   Duration  1.66s (transform 3.95s, setup 2ms, collect 6.19s, tests 815ms, environment 3ms, prepare 483ms)
+

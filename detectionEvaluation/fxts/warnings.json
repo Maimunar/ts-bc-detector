@@ -1,0 +1,42 @@
+[
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: getMagnitude"
+  },
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: LiteralPart"
+  },
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: createMemoizedDateTimeFormat"
+  },
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: createMemoizedListFormat"
+  },
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: createMemoizedLocale"
+  },
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: createMemoizedNumberFormat"
+  },
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: createMemoizedPluralRules"
+  },
+  {
+    "file": "formatjs/v2/packages/ecma402-abstract/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: invariant"
+  }
+]

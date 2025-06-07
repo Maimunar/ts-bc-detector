@@ -1,0 +1,57 @@
+[
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Changed type of parameter: options"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Intersection Member: WritableAtom<Value, Args, Result>"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Removed Union Member: Value"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithObservable.ts",
+    "declaration": "atomWithObservable",
+    "description": "Changed Optional Type Literal Property to Required: initialValue"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithObservable.ts",
+    "declaration": "atomWithObservable",
+    "description": "Changed Optional Type Literal Property to Required: initialValue"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithObservable.ts",
+    "declaration": "atomWithObservable",
+    "description": "Changed Optional Type Literal Property to Required: initialValue"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "AsyncStorage",
+    "description": "Added required parameter: initialValue"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "SyncStorage",
+    "description": "Added required parameter: initialValue"
+  }
+]

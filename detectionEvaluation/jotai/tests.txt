@@ -1,0 +1,50 @@
+
+> jotai@2.12.5 test:spec /Users/aleksandarivanov/tue/masterProject/projects/jotai/testingVersion
+> vitest run
+
+
+ RUN  v3.1.4 /Users/aleksandarivanov/tue/masterProject/projects/jotai/testingVersion
+
+
+ Test Files  35 failed (35)
+      Tests  no tests
+   Start at  18:05:50
+   Duration  3.18s (transform 20ms, setup 0ms, collect 0ms, tests 0ms, environment 12.65s, prepare 2.99s)
+
+ ELIFECYCLE  Command failed with exit code 1.
+
+ FAIL  |jotai| tests/babel/plugin-debug-label.test.ts [ tests/babel/plugin-debug-label.test.ts ]
+ FAIL  |jotai| tests/babel/plugin-react-refresh.test.ts [ tests/babel/plugin-react-refresh.test.ts ]
+ FAIL  |jotai| tests/babel/preset.test.ts [ tests/babel/preset.test.ts ]
+ FAIL  |jotai| tests/react/abortable.test.tsx [ tests/react/abortable.test.tsx ]
+ FAIL  |jotai| tests/react/async.test.tsx [ tests/react/async.test.tsx ]
+ FAIL  |jotai| tests/react/async2.test.tsx [ tests/react/async2.test.tsx ]
+ FAIL  |jotai| tests/react/basic.test.tsx [ tests/react/basic.test.tsx ]
+ FAIL  |jotai| tests/react/dependency.test.tsx [ tests/react/dependency.test.tsx ]
+ FAIL  |jotai| tests/react/error.test.tsx [ tests/react/error.test.tsx ]
+ FAIL  |jotai| tests/react/items.test.tsx [ tests/react/items.test.tsx ]
+ FAIL  |jotai| tests/react/onmount.test.tsx [ tests/react/onmount.test.tsx ]
+ FAIL  |jotai| tests/react/optimization.test.tsx [ tests/react/optimization.test.tsx ]
+ FAIL  |jotai| tests/react/provider.test.tsx [ tests/react/provider.test.tsx ]
+ FAIL  |jotai| tests/react/transition.test.tsx [ tests/react/transition.test.tsx ]
+ FAIL  |jotai| tests/react/types.test.tsx [ tests/react/types.test.tsx ]
+ FAIL  |jotai| tests/react/useAtomValue.test.tsx [ tests/react/useAtomValue.test.tsx ]
+ FAIL  |jotai| tests/react/useSetAtom.test.tsx [ tests/react/useSetAtom.test.tsx ]
+ FAIL  |jotai| tests/vanilla/basic.test.tsx [ tests/vanilla/basic.test.tsx ]
+ FAIL  |jotai| tests/vanilla/dependency.test.tsx [ tests/vanilla/dependency.test.tsx ]
+ FAIL  |jotai| tests/vanilla/store.test.tsx [ tests/vanilla/store.test.tsx ]
+ FAIL  |jotai| tests/vanilla/types.test.tsx [ tests/vanilla/types.test.tsx ]
+ FAIL  |jotai| tests/react/utils/useAtomCallback.test.tsx [ tests/react/utils/useAtomCallback.test.tsx ]
+ FAIL  |jotai| tests/react/utils/useHydrateAtoms.test.tsx [ tests/react/utils/useHydrateAtoms.test.tsx ]
+ FAIL  |jotai| tests/react/utils/useReducerAtom.test.tsx [ tests/react/utils/useReducerAtom.test.tsx ]
+ FAIL  |jotai| tests/react/utils/useResetAtom.test.tsx [ tests/react/utils/useResetAtom.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/atomFamily.test.tsx [ tests/react/vanilla-utils/atomFamily.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/atomWithDefault.test.tsx [ tests/react/vanilla-utils/atomWithDefault.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/atomWithObservable.test.tsx [ tests/react/vanilla-utils/atomWithObservable.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/atomWithReducer.test.tsx [ tests/react/vanilla-utils/atomWithReducer.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/atomWithStorage.test.tsx [ tests/react/vanilla-utils/atomWithStorage.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/freezeAtom.test.tsx [ tests/react/vanilla-utils/freezeAtom.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/loadable.test.tsx [ tests/react/vanilla-utils/loadable.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/selectAtom.test.tsx [ tests/react/vanilla-utils/selectAtom.test.tsx ]
+ FAIL  |jotai| tests/react/vanilla-utils/splitAtom.test.tsx [ tests/react/vanilla-utils/splitAtom.test.tsx ]
+ FAIL  |jotai| tests/vanilla/utils/unwrap.test.tsx [ tests/vanilla/utils/unwrap.test.tsx ]

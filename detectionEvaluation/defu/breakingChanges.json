@@ -1,0 +1,27 @@
+[
+  {
+    "file": "defu/v2/src/defu.ts",
+    "declaration": "defu",
+    "description": "Changed type of parameter: defaults"
+  },
+  {
+    "file": "defu/v2/src/defu.ts",
+    "declaration": "defu",
+    "description": "Changed primitive type from 'Defu' to 'DefuInstance'"
+  },
+  {
+    "file": "defu/v2/src/defu.ts",
+    "declaration": "defu",
+    "description": "Changed type of parameter: defaults"
+  },
+  {
+    "file": "defu/v2/src/defu.ts",
+    "declaration": "defu",
+    "description": "Changed primitive type from 'Defu' to 'DefuInstance'"
+  },
+  {
+    "file": "defu/v2/src/types.ts",
+    "declaration": "Defu",
+    "description": "Removed Declaration"
+  }
+]

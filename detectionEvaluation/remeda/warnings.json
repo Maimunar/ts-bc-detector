@@ -1,0 +1,752 @@
+[
+  {
+    "file": "remeda/v2/src/chunk.ts",
+    "declaration": "chunk",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/clone.ts",
+    "declaration": "clone",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return0"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return1"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return2"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return3"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return4"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return5"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return6"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return7"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return8"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Union Member: Return9"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Removed Union Member: Projection<T>"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Removed Union Member: readonly [projection: Projection<T>, direction: \"asc\" | \"desc\"]"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/evolve.ts",
+    "declaration": "evolve",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/first.ts",
+    "declaration": "first",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/firstBy.ts",
+    "declaration": "firstBy",
+    "description": "Removed Union Member: T"
+  },
+  {
+    "file": "remeda/v2/src/flat.ts",
+    "declaration": "flat",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/flat.ts",
+    "declaration": "flat",
+    "description": "Removed Union Member: number"
+  },
+  {
+    "file": "remeda/v2/src/flat.ts",
+    "declaration": "flat",
+    "description": "Removed Union Member: readonly []"
+  },
+  {
+    "file": "remeda/v2/src/flat.ts",
+    "declaration": "flat",
+    "description": "Removed Union Member: readonly unknown[]"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/forEachObj.ts",
+    "declaration": "forEachObj",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/fromKeys.ts",
+    "declaration": "fromKeys",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Union Member: N"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Union Member: number"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Union Member: unknown"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/isEmpty.ts",
+    "declaration": "isEmpty",
+    "description": "Removed Union Member: string"
+  },
+  {
+    "file": "remeda/v2/src/isEmpty.ts",
+    "declaration": "isEmpty",
+    "description": "Removed Union Member: object"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Union Member: readonly []"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Union Member: readonly S[]"
+  },
+  {
+    "file": "remeda/v2/src/isPromise.ts",
+    "declaration": "isPromise",
+    "description": "Removed Union Member: Promise<T>"
+  },
+  {
+    "file": "remeda/v2/src/isPromise.ts",
+    "declaration": "isPromise",
+    "description": "Removed Union Member: S"
+  },
+  {
+    "file": "remeda/v2/src/keys.ts",
+    "declaration": "keys",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/map.ts",
+    "declaration": "map",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/map.ts",
+    "declaration": "map",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/map.ts",
+    "declaration": "map",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/mapKeys.ts",
+    "declaration": "mapKeys",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/mapValues.ts",
+    "declaration": "mapValues",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/objOf.ts",
+    "declaration": "objOf",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/objOf.ts",
+    "declaration": "objOf",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/omitBy.ts",
+    "declaration": "omitBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/omitBy.ts",
+    "declaration": "omitBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/only.ts",
+    "declaration": "only",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/only.ts",
+    "declaration": "only",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/pick.ts",
+    "declaration": "pick",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/pickBy.ts",
+    "declaration": "pickBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/pickBy.ts",
+    "declaration": "pickBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/product.ts",
+    "declaration": "product",
+    "description": "Removed Tuple"
+  },
+  {
+    "file": "remeda/v2/src/product.ts",
+    "declaration": "product",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/product.ts",
+    "declaration": "product",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/pullObject.ts",
+    "declaration": "pullObject",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Removed Union Member: Projection<T>"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Removed Union Member: readonly [projection: Projection<T>, direction: \"asc\" | \"desc\"]"
+  },
+  {
+    "file": "remeda/v2/src/sample.ts",
+    "declaration": "sample",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/setPath.ts",
+    "declaration": "setPath",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/shuffle.ts",
+    "declaration": "shuffle",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/shuffle.ts",
+    "declaration": "shuffle",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/shuffle.ts",
+    "declaration": "shuffle",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/sort.ts",
+    "declaration": "sort",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/sort.ts",
+    "declaration": "sort",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/sort.ts",
+    "declaration": "sort",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/sortBy.ts",
+    "declaration": "sortBy",
+    "description": "Removed Union Member: T"
+  },
+  {
+    "file": "remeda/v2/src/sortBy.ts",
+    "declaration": "sortBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/sum.ts",
+    "declaration": "sum",
+    "description": "Removed Tuple"
+  },
+  {
+    "file": "remeda/v2/src/sum.ts",
+    "declaration": "sum",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/sum.ts",
+    "declaration": "sum",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/swapIndices.ts",
+    "declaration": "swapIndices",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/swapProps.ts",
+    "declaration": "swapProps",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/swapProps.ts",
+    "declaration": "swapProps",
+    "description": "Added Type Literal"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Removed Union Member: Projection<T>"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Removed Union Member: readonly [projection: Projection<T>, direction: \"asc\" | \"desc\"]"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/tap.ts",
+    "declaration": "tap",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/tap.ts",
+    "declaration": "tap",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/times.ts",
+    "declaration": "times",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/times.ts",
+    "declaration": "times",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/unique.ts",
+    "declaration": "unique",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Changed type of parameter: a"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Changed type of parameter: b"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/values.ts",
+    "declaration": "values",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/zip.ts",
+    "declaration": "zip",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Union Member: readonly []"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Union Member: readonly unknown[]"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Union Member: ZippingFunction<IterableContainer, IterableContainer, unknown>"
+  }
+]

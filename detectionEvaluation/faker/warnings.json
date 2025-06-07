@@ -1,0 +1,132 @@
+[
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./faker'",
+    "description": "Removed Export Specifier: FakerOptions"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/airline'",
+    "description": "Removed Export Specifier: AircraftType"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/airline'",
+    "description": "Removed Export Specifier: AirlineModule"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/color'",
+    "description": "Removed Export Specifier: Casing"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/color'",
+    "description": "Removed Export Specifier: ColorFormat"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/color'",
+    "description": "Removed Export Specifier: ColorModule"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/color'",
+    "description": "Removed Export Specifier: CssFunctionType"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/color'",
+    "description": "Removed Export Specifier: CssSpaceType"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/color'",
+    "description": "Removed Export Specifier: NumberColorFormat"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/color'",
+    "description": "Removed Export Specifier: StringColorFormat"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/finance/bitcoin'",
+    "description": "Removed Export Specifier: BitcoinAddressFamilyType"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/finance/bitcoin'",
+    "description": "Removed Export Specifier: BitcoinNetworkType"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/internet'",
+    "description": "Removed Export Specifier: InternetModule"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/person'",
+    "description": "Removed Export Specifier: PersonModule"
+  },
+  {
+    "file": "faker/v2/src/index.ts",
+    "declaration": "'./modules/person'",
+    "description": "Removed Export Specifier: SexType"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: mode"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: min"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: max"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: mode"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: min"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: max"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: mode"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: min"
+  },
+  {
+    "file": "faker/v2/src/modules/date/index.ts",
+    "declaration": "SimpleDateModule",
+    "description": "Removed Type Literal Property: max"
+  },
+  {
+    "file": "faker/v2/test/scripts/apidocs/method.example.ts",
+    "declaration": "AlphaNumericChar",
+    "description": "Removed Export Specifier: AlphaNumericChar"
+  },
+  {
+    "file": "faker/v2/test/scripts/apidocs/method.example.ts",
+    "declaration": "AlphaNumericChar",
+    "description": "Removed Export Specifier: LiteralUnion"
+  }
+]

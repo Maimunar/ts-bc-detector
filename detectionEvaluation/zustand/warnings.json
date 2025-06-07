@@ -1,0 +1,7 @@
+[
+  {
+    "file": "zustand/v2/src/react.ts",
+    "declaration": "useStore",
+    "description": "Added Intersection Member: S"
+  }
+]

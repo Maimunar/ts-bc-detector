@@ -1,0 +1,507 @@
+> remeda@2.0.0 test
+> tsc --project tsconfig.tests.json && vitest --typecheck.enabled --typecheck.ignoreSourceErrors
+
+src/chunk.test.ts:2:36 - error TS2307: Cannot find module './internal/types' or its corresponding type declarations.
+
+2 import type { NonEmptyArray } from "./internal/types";
+                                     ~~~~~~~~~~~~~~~~~~
+
+src/chunk.test.ts:53:26 - error TS2554: Expected 1 arguments, but got 0.
+
+53     expectTypeOf(result).toEqualTypeOf<Array<NonEmptyArray<number>>>();
+                            ~~~~~~~~~~~~~
+
+  node_modules/expect-type/dist/index.d.ts:91:148
+    91         <Expected extends StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected> extends true ? unknown : MismatchInfo<Actual, Expected>>(...MISMATCH: MismatchArgs<StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected>, true>): true;
+                                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Arguments for the rest parameter 'MISMATCH' were not provided.
+
+src/chunk.test.ts:59:26 - error TS2554: Expected 1 arguments, but got 0.
+
+59     expectTypeOf(result).toEqualTypeOf<Array<NonEmptyArray<number>>>();
+                            ~~~~~~~~~~~~~
+
+  node_modules/expect-type/dist/index.d.ts:91:148
+    91         <Expected extends StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected> extends true ? unknown : MismatchInfo<Actual, Expected>>(...MISMATCH: MismatchArgs<StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected>, true>): true;
+                                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Arguments for the rest parameter 'MISMATCH' were not provided.
+
+src/filter.test.ts:68:42 - error TS2344: Type '(1 | 2 | 3)[]' does not satisfy the constraint '{ [x: number]: 1 | 2 | 3; 0: "Expected: never, Actual: literal number: 1"; 1: "Expected: never, Actual: literal number: 2"; 2: "Expected: never, Actual: literal number: 3"; }'.
+  Type '(1 | 2 | 3)[]' is missing the following properties from type '{ [x: number]: 1 | 2 | 3; 0: "Expected: never, Actual: literal number: 1"; 1: "Expected: never, Actual: literal number: 2"; 2: "Expected: never, Actual: literal number: 3"; }': 0, 1, 2
+
+68       expectTypeOf(result).toEqualTypeOf<Array<1 | 2 | 3>>();
+                                            ~~~~~~~~~~~~~~~~
+
+src/filter.test.ts:91:42 - error TS2344: Type '(1 | 2 | 3)[]' does not satisfy the constraint '{ [x: number]: 1 | 2 | 3; 0: "Expected: never, Actual: literal number: 1"; 1: "Expected: never, Actual: literal number: 2"; 2: "Expected: never, Actual: literal number: 3"; }'.
+  Type '(1 | 2 | 3)[]' is missing the following properties from type '{ [x: number]: 1 | 2 | 3; 0: "Expected: never, Actual: literal number: 1"; 1: "Expected: never, Actual: literal number: 2"; 2: "Expected: never, Actual: literal number: 3"; }': 0, 1, 2
+
+91       expectTypeOf(result).toEqualTypeOf<Array<1 | 2 | 3>>();
+                                            ~~~~~~~~~~~~~~~~
+
+src/firstBy.test.ts:1:36 - error TS2307: Cannot find module './internal/types' or its corresponding type declarations.
+
+1 import type { NonEmptyArray } from "./internal/types";
+                                     ~~~~~~~~~~~~~~~~~~
+
+src/flat.test.ts:2:36 - error TS2307: Cannot find module './internal/types.js' or its corresponding type declarations.
+
+2 import type { NonEmptyArray } from "./internal/types.js";
+                                     ~~~~~~~~~~~~~~~~~~~~~
+
+src/forEachObj.test.ts:43:22 - error TS2344: Type '[number, string, { a: number; b: number; c: number; }]' does not satisfy the constraint 'Procedure'.
+  Type '[number, string, { a: number; b: number; c: number; }]' provides no match for the signature '(...args: any[]): any'.
+
+43     const cb = vi.fn<[number, string, typeof data]>();
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/forEachObj.test.ts:45:23 - error TS2345: Argument of type 'void' is not assignable to parameter of type '(input: { a: number; b: number; c: number; }) => unknown'.
+
+45     expect(pipe(data, forEachObj(cb))).toBe(data);
+                         ~~~~~~~~~~~~~~
+
+src/forEachObj.test.ts:45:34 - error TS2345: Argument of type 'Mock<[number, string, { a: number; b: number; c: number; }]>' is not assignable to parameter of type '(value: never, key: string, obj: never) => void'.
+  Types of parameters 'args' and 'value' are incompatible.
+    Type '[value: never, key: string, obj: never]' is not assignable to type 'never'.
+
+45     expect(pipe(data, forEachObj(cb))).toBe(data);
+                                    ~~
+
+  src/forEachObj.ts:59:17
+    59 export function forEachObj(...args: ReadonlyArray<unknown>): unknown {
+                       ~~~~~~~~~~
+    The call would have succeeded against this implementation, but implementation signatures of overloads are not externally visible.
+
+src/fromKeys.test.ts:174:45 - error TS2344: Type 'Partial<Record<string, number>>' does not satisfy the constraint '{ [x: string]: "Expected: number, Actual: never" | "Expected: undefined, Actual: never"; }'.
+  'string' index signatures are incompatible.
+    Type 'number | undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+
+174       expectTypeOf(dataFirst).toEqualTypeOf<Partial<Record<string, number>>>();
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/fromKeys.test.ts:177:44 - error TS2344: Type 'Partial<Record<string, number>>' does not satisfy the constraint '{ [x: string]: "Expected: number, Actual: never" | "Expected: undefined, Actual: never"; }'.
+  'string' index signatures are incompatible.
+    Type 'number | undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+
+177       expectTypeOf(dataLast).toEqualTypeOf<Partial<Record<string, number>>>();
+                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/fromKeys.test.ts:263:9 - error TS2344: Type 'Partial<Record<`prefix_${number}`, number>>' does not satisfy the constraint '{ [x: `prefix_${number}`]: "Expected: number, Actual: never" | "Expected: undefined, Actual: never"; }'.
+  '`prefix_${number}`' index signatures are incompatible.
+    Type 'number | undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+
+263         Partial<Record<`prefix_${number}`, number>>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/fromKeys.test.ts:268:9 - error TS2344: Type 'Partial<Record<`prefix_${number}`, number>>' does not satisfy the constraint '{ [x: `prefix_${number}`]: "Expected: number, Actual: never" | "Expected: undefined, Actual: never"; }'.
+  '`prefix_${number}`' index signatures are incompatible.
+    Type 'number | undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: number, Actual: never" | "Expected: undefined, Actual: never"'.
+
+268         Partial<Record<`prefix_${number}`, number>>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/fromKeys.test.ts:312:11 - error TS2344: Type 'Partial<Record<number, number>>' does not satisfy the constraint 'never[]'.
+  Type 'Partial<Record<number, number>>' is missing the following properties from type 'never[]': length, pop, push, concat, and 29 more.
+
+312           Partial<Record<number, number>>
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/fromKeys.test.ts:316:46 - error TS2344: Type 'Partial<Record<number, number>>' does not satisfy the constraint 'never[]'.
+  Type 'Partial<Record<number, number>>' is missing the following properties from type 'never[]': length, pop, push, concat, and 29 more.
+
+316         expectTypeOf(dataLast).toEqualTypeOf<Partial<Record<number, number>>>();
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/groupBy.test.ts:1:36 - error TS2307: Cannot find module './internal/types' or its corresponding type declarations.
+
+1 import type { NonEmptyArray } from "./internal/types";
+                                     ~~~~~~~~~~~~~~~~~~
+
+src/groupBy.test.ts:89:7 - error TS2344: Type 'Partial<Record<"cat" | "dog", NonEmptyArray<{ readonly a: "cat"; readonly b: 123; } | { readonly a: "dog"; readonly b: 456; }>>>' does not satisfy the constraint '{ cat: never; dog: never; }'.
+  Types of property 'cat' are incompatible.
+    Type 'any' is not assignable to type 'never'.
+
+ 89       Partial<
+          ~~~~~~~~
+ 90         Record<
+    ~~~~~~~~~~~~~~~
+...
+ 96         >
+    ~~~~~~~~~
+ 97       >
+    ~~~~~~~
+
+src/groupBy.test.ts:110:7 - error TS2344: Type 'Partial<Record<123 | 456, NonEmptyArray<{ readonly a: "cat"; readonly b: 123; } | { readonly a: "dog"; readonly b: 456; }>>>' does not satisfy the constraint '{ 123: never; 456: never; }'.
+  Types of property '123' are incompatible.
+    Type 'any' is not assignable to type 'never'.
+
+110       Partial<
+          ~~~~~~~~
+111         Record<
+    ~~~~~~~~~~~~~~~
+...
+117         >
+    ~~~~~~~~~
+118       >
+    ~~~~~~~
+
+src/groupBy.test.ts:130:24 - error TS2554: Expected 1 arguments, but got 0.
+
+130     expectTypeOf(data).toEqualTypeOf<
+                           ~~~~~~~~~~~~~
+
+  node_modules/expect-type/dist/index.d.ts:91:148
+    91         <Expected extends StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected> extends true ? unknown : MismatchInfo<Actual, Expected>>(...MISMATCH: MismatchArgs<StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected>, true>): true;
+                                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Arguments for the rest parameter 'MISMATCH' were not provided.
+
+src/groupBy.test.ts:150:7 - error TS2344: Type 'Record<number, NonEmptyArray<{ readonly a: "cat"; readonly b: 123; } | { readonly a: "dog"; readonly b: 456; }>>' does not satisfy the constraint 'never[]'.
+  Type 'Record<number, NonEmptyArray<{ readonly a: "cat"; readonly b: 123; } | { readonly a: "dog"; readonly b: 456; }>>' is missing the following properties from type 'never[]': length, pop, push, concat, and 29 more.
+
+150       Record<
+          ~~~~~~~
+151         number,
+    ~~~~~~~~~~~~~~~
+...
+155         >
+    ~~~~~~~~~
+156       >
+    ~~~~~~~
+
+src/groupBy.test.ts:168:24 - error TS2554: Expected 1 arguments, but got 0.
+
+168     expectTypeOf(data).toEqualTypeOf<
+                           ~~~~~~~~~~~~~
+
+  node_modules/expect-type/dist/index.d.ts:91:148
+    91         <Expected extends StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected> extends true ? unknown : MismatchInfo<Actual, Expected>>(...MISMATCH: MismatchArgs<StrictEqualUsingTSInternalIdenticalToOperator<Actual, Expected>, true>): true;
+                                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Arguments for the rest parameter 'MISMATCH' were not provided.
+
+src/hasSubObject.test.ts:74:7 - error TS2578: Unused '@ts-expect-error' directive.
+
+74       // @ts-expect-error [ts2345] - narrower value type
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/hasSubObject.test.ts:78:20 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'object'.
+
+78       hasSubObject({ a: 2 } as unknown, { a: 1 });
+                      ~~~~~~~~~~~~~~~~~~~
+
+  src/hasSubObject.ts:103:17
+    103 export function hasSubObject(...args: ReadonlyArray<unknown>): unknown {
+                        ~~~~~~~~~~~~
+    The call would have succeeded against this implementation, but implementation signatures of overloads are not externally visible.
+
+src/hasSubObject.test.ts:86:50 - error TS2322: Type 'number' is not assignable to type 'never'.
+
+86       hasSubObject({ a: { b: 4 } }, { a: { b: 1, c: 2 } });
+                                                    ~
+
+  src/hasSubObject.ts:103:17
+    103 export function hasSubObject(...args: ReadonlyArray<unknown>): unknown {
+                        ~~~~~~~~~~~~
+    The call would have succeeded against this implementation, but implementation signatures of overloads are not externally visible.
+
+src/hasSubObject.test.ts:99:41 - error TS2344: Type '{ a?: string; b?: number; }' does not satisfy the constraint '{ a: string | undefined; b: number | undefined; [tag]: { [HAS_SUB_OBJECT_BRAND]: never; }; }'.
+  Property '[tag]' is missing in type '{ a?: string; b?: number; }' but required in type '{ a: string | undefined; b: number | undefined; [tag]: { [HAS_SUB_OBJECT_BRAND]: never; }; }'.
+
+99         expectTypeOf(obj).toEqualTypeOf<{ a?: string; b?: number }>();
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/hasSubObject.test.ts:103:41 - error TS2344: Type '{ a: string; b?: number; }' does not satisfy the constraint '{ a: string; b: number | undefined; [tag]: { [HAS_SUB_OBJECT_BRAND]: never; }; }'.
+  Property '[tag]' is missing in type '{ a: string; b?: number; }' but required in type '{ a: string; b: number | undefined; [tag]: { [HAS_SUB_OBJECT_BRAND]: never; }; }'.
+
+103         expectTypeOf(obj).toEqualTypeOf<{ a: string; b?: number }>();
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/hasSubObject.test.ts:107:41 - error TS2344: Type '{ a: "a"; b?: number; }' does not satisfy the constraint '{ a: "a"; b: number | undefined; [tag]: { [HAS_SUB_OBJECT_BRAND]: never; }; }'.
+  Property '[tag]' is missing in type '{ a: "a"; b?: number; }' but required in type '{ a: "a"; b: number | undefined; [tag]: { [HAS_SUB_OBJECT_BRAND]: never; }; }'.
+
+107         expectTypeOf(obj).toEqualTypeOf<{ a: "a"; b?: number }>();
+                                            ~~~~~~~~~~~~~~~~~~~~~~
+
+src/hasSubObject.test.ts:127:7 - error TS2578: Unused '@ts-expect-error' directive.
+
+127       // @ts-expect-error [ts2345] - narrower value type
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/hasSubObject.test.ts:131:33 - error TS2345: Argument of type '<T extends HasSubObjectData<T, { a: number; }, Required<T>, Required<{ a: number; }>>>(data: T) => data is { [KeyType in keyof Tagged<{ a: number; } & T, unique symbol>]: Tagged<...>[KeyType]; }' is not assignable to parameter of type '(input: unknown) => boolean'.
+  Types of parameters 'data' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'HasSubObjectData<unknown, { a: number; }, Required<unknown>, Required<{ a: number; }>>'.
+      Type 'unknown' is not assignable to type 'Partial<{}>'.
+
+131       pipe({ a: 2 } as unknown, hasSubObject({ a: 1 }));
+                                    ~~~~~~~~~~~~~~~~~~~~~~
+
+  src/pipe.ts:213:17
+    213 export function pipe(
+                        ~~~~
+    The call would have succeeded against this implementation, but implementation signatures of overloads are not externally visible.
+
+src/hasSubObject.test.ts:139:29 - error TS2345: Argument of type '<T extends HasSubObjectData<T, { a: { b: number; c: number; }; }, Required<T>, Required<{ a: { b: number; c: number; }; }>>>(data: T) => data is { [KeyType in keyof Tagged<{ a: { b: number; c: number; }; } & T, unique symbol>]: Tagged<...>[KeyType]; }' is not assignable to parameter of type '(input: { a: { b: number; }; }) => boolean'.
+  Types of parameters 'data' and 'input' are incompatible.
+    Type '{ a: { b: number; }; }' is not assignable to type 'HasSubObjectData<{ a: { b: number; }; }, { a: { b: number; c: number; }; }, Required<{ a: { b: number; }; }>, Required<{ a: { b: number; c: number; }; }>>'.
+      Type '{ a: { b: number; }; }' is not assignable to type 'Partial<{ a: HasSubObjectObjectValue<{ b: number; }, { b: number; c: number; }>; }>'.
+        Types of property 'a' are incompatible.
+          Type '{ b: number; }' is not assignable to type 'HasSubObjectObjectValue<{ b: number; }, { b: number; c: number; }>'.
+            Property 'c' is missing in type '{ b: number; }' but required in type '{ c: number; }'.
+
+139       pipe({ a: { b: 4 } }, hasSubObject({ a: { b: 1, c: 2 } }));
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/pipe.ts:213:17
+    213 export function pipe(
+                        ~~~~
+    The call would have succeeded against this implementation, but implementation signatures of overloads are not externally visible.
+
+src/internal/purryFromLazy.test.ts:6:15 - error TS2459: Module '"../pipe"' declares 'LazyEvaluator' locally, but it is not exported.
+
+6 import { type LazyEvaluator } from "../pipe";
+                ~~~~~~~~~~~~~
+
+  src/pipe.ts:5:15
+    5 import type { LazyEvaluator } from "./internal/types/LazyEvaluator";
+                    ~~~~~~~~~~~~~
+    'LazyEvaluator' is declared here.
+
+src/isDefined.test.ts:15:9 - error TS2344: Type 'string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | null' does not satisfy the constraint '"Expected: boolean, Actual: never"'.
+  Type 'null' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 15         | Array<number>
+            ~~~~~~~~~~~~~~~
+ 16         | Date
+    ~~~~~~~~~~~~~~
+...
+ 31         | [number, number, number]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 32         | null
+    ~~~~~~~~~~~~~~
+
+src/isDefined.test.ts:41:7 - error TS2344: Type '(string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | null)[]' does not satisfy the constraint '"Expected: boolean, Actual: never"[]'.
+  Type 'string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | null' is not assignable to type '"Expected: boolean, Actual: never"'.
+    Type 'null' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 41       Array<
+          ~~~~~~
+ 42         | Array<number>
+    ~~~~~~~~~~~~~~~~~~~~~~~
+...
+ 59         | null
+    ~~~~~~~~~~~~~~
+ 60       >
+    ~~~~~~~
+
+src/isNonNull.test.ts:15:9 - error TS2344: Type 'string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | undefined' does not satisfy the constraint '"Expected: boolean, Actual: never"'.
+  Type 'undefined' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 15         | Array<number>
+            ~~~~~~~~~~~~~~~
+ 16         | Date
+    ~~~~~~~~~~~~~~
+...
+ 31         | [number, number, number]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 32         | undefined
+    ~~~~~~~~~~~~~~~~~~~
+
+src/isNonNull.test.ts:40:7 - error TS2344: Type '(string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | undefined)[]' does not satisfy the constraint '"Expected: boolean, Actual: never"[]'.
+  Type 'string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | undefined' is not assignable to type '"Expected: boolean, Actual: never"'.
+    Type 'undefined' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 40       Array<
+          ~~~~~~
+ 41         | Array<number>
+    ~~~~~~~~~~~~~~~~~~~~~~~
+...
+ 58         | undefined
+    ~~~~~~~~~~~~~~~~~~~
+ 59       >
+    ~~~~~~~
+
+src/isNonNullish.test.ts:15:9 - error TS2344: Type 'string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 4 more ... | (() => void)' does not satisfy the constraint '"Expected: boolean, Actual: never"'.
+  Type 'string' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 15         | Array<number>
+            ~~~~~~~~~~~~~~~
+ 16         | Date
+    ~~~~~~~~~~~~~~
+...
+ 30         | { readonly a: "asd" }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 31         | [number, number, number]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/isNonNullish.test.ts:39:7 - error TS2344: Type '(string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 4 more ... | (() => void))[]' does not satisfy the constraint '"Expected: boolean, Actual: never"[]'.
+  Type 'string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 4 more ... | (() => void)' is not assignable to type '"Expected: boolean, Actual: never"'.
+    Type 'string' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 39       Array<
+          ~~~~~~
+ 40         | Array<number>
+    ~~~~~~~~~~~~~~~~~~~~~~~
+...
+ 56         | [number, number, number]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 57       >
+    ~~~~~~~
+
+src/isNot.test.ts:17:9 - error TS2344: Type 'number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | Promise<number> | ... 5 more ... | undefined' does not satisfy the constraint '"Expected: boolean, Actual: never"'.
+  Type 'undefined' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 17         | Array<number>
+            ~~~~~~~~~~~~~~~
+ 18         | Date
+    ~~~~~~~~~~~~~~
+...
+ 33         | null
+    ~~~~~~~~~~~~~~
+ 34         | undefined
+    ~~~~~~~~~~~~~~~~~~~
+
+src/isNot.test.ts:43:7 - error TS2344: Type '(string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | undefined)[]' does not satisfy the constraint '"Expected: boolean, Actual: never"[]'.
+  Type 'string | number | boolean | symbol | RegExp | Error | number[] | [number, number, number] | Date | TestClass | 1n | Map<string, string> | ... 5 more ... | undefined' is not assignable to type '"Expected: boolean, Actual: never"'.
+    Type 'undefined' is not assignable to type '"Expected: boolean, Actual: never"'.
+
+ 43       Array<
+          ~~~~~~
+ 44         | Array<number>
+    ~~~~~~~~~~~~~~~~~~~~~~~
+...
+ 61         | undefined
+    ~~~~~~~~~~~~~~~~~~~
+ 62       >
+    ~~~~~~~
+
+src/isObjectType.test.ts:81:9 - error TS2344: Type 'RegExp | Error | number[] | [number, number, number] | Date | TestClass | Map<string, string> | Promise<number> | Set<string> | Uint8Array<...> | { ...; } | (() => void)' does not satisfy the constraint '"Expected: function, Actual: never" | "Expected: ..., Actual: never"'.
+  Type 'RegExp' is not assignable to type '"Expected: function, Actual: never" | "Expected: ..., Actual: never"'.
+
+ 81         | Array<number>
+            ~~~~~~~~~~~~~~~
+ 82         | Date
+    ~~~~~~~~~~~~~~
+...
+ 91         | { readonly a: "asd" }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 92         | [number, number, number]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/isObjectType.test.ts:107:7 - error TS2344: Type '(RegExp | Error | number[] | [number, number, number] | Date | TestClass | Map<string, string> | Promise<number> | Set<string> | Uint8Array<...> | { ...; } | (() => void))[]' does not satisfy the constraint '("Expected: function, Actual: never" | "Expected: ..., Actual: never")[]'.
+  Type 'RegExp | Error | number[] | [number, number, number] | Date | TestClass | Map<string, string> | Promise<number> | Set<string> | Uint8Array<...> | { ...; } | (() => void)' is not assignable to type '"Expected: function, Actual: never" | "Expected: ..., Actual: never"'.
+    Type 'RegExp' is not assignable to type '"Expected: function, Actual: never" | "Expected: ..., Actual: never"'.
+
+107       Array<
+          ~~~~~~
+108         | Array<number>
+    ~~~~~~~~~~~~~~~~~~~~~~~
+...
+119         | [number, number, number]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+120       >
+    ~~~~~~~
+
+src/product.test.ts:59:5 - error TS2578: Unused '@ts-expect-error' directive.
+
+59     // @ts-expect-error [ts2769] - We prevent this situation using typing, but we still want to have a test in place so that we don't accidentally remove the defensive typing.
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:177:43 - error TS2344: Type 'Partial<Record<string, string>>' does not satisfy the constraint '{ [x: string]: "Expected: undefined, Actual: never" | "Expected: string, Actual: never"; }'.
+  'string' index signatures are incompatible.
+    Type 'string | undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+
+177     expectTypeOf(dataFirst).toEqualTypeOf<Partial<Record<string, string>>>();
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:180:42 - error TS2344: Type 'Partial<Record<string, string>>' does not satisfy the constraint '{ [x: string]: "Expected: undefined, Actual: never" | "Expected: string, Actual: never"; }'.
+  'string' index signatures are incompatible.
+    Type 'string | undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+
+180     expectTypeOf(dataLast).toEqualTypeOf<Partial<Record<string, string>>>();
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:187:43 - error TS2344: Type 'Partial<Record<number, number>>' does not satisfy the constraint 'never[]'.
+  Type 'Partial<Record<number, number>>' is missing the following properties from type 'never[]': length, pop, push, concat, and 29 more.
+
+187     expectTypeOf(dataFirst).toEqualTypeOf<Partial<Record<number, number>>>();
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:190:42 - error TS2344: Type 'Partial<Record<number, number>>' does not satisfy the constraint 'never[]'.
+  Type 'Partial<Record<number, number>>' is missing the following properties from type 'never[]': length, pop, push, concat, and 29 more.
+
+190     expectTypeOf(dataLast).toEqualTypeOf<Partial<Record<number, number>>>();
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:197:43 - error TS2344: Type 'Partial<Record<symbol, symbol>>' does not satisfy the constraint '{ [x: symbol]: { [toPrimitive]: "Expected: never, Actual: function"; [toStringTag]: "Expected: never, Actual: string"; description: "Expected: never, Actual: string" | "Expected: never, Actual: undefined"; toString: "Expected: never, Actual: function"; valueOf: "Expected: never, Actual: function"; }; }'.
+  'symbol' index signatures are incompatible.
+    Type 'symbol | undefined' is not assignable to type '{ [toPrimitive]: "Expected: never, Actual: function"; [toStringTag]: "Expected: never, Actual: string"; description: "Expected: never, Actual: string" | "Expected: never, Actual: undefined"; toString: "Expected: never, Actual: function"; valueOf: "Expected: never, Actual: function"; }'.
+      Type 'undefined' is not assignable to type '{ [toPrimitive]: "Expected: never, Actual: function"; [toStringTag]: "Expected: never, Actual: string"; description: "Expected: never, Actual: string" | "Expected: never, Actual: undefined"; toString: "Expected: never, Actual: function"; valueOf: "Expected: never, Actual: function"; }'.
+
+197     expectTypeOf(dataFirst).toEqualTypeOf<Partial<Record<symbol, symbol>>>();
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:200:42 - error TS2344: Type 'Partial<Record<symbol, symbol>>' does not satisfy the constraint '{ [x: symbol]: { [toPrimitive]: "Expected: never, Actual: function"; [toStringTag]: "Expected: never, Actual: string"; description: "Expected: never, Actual: string" | "Expected: never, Actual: undefined"; toString: "Expected: never, Actual: function"; valueOf: "Expected: never, Actual: function"; }; }'.
+  'symbol' index signatures are incompatible.
+    Type 'symbol | undefined' is not assignable to type '{ [toPrimitive]: "Expected: never, Actual: function"; [toStringTag]: "Expected: never, Actual: string"; description: "Expected: never, Actual: string" | "Expected: never, Actual: undefined"; toString: "Expected: never, Actual: function"; valueOf: "Expected: never, Actual: function"; }'.
+      Type 'undefined' is not assignable to type '{ [toPrimitive]: "Expected: never, Actual: function"; [toStringTag]: "Expected: never, Actual: string"; description: "Expected: never, Actual: string" | "Expected: never, Actual: undefined"; toString: "Expected: never, Actual: function"; valueOf: "Expected: never, Actual: function"; }'.
+
+200     expectTypeOf(dataLast).toEqualTypeOf<Partial<Record<symbol, symbol>>>();
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:253:7 - error TS2344: Type 'Partial<Record<`prefix_${number}`, string>>' does not satisfy the constraint '{ [x: `prefix_${number}`]: "Expected: undefined, Actual: never" | "Expected: string, Actual: never"; }'.
+  '`prefix_${number}`' index signatures are incompatible.
+    Type 'string | undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+
+253       Partial<Record<`prefix_${number}`, string>>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/pullObject.test.ts:261:7 - error TS2344: Type 'Partial<Record<`prefix_${number}`, string>>' does not satisfy the constraint '{ [x: `prefix_${number}`]: "Expected: undefined, Actual: never" | "Expected: string, Actual: never"; }'.
+  '`prefix_${number}`' index signatures are incompatible.
+    Type 'string | undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+      Type 'undefined' is not assignable to type '"Expected: undefined, Actual: never" | "Expected: string, Actual: never"'.
+
+261       Partial<Record<`prefix_${number}`, string>>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/sample.test.ts:1:36 - error TS2307: Cannot find module './internal/types' or its corresponding type declarations.
+
+1 import type { NonEmptyArray } from "./internal/types";
+                                     ~~~~~~~~~~~~~~~~~~
+
+src/sample.test.ts:922:3 - error TS2578: Unused '@ts-expect-error' directive.
+
+922   // @ts-expect-error [ts2322]: we know this array isn't empty!
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/sum.test.ts:57:5 - error TS2578: Unused '@ts-expect-error' directive.
+
+57     // @ts-expect-error [ts2769] - We prevent this situation using typing, but we still want to have a test in place so that we don't accidentally remove the defensive typing.
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Found 54 errors in 18 files.
+
+Errors  Files
+     3  src/chunk.test.ts:2
+     2  src/filter.test.ts:68
+     1  src/firstBy.test.ts:1
+     1  src/flat.test.ts:2
+     3  src/forEachObj.test.ts:43
+     6  src/fromKeys.test.ts:174
+     6  src/groupBy.test.ts:1
+     9  src/hasSubObject.test.ts:74
+     1  src/internal/purryFromLazy.test.ts:6
+     2  src/isDefined.test.ts:15
+     2  src/isNonNull.test.ts:15
+     2  src/isNonNullish.test.ts:15
+     2  src/isNot.test.ts:17
+     2  src/isObjectType.test.ts:81
+     1  src/product.test.ts:59
+     8  src/pullObject.test.ts:177
+     2  src/sample.test.ts:1
+     1  src/sum.test.ts:57

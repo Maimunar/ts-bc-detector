@@ -1,0 +1,1866 @@
+
+> @fast-check/monorepo@ test /Users/aleksandarivanov/tue/masterProject/projects/fast-check/testingVersion
+> vitest --coverage=false
+
+
+ DEV  v3.0.9 /Users/aleksandarivanov/tue/masterProject/projects/fast-check/testingVersion
+
+ ❯ |fast-check| test/unit/check/runner/Runner.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/FrequencyArbitrary.part1.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/arbitrary/definition/Arbitrary.utest.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/implementations/SchedulerImplem.spec.ts (0 test)
+ ❯ |fast-check| test/unit/utils/stringify.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/ArrayArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/NoRegression.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/IntegerArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/BigIntArbitrary.spec.ts (0 test)
+ ✓ |@fast-check/worker| test/internals/worker-pool/BasicPool.spec.ts (17 tests) 14ms
+ ❯ |fast-check| test/unit/arbitrary/uniqueArray.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/TupleArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Poisoning.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/AsyncProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/MaxLengthFromMinLength.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/Property.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/double.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/sparseArray.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/float.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/commands.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/AdapterArbitrary.spec.ts (0 test)
+ ✓ |@fast-check/packaged| test/packaged.spec.ts (12 tests) 542ms
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/arbitrary/definition/Arbitrary.itest.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/ConstantArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/letrec.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/GeneratorArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/WithShrinkFromOtherArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/StreamArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/builders/PartialRecordArbitraryBuilder.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/CloneArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/string.spec.ts (0 test)
+ ❯ |fast-check| test/unit/stream/Stream.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/WordsToLorem.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/DoubleOnlyHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/ValuesAndSeparateKeysToObject.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/GraphemeRangesHelpers.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/StateFullArbitraries.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/date.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/Sampler.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/record.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/MixedCaseArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/builders/AnyArbitraryBuilder.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/LimitedShrinkArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/documentation/Docs.md.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/SkipAfterProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/builders/TypedIntArrayArbitraryBuilder.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/internals/TrackDiffsOnGlobal.spec.ts (8 tests) 5ms
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/EntitiesToIPv6.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/DoubleHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/SubarrayArbitrary.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/internals/CaptureAllGlobals.spec.ts (46 tests) 1278ms
+ ❯ |fast-check:e2e| test/e2e/ComplexShrink.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/TimeoutProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/KeyValuePairsToObject.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/PatternsToString.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/FrequencyArbitrary.part2.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/BuildSchedulerFor.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/stringMatching.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/reporter/RunExecution.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/AsyncScheduler.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/SchedulerArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/FloatHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/TokenizeRegex.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/DecorateProperty.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/NoStackOverflowOnShrink.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/commands/CommandWrapper.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/ReplayFailures.spec.ts (0 test)
+ ❯ |fast-check| test/unit/utils/hash.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/configuration/QualifiedParameters.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/SkipAllAfterTime.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ipV6.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/webUrl.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/main.spec.ts (7 tests) 170ms
+ ❯ |fast-check| test/unit/arbitrary/uuid.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/implementations/SlicedBasedGenerator.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/GeneratorArbitrary.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/predicateIsolation.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/IgnoreEqualValuesProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/func.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ToggleFlags.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/integer.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Shadows.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/SourceValuesIterator.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/StrictlyEqualSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/option.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/internals/worker-property/WorkerPropertyFromWorker.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/model/CommandsArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/GenerateAllValues.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/BiasNumericRange.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/RecursiveStructures.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/commands/ScheduledCommand.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ShrinkInteger.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ShrinkBigInt.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/internals/FilterNonEligibleDiffs.spec.ts (7 tests) 2ms
+ ❯ |fast-check| test/unit/arbitrary/mapToConstant.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/scheduler.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/SameValueZeroSet.spec.ts (0 test)
+ ❯ |@fast-check/vitest| test/vitest-fast-check.spec.ts (20 tests | 12 failed | 2 skipped) 9638ms
+   × 'test' > should support test.prop 733ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   × 'test' > at depth 1 > should support test.concurrent.prop 993ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   ✓ 'test' > at depth 1 > should support test.fails.prop 885ms
+   ↓ 'test' > at depth 1 > should support test.only.prop
+   × 'test' > at depth 1 > should support test.skip.prop 871ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'test' > at depth 1 > should support test.todo.prop 870ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   ✓ 'test' > at depth strictly above 1 > should support test.concurrent.fails.prop 1827ms
+   ✓ 'test' > at depth strictly above 1 > should support test.concurrent.fails.only.prop 1500ms
+   × 'test' > at depth strictly above 1 > should support test.concurrent.fails.skip.prop 1546ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'test' > at depth strictly above 1 > should support test.concurrent.fails.todo.prop 1679ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'it' > should support it.prop 795ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   × 'it' > at depth 1 > should support it.concurrent.prop 1119ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   ✓ 'it' > at depth 1 > should support it.fails.prop 973ms
+   ↓ 'it' > at depth 1 > should support it.only.prop
+   × 'it' > at depth 1 > should support it.skip.prop 1279ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'it' > at depth 1 > should support it.todo.prop 1492ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   ✓ 'it' > at depth strictly above 1 > should support it.concurrent.fails.prop 1714ms
+   ✓ 'it' > at depth strictly above 1 > should support it.concurrent.fails.only.prop 1492ms
+   × 'it' > at depth strictly above 1 > should support it.concurrent.fails.skip.prop 1615ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'it' > at depth strictly above 1 > should support it.concurrent.fails.todo.prop 1779ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+ ❯ |fast-check| test/unit/arbitrary/domain.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/SameValueSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/IndexToMappedConstant.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/ModelRunner.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/BigIntArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/dictionary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/oneof.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/GlobalParameters.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/noShrink.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/utils/apply.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/memo.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/Tosser.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/FloatArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/webPath.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/emailAddress.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/jsonValue.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/DoubleArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/LazyArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ReadRegex.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/compareBooleanFunc.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/nat.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/compareFunc.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ipV4Extended.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/commands/CommandsIterable.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/ReplayCommands.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/nonSerializableButSameData.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/lorem.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/VersionsApplierForUuid.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/ArrayArbitrary.spec.ts (0 test)
+ ❯ |@fast-check/ava| test/main.spec.ts (1 test | 1 failed) 663ms
+   × ava > should pass 663ms
+     → expected '  ⚠ Using configuration from /Users/a…' to match /ok \d+ - should never be executed \(w…/
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ZipIterableIterators.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/CustomEqualSet.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/WebArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/noBias.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/ModelBased.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/float64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/float32Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/context.spec.ts (0 test)
+ ❯ |fast-check| test/unit/random/generator/Random.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/MemoArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ulid.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/TextEscaper.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ipV4.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/Arbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/LetRecArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/ObjectArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/UnboxedToBoxed.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/webAuthority.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/NoRegressionStack.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/propertyIsolation.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/RandomEnough.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/InvalidSubdomainLabelFiIter.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/VerbosityChecks.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/RecordArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/SubarrayArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/falsy.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/boolean.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/NoUndefinedAsContext.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/arbitrary/definition/NextValue.utest.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigUint64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint8ClampedArray.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/PartsToUrl.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/NatToStringifiedNat.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/CharacterArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint16Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint32Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/int16Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/int32Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint8Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/int8Array.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/StringArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/constantFrom.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/NumberToPaddedEight.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/IntegerArbitrary.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/asyncThrow.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/noWorker.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/syncThrow.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/WithProvidedExamples.spec.ts (0 test)
+ ✓ |@fast-check/worker| test/internals/lock/Lock.spec.ts (2 tests) 25ms
+ ❯ |fast-check:e2e| test/e2e/Sampler.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/FunctionArbitrary.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/internals/PoisoningFreeArray.spec.ts (3 tests) 50ms
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/SanitizeRegexAst.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/concurrentAssert.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/TimeToDate.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/constant.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/CodePointsToString.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/IgnoreEqualValues.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/internals/PoisoningFreeMap.spec.ts (4 tests) 5ms
+ ❯ |@fast-check/worker| test/e2e/nonSerializableData.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/ReplayPath.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/internals/PoisoningFreeSet.spec.ts (2 tests) 2ms
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/CharsToString.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/ArrayToMap.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/FloatOnlyHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/maxSafeInteger.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/PaddedEightsToUuid.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Timeout.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/blockEventLoop.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/configuration/GlobalParameters.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/maxSafeNat.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/clone.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/unregistered.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/infiniteStream.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/OneOfArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/ArrayToSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/precondition/Pre.spec.ts (0 test)
+ ❯ |fast-check| test/unit/stream/LazyIterableIterator.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/failing.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/PreConditionChecks.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/StringToBase64.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/tuple.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/passing.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/supportPre.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/UnbiasedProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/SegmentsToPath.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/UintToBase32String.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/TupleArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Bundle.spec.ts (0 test)
+ ❯ |@fast-check/jest| test/jest-fast-check.spec.ts (130 tests | 130 failed) 36260ms
+   × 'test' > should pass on successful no prop mode 1286ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on failing no prop mode 1285ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test' > should pass on truthy synchronous property 1101ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should pass on truthy asynchronous property 1119ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy synchronous property 1150ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-762709350)\)/
+   × 'test' > should fail on falsy asynchronous property 1139ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-2047863834)\)/
+   × 'test' > should pass on truthy record-based property 1148ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy record-based property 1092ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(406760814)\)/
+   × 'test' > should fail on falsy record-based property with seed 1163ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test' > should fail with locally requested seed 1161ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test' > should fail with globally requested seed 768ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test' > should fail with seed requested at jest level 773ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test' > .skip > should never be executed 575ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test' > .failing > should fail on successful no prop mode 937ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] successful no prop/
+   × 'test' > .failing > should pass on failing no prop mode 976ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .failing > should pass because failing 957ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .failing > should fail because passing 937ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test' > .concurrent > should pass on truthy property 1284ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .concurrent > should fail on falsy property 1279ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-290169329)\)/
+   × 'test' > .concurrent > .failing > should pass because failing 1179ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .concurrent > .failing > should fail because passing 1134ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test' > timeout > should fail as test takes longer than global Jest timeout 2081ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest local timeout 1944ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest config timeout 2139ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest setTimeout 2127ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest CLI timeout 2126ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail but favor local Jest timeout over Jest setTimeout 1037ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 907ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > should pass on successful no prop mode 1694ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should fail on failing no prop mode 1559ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test (worker)' > should fail on property blocking the main thread 1417ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property block main thread/
+   × 'test (worker)' > should pass on truthy synchronous property 1796ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should pass on truthy asynchronous property 1571ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should fail on falsy synchronous property 2297ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1325939347)\)/
+   × 'test (worker)' > should fail on falsy asynchronous property 2298ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1784631702)\)/
+   × 'test (worker)' > should pass on truthy record-based property 2286ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should fail on falsy record-based property 2245ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-182944881)\)/
+   × 'test (worker)' > should fail on falsy record-based property with seed 2221ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (worker)' > should fail with locally requested seed 1039ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (worker)' > should fail with globally requested seed 882ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (worker)' > should fail with seed requested at jest level 869ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test (worker)' > .skip > should never be executed 680ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test (worker)' > .failing > should fail on successful no prop mode 1022ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] successful no prop/
+   × 'test (worker)' > .failing > should pass on failing no prop mode 1041ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .failing > should pass because failing 1038ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .failing > should fail because passing 1041ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test (worker)' > .concurrent > should pass on truthy property 691ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .concurrent > should fail on falsy property 694ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(494330436)\)/
+   × 'test (worker)' > .concurrent > .failing > should pass because failing 766ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .concurrent > .failing > should fail because passing 782ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test (worker)' > timeout > should fail as test takes longer than global Jest timeout 1135ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest local timeout 1135ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest config timeout 1203ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest setTimeout 1132ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest CLI timeout 1169ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout 720ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 722ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > should pass on successful no prop mode 1223ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should fail on failing no prop mode 1142ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test (jasmine)' > should pass on truthy synchronous property 1170ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should pass on truthy asynchronous property 1288ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should fail on falsy synchronous property 1213ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-287019240)\)/
+   × 'test (jasmine)' > should fail on falsy asynchronous property 1351ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(549790016)\)/
+   × 'test (jasmine)' > should pass on truthy record-based property 1381ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should fail on falsy record-based property 1265ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1433626487)\)/
+   × 'test (jasmine)' > should fail on falsy record-based property with seed 1286ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)' > should fail with locally requested seed 1247ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)' > should fail with globally requested seed 717ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)' > should fail with seed requested at jest level 731ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test (jasmine)' > .skip > should never be executed 613ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test (jasmine)' > .concurrent > should pass on truthy property 549ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > .concurrent > should fail on falsy property 558ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1012212599)\)/
+   × 'test (jasmine)' > timeout > should fail as test takes longer than global Jest timeout 813ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest local timeout 839ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest config timeout 829ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest setTimeout 828ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest CLI timeout 836ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail but favor local Jest timeout over Jest setTimeout 550ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 538ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > should pass on successful no prop mode 899ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should fail on failing no prop mode 894ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test (jasmine)(worker)' > should fail on property blocking the main thread 886ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property block main thread/
+   × 'test (jasmine)(worker)' > should pass on truthy synchronous property 905ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should pass on truthy asynchronous property 894ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should fail on falsy synchronous property 836ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1181790893)\)/
+   × 'test (jasmine)(worker)' > should fail on falsy asynchronous property 833ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1821276650)\)/
+   × 'test (jasmine)(worker)' > should pass on truthy record-based property 832ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should fail on falsy record-based property 863ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(548527218)\)/
+   × 'test (jasmine)(worker)' > should fail on falsy record-based property with seed 859ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)(worker)' > should fail with locally requested seed 623ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)(worker)' > should fail with globally requested seed 626ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)(worker)' > should fail with seed requested at jest level 608ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test (jasmine)(worker)' > .skip > should never be executed 454ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test (jasmine)(worker)' > .concurrent > should pass on truthy property 536ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > .concurrent > should fail on falsy property 536ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1129416371)\)/
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than global Jest timeout 852ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest local timeout 861ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest config timeout 879ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest setTimeout 833ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest CLI timeout 860ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout 561ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 563ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > should pass on successful no prop mode 809ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should fail on failing no prop mode 834ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'it' > should pass on truthy synchronous property 850ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should pass on truthy asynchronous property 838ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should fail on falsy synchronous property 858ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1260041211)\)/
+   × 'it' > should fail on falsy asynchronous property 849ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(515006645)\)/
+   × 'it' > should pass on truthy record-based property 863ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should fail on falsy record-based property 821ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(891422881)\)/
+   × 'it' > should fail on falsy record-based property with seed 840ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'it' > should fail with locally requested seed 849ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'it' > should fail with globally requested seed 544ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'it' > should fail with seed requested at jest level 557ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'it' > .skip > should never be executed 458ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'it' > .failing > should fail on successful no prop mode 698ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] successful no prop/
+   × 'it' > .failing > should pass on failing no prop mode 689ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .failing > should pass because failing 680ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .failing > should fail because passing 710ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'it' > .concurrent > should pass on truthy property 526ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .concurrent > should fail on falsy property 533ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1822833601)\)/
+   × 'it' > .concurrent > .failing > should pass because failing 531ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .concurrent > .failing > should fail because passing 529ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'it' > timeout > should fail as test takes longer than global Jest timeout 929ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest local timeout 907ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest config timeout 914ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest setTimeout 907ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest CLI timeout 906ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail but favor local Jest timeout over Jest setTimeout 546ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 540ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+
+ Test Files  213 failed | 10 passed (223)
+      Tests  143 failed | 114 passed | 2 skipped (259)
+   Start at  17:32:57
+   Duration  36.65s (transform 318ms, setup 0ms, collect 1.18s, tests 48.65s, environment 69ms, prepare 21.62s)
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |@fast-check/ava| test/main.spec.ts (1 test | 1 failed) 647ms
+   × ava > should pass 646ms
+     → expected '  ⚠ Using configuration from /Users/a…' to match /ok \d+ - should never be executed \(w…/
+ ❯ |@fast-check/vitest| test/vitest-fast-check.spec.ts (20 tests | 1 failed | 2 skipped) 958ms
+   × 'test' > should support test.prop 953ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   · 'test' > at depth 1 > should support test.concurrent.prop
+   · 'test' > at depth 1 > should support test.fails.prop
+   ↓ 'test' > at depth 1 > should support test.only.prop
+   · 'test' > at depth 1 > should support test.skip.prop
+   · 'test' > at depth 1 > should support test.todo.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.only.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.skip.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.todo.prop
+   · 'it' > should support it.prop
+   · 'it' > at depth 1 > should support it.concurrent.prop
+   · 'it' > at depth 1 > should support it.fails.prop
+   ↓ 'it' > at depth 1 > should support it.only.prop
+   · 'it' > at depth 1 > should support it.skip.prop
+   · 'it' > at depth 1 > should support it.todo.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.only.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.skip.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.todo.prop
+ ❯ |@fast-check/jest| test/jest-fast-check.spec.ts (130 tests | 5 failed) 1307ms
+   × 'test' > should pass on successful no prop mode 1304ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on failing no prop mode 1295ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test' > should pass on truthy synchronous property 1258ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should pass on truthy asynchronous property 1252ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy synchronous property 1251ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1276680556)\)/
+   · 'test' > should fail on falsy asynchronous property
+   · 'test' > should pass on truthy record-based property
+   · 'test' > should fail on falsy record-based property
+   · 'test' > should fail on falsy record-based property with seed
+   · 'test' > should fail with locally requested seed
+   · 'test' > should fail with globally requested seed
+   · 'test' > should fail with seed requested at jest level
+   · 'test' > .skip > should never be executed
+   · 'test' > .failing > should fail on successful no prop mode
+   · 'test' > .failing > should pass on failing no prop mode
+   · 'test' > .failing > should pass because failing
+   · 'test' > .failing > should fail because passing
+   · 'test' > .concurrent > should pass on truthy property
+   · 'test' > .concurrent > should fail on falsy property
+   · 'test' > .concurrent > .failing > should pass because failing
+   · 'test' > .concurrent > .failing > should fail because passing
+   · 'test' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (worker)' > should pass on successful no prop mode
+   · 'test (worker)' > should fail on failing no prop mode
+   · 'test (worker)' > should fail on property blocking the main thread
+   · 'test (worker)' > should pass on truthy synchronous property
+   · 'test (worker)' > should pass on truthy asynchronous property
+   · 'test (worker)' > should fail on falsy synchronous property
+   · 'test (worker)' > should fail on falsy asynchronous property
+   · 'test (worker)' > should pass on truthy record-based property
+   · 'test (worker)' > should fail on falsy record-based property
+   · 'test (worker)' > should fail on falsy record-based property with seed
+   · 'test (worker)' > should fail with locally requested seed
+   · 'test (worker)' > should fail with globally requested seed
+   · 'test (worker)' > should fail with seed requested at jest level
+   · 'test (worker)' > .skip > should never be executed
+   · 'test (worker)' > .failing > should fail on successful no prop mode
+   · 'test (worker)' > .failing > should pass on failing no prop mode
+   · 'test (worker)' > .failing > should pass because failing
+   · 'test (worker)' > .failing > should fail because passing
+   · 'test (worker)' > .concurrent > should pass on truthy property
+   · 'test (worker)' > .concurrent > should fail on falsy property
+   · 'test (worker)' > .concurrent > .failing > should pass because failing
+   · 'test (worker)' > .concurrent > .failing > should fail because passing
+   · 'test (worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)' > should pass on successful no prop mode
+   · 'test (jasmine)' > should fail on failing no prop mode
+   · 'test (jasmine)' > should pass on truthy synchronous property
+   · 'test (jasmine)' > should pass on truthy asynchronous property
+   · 'test (jasmine)' > should fail on falsy synchronous property
+   · 'test (jasmine)' > should fail on falsy asynchronous property
+   · 'test (jasmine)' > should pass on truthy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)' > should fail with locally requested seed
+   · 'test (jasmine)' > should fail with globally requested seed
+   · 'test (jasmine)' > should fail with seed requested at jest level
+   · 'test (jasmine)' > .skip > should never be executed
+   · 'test (jasmine)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)(worker)' > should pass on successful no prop mode
+   · 'test (jasmine)(worker)' > should fail on failing no prop mode
+   · 'test (jasmine)(worker)' > should fail on property blocking the main thread
+   · 'test (jasmine)(worker)' > should pass on truthy synchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy asynchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy synchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy asynchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)(worker)' > should fail with locally requested seed
+   · 'test (jasmine)(worker)' > should fail with globally requested seed
+   · 'test (jasmine)(worker)' > should fail with seed requested at jest level
+   · 'test (jasmine)(worker)' > .skip > should never be executed
+   · 'test (jasmine)(worker)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)(worker)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'it' > should pass on successful no prop mode
+   · 'it' > should fail on failing no prop mode
+   · 'it' > should pass on truthy synchronous property
+   · 'it' > should pass on truthy asynchronous property
+   · 'it' > should fail on falsy synchronous property
+   · 'it' > should fail on falsy asynchronous property
+   · 'it' > should pass on truthy record-based property
+   · 'it' > should fail on falsy record-based property
+   · 'it' > should fail on falsy record-based property with seed
+   · 'it' > should fail with locally requested seed
+   · 'it' > should fail with globally requested seed
+   · 'it' > should fail with seed requested at jest level
+   · 'it' > .skip > should never be executed
+   · 'it' > .failing > should fail on successful no prop mode
+   · 'it' > .failing > should pass on failing no prop mode
+   · 'it' > .failing > should pass because failing
+   · 'it' > .failing > should fail because passing
+   · 'it' > .concurrent > should pass on truthy property
+   · 'it' > .concurrent > should fail on falsy property
+   · 'it' > .concurrent > .failing > should pass because failing
+   · 'it' > .concurrent > .failing > should fail because passing
+   · 'it' > timeout > should fail as test takes longer than global Jest timeout
+   · 'it' > timeout > should fail as test takes longer than Jest local timeout
+   · 'it' > timeout > should fail as test takes longer than Jest config timeout
+   · 'it' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'it' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'it' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'it' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+
+ Test Files  5 failed (223)
+      Tests  7 failed | 2 skipped (151)
+   Start at  17:35:08
+   Duration  2.93s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ↓ |@fast-check/ava| test/main.spec.ts (1 test)
+ ↓ |@fast-check/vitest| test/vitest-fast-check.spec.ts (20 tests | 2 skipped)
+ ↓ |@fast-check/jest| test/jest-fast-check.spec.ts (130 tests)
+
+ Test Files  1 failed | 3 skipped (223)
+      Tests  2 skipped (151)
+   Start at  17:39:03
+   Duration  31ms
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/arbitrary/bigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+
+ Test Files  4 failed (223)
+      Tests  no tests
+   Start at  17:39:03
+   Duration  0ms
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+
+ Test Files  4 failed (223)
+      Tests  no tests
+   Start at  17:39:04
+   Duration  0ms
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigUint64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/boolean.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/clone.spec.ts (0 test)
+
+ Test Files  8 failed (223)
+      Tests  no tests
+   Start at  17:39:04
+   Duration  0ms
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/arbitrary/bigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigUint64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/boolean.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/clone.spec.ts (0 test)
+
+ Test Files  8 failed (223)
+      Tests  no tests
+   Start at  17:39:05
+   Duration  0ms
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/boolean.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigUint64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/clone.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/compareFunc.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/commands.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/constant.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/compareBooleanFunc.spec.ts (0 test)
+
+ Test Files  12 failed (223)
+      Tests  no tests
+   Start at  17:39:05
+   Duration  0ms
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/arbitrary/bigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/boolean.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigUint64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/bigInt64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/clone.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/commands.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/compareBooleanFunc.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/compareFunc.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/constant.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/date.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/constantFrom.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/context.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/dictionary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/domain.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/double.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/emailAddress.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/falsy.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/float.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/float32Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/float64Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/func.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/infiniteStream.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/int16Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/int32Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/int8Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ipV4.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/integer.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ipV4Extended.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ipV6.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/jsonValue.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/letrec.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/lorem.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/mapToConstant.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/maxSafeInteger.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/maxSafeNat.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/nat.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/memo.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/noShrink.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/noBias.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/oneof.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/option.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/record.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/scheduler.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/sparseArray.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/string.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/stringMatching.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/tuple.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint16Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint32Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint8Array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uint8ClampedArray.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/ulid.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uniqueArray.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/uuid.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/webAuthority.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/webPath.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/webUrl.spec.ts (0 test)
+ ❯ |fast-check| test/unit/utils/apply.spec.ts (0 test)
+ ❯ |fast-check| test/unit/utils/hash.spec.ts (0 test)
+ ❯ |fast-check| test/unit/utils/stringify.spec.ts (0 test)
+ ❯ |fast-check| test/unit/stream/LazyIterableIterator.spec.ts (0 test)
+ ❯ |fast-check| test/unit/stream/Stream.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/AsyncProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/IgnoreEqualValuesProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/Property.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/SkipAfterProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/TimeoutProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/property/UnbiasedProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/ModelRunner.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/ReplayPath.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/DecorateProperty.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/Runner.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/Sampler.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/SourceValuesIterator.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/Tosser.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/precondition/Pre.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/AdapterArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/ArrayArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/CloneArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/BigIntArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/ConstantArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/FrequencyArbitrary.part1.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/FrequencyArbitrary.part2.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/IntegerArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/GeneratorArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/LazyArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/LimitedShrinkArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/MixedCaseArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/SchedulerArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/StreamArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/SubarrayArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/TupleArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/WithShrinkFromOtherArbitrary.spec.ts (0 test)
+ ❯ |fast-check| test/unit/random/generator/Random.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/arbitrary/definition/Arbitrary.itest.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/arbitrary/definition/NextValue.utest.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/arbitrary/definition/Arbitrary.utest.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/commands/CommandWrapper.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/commands/CommandsIterable.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/model/commands/ScheduledCommand.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/configuration/GlobalParameters.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/configuration/QualifiedParameters.spec.ts (0 test)
+ ❯ |fast-check| test/unit/check/runner/reporter/RunExecution.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/implementations/SchedulerImplem.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/implementations/SlicedBasedGenerator.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/BiasNumericRange.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/BuildSchedulerFor.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/DoubleHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/CustomEqualSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/DoubleOnlyHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/FloatHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/FloatOnlyHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/GraphemeRangesHelpers.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/InvalidSubdomainLabelFiIter.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/MaxLengthFromMinLength.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/NoUndefinedAsContext.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ReadRegex.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/SameValueSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/SameValueZeroSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/SanitizeRegexAst.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ShrinkBigInt.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ShrinkInteger.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/TextEscaper.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/StrictlyEqualSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ToggleFlags.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/TokenizeRegex.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/helpers/ZipIterableIterators.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/ArrayToMap.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/ArrayToSet.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/CharsToString.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/CodePointsToString.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/EntitiesToIPv6.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/IndexToMappedConstant.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/KeyValuePairsToObject.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/NatToStringifiedNat.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/NumberToPaddedEight.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/PaddedEightsToUuid.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/PartsToUrl.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/PatternsToString.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/SegmentsToPath.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/StringToBase64.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/TimeToDate.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/UintToBase32String.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/UnboxedToBoxed.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/ValuesAndSeparateKeysToObject.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/VersionsApplierForUuid.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/mappers/WordsToLorem.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/builders/AnyArbitraryBuilder.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/builders/PartialRecordArbitraryBuilder.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/_internals/builders/TypedIntArrayArbitraryBuilder.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/AsyncScheduler.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Bundle.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/ComplexShrink.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/GenerateAllValues.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/GlobalParameters.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/IgnoreEqualValues.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/ModelBased.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/NoRegression.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/NoRegressionStack.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/NoStackOverflowOnShrink.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Poisoning.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/PreConditionChecks.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/RandomEnough.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/RecursiveStructures.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/ReplayCommands.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/ReplayFailures.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Sampler.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Shadows.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/SkipAllAfterTime.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/StateFullArbitraries.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/Timeout.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/VerbosityChecks.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/WithProvidedExamples.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/model/CommandsArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/documentation/Docs.md.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/Arbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/ArrayArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/BigIntArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/CharacterArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/DoubleArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/FloatArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/FunctionArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/GeneratorArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/IntegerArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/LetRecArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/MemoArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/ObjectArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/OneOfArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/RecordArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/StringArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/SubarrayArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/TupleArbitrary.spec.ts (0 test)
+ ❯ |fast-check:e2e| test/e2e/arbitraries/WebArbitrary.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/asyncThrow.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/blockEventLoop.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/concurrentAssert.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/failing.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/noWorker.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/nonSerializableButSameData.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/nonSerializableData.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/passing.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/predicateIsolation.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/propertyIsolation.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/supportPre.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/syncThrow.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/e2e/unregistered.spec.ts (0 test)
+ ❯ |@fast-check/worker| test/internals/worker-property/WorkerPropertyFromWorker.spec.ts (0 test)
+ ✓ |@fast-check/poisoning| test/internals/PoisoningFreeArray.spec.ts (3 tests) 2ms
+ ✓ |@fast-check/poisoning| test/main.spec.ts (7 tests) 81ms
+ ✓ |@fast-check/worker| test/internals/lock/Lock.spec.ts (2 tests) 5ms
+ ✓ |@fast-check/worker| test/internals/worker-pool/BasicPool.spec.ts (17 tests) 10ms
+ ✓ |@fast-check/poisoning| test/internals/TrackDiffsOnGlobal.spec.ts (8 tests) 5ms
+ ✓ |@fast-check/packaged| test/packaged.spec.ts (12 tests) 250ms
+ ✓ |@fast-check/poisoning| test/internals/PoisoningFreeMap.spec.ts (4 tests) 2ms
+ ✓ |@fast-check/poisoning| test/internals/PoisoningFreeSet.spec.ts (2 tests) 2ms
+ ✓ |@fast-check/poisoning| test/internals/CaptureAllGlobals.spec.ts (46 tests) 639ms
+ ✓ |@fast-check/poisoning| test/internals/FilterNonEligibleDiffs.spec.ts (7 tests) 2ms
+ ❯ |@fast-check/ava| test/main.spec.ts (1 test | 1 failed) 436ms
+   × ava > should pass 436ms
+     → expected '  ⚠ Using configuration from /Users/a…' to match /ok \d+ - should never be executed \(w…/
+ ❯ |@fast-check/vitest| test/vitest-fast-check.spec.ts (20 tests | 12 failed | 2 skipped) 7934ms
+   × 'test' > should support test.prop 1021ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   × 'test' > at depth 1 > should support test.concurrent.prop 1077ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   ✓ 'test' > at depth 1 > should support test.fails.prop 1082ms
+   ↓ 'test' > at depth 1 > should support test.only.prop
+   × 'test' > at depth 1 > should support test.skip.prop 895ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'test' > at depth 1 > should support test.todo.prop 897ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   ✓ 'test' > at depth strictly above 1 > should support test.concurrent.fails.prop 1261ms
+   ✓ 'test' > at depth strictly above 1 > should support test.concurrent.fails.only.prop 1186ms
+   × 'test' > at depth strictly above 1 > should support test.concurrent.fails.skip.prop 1276ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'test' > at depth strictly above 1 > should support test.concurrent.fails.todo.prop 1218ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'it' > should support it.prop 540ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   × 'it' > at depth 1 > should support it.concurrent.prop 1035ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   ✓ 'it' > at depth 1 > should support it.fails.prop 1010ms
+   ↓ 'it' > at depth 1 > should support it.only.prop
+   × 'it' > at depth 1 > should support it.skip.prop 652ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'it' > at depth 1 > should support it.todo.prop 857ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   ✓ 'it' > at depth strictly above 1 > should support it.concurrent.fails.prop 1215ms
+   ✓ 'it' > at depth strictly above 1 > should support it.concurrent.fails.only.prop 1171ms
+   × 'it' > at depth strictly above 1 > should support it.concurrent.fails.skip.prop 1220ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+   × 'it' > at depth strictly above 1 > should support it.concurrent.fails.todo.prop 1204ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '↓ generated.spec.mjs'
+ ❯ |@fast-check/jest| test/jest-fast-check.spec.ts (130 tests | 130 failed) 30941ms
+   × 'test' > should pass on successful no prop mode 1153ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on failing no prop mode 1159ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test' > should pass on truthy synchronous property 1175ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should pass on truthy asynchronous property 1154ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy synchronous property 1188ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-146800365)\)/
+   × 'test' > should fail on falsy asynchronous property 1252ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-592191567)\)/
+   × 'test' > should pass on truthy record-based property 1285ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy record-based property 1280ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1709629428)\)/
+   × 'test' > should fail on falsy record-based property with seed 1253ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test' > should fail with locally requested seed 1264ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test' > should fail with globally requested seed 1321ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test' > should fail with seed requested at jest level 1295ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test' > .skip > should never be executed 990ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test' > .failing > should fail on successful no prop mode 1330ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] successful no prop/
+   × 'test' > .failing > should pass on failing no prop mode 1288ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .failing > should pass because failing 1288ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .failing > should fail because passing 1327ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test' > .concurrent > should pass on truthy property 1055ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .concurrent > should fail on falsy property 1041ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1830852048)\)/
+   × 'test' > .concurrent > .failing > should pass because failing 1207ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > .concurrent > .failing > should fail because passing 1207ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test' > timeout > should fail as test takes longer than global Jest timeout 918ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest local timeout 871ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest config timeout 917ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest setTimeout 887ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail as test takes longer than Jest CLI timeout 901ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail but favor local Jest timeout over Jest setTimeout 609ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 603ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > should pass on successful no prop mode 883ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should fail on failing no prop mode 899ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test (worker)' > should fail on property blocking the main thread 896ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property block main thread/
+   × 'test (worker)' > should pass on truthy synchronous property 917ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should pass on truthy asynchronous property 890ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should fail on falsy synchronous property 895ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1621812887)\)/
+   × 'test (worker)' > should fail on falsy asynchronous property 902ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1240254737)\)/
+   × 'test (worker)' > should pass on truthy record-based property 846ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > should fail on falsy record-based property 899ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1908695663)\)/
+   × 'test (worker)' > should fail on falsy record-based property with seed 893ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (worker)' > should fail with locally requested seed 651ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (worker)' > should fail with globally requested seed 615ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (worker)' > should fail with seed requested at jest level 625ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test (worker)' > .skip > should never be executed 465ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test (worker)' > .failing > should fail on successful no prop mode 733ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] successful no prop/
+   × 'test (worker)' > .failing > should pass on failing no prop mode 727ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .failing > should pass because failing 756ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .failing > should fail because passing 720ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test (worker)' > .concurrent > should pass on truthy property 529ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .concurrent > should fail on falsy property 530ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1575892976)\)/
+   × 'test (worker)' > .concurrent > .failing > should pass because failing 507ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (worker)' > .concurrent > .failing > should fail because passing 526ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'test (worker)' > timeout > should fail as test takes longer than global Jest timeout 837ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest local timeout 861ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest config timeout 859ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest setTimeout 853ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail as test takes longer than Jest CLI timeout 863ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout 516ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 513ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > should pass on successful no prop mode 890ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should fail on failing no prop mode 886ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test (jasmine)' > should pass on truthy synchronous property 879ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should pass on truthy asynchronous property 867ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should fail on falsy synchronous property 894ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1846688427)\)/
+   × 'test (jasmine)' > should fail on falsy asynchronous property 823ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-850131667)\)/
+   × 'test (jasmine)' > should pass on truthy record-based property 775ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > should fail on falsy record-based property 809ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-148080652)\)/
+   × 'test (jasmine)' > should fail on falsy record-based property with seed 768ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)' > should fail with locally requested seed 803ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)' > should fail with globally requested seed 535ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)' > should fail with seed requested at jest level 525ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test (jasmine)' > .skip > should never be executed 457ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test (jasmine)' > .concurrent > should pass on truthy property 575ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)' > .concurrent > should fail on falsy property 565ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1045145063)\)/
+   × 'test (jasmine)' > timeout > should fail as test takes longer than global Jest timeout 826ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest local timeout 823ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest config timeout 814ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest setTimeout 773ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail as test takes longer than Jest CLI timeout 805ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail but favor local Jest timeout over Jest setTimeout 547ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 529ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > should pass on successful no prop mode 872ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should fail on failing no prop mode 839ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test (jasmine)(worker)' > should fail on property blocking the main thread 848ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property block main thread/
+   × 'test (jasmine)(worker)' > should pass on truthy synchronous property 856ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should pass on truthy asynchronous property 856ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should fail on falsy synchronous property 852ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1827195608)\)/
+   × 'test (jasmine)(worker)' > should fail on falsy asynchronous property 844ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-699812649)\)/
+   × 'test (jasmine)(worker)' > should pass on truthy record-based property 834ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > should fail on falsy record-based property 837ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1799884862)\)/
+   × 'test (jasmine)(worker)' > should fail on falsy record-based property with seed 846ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)(worker)' > should fail with locally requested seed 604ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)(worker)' > should fail with globally requested seed 587ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'test (jasmine)(worker)' > should fail with seed requested at jest level 602ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'test (jasmine)(worker)' > .skip > should never be executed 460ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'test (jasmine)(worker)' > .concurrent > should pass on truthy property 541ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test (jasmine)(worker)' > .concurrent > should fail on falsy property 540ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1979948623)\)/
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than global Jest timeout 791ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest local timeout 829ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest config timeout 803ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest setTimeout 847ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest CLI timeout 841ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout 598ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'test (jasmine)(worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 584ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > should pass on successful no prop mode 793ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should fail on failing no prop mode 797ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'it' > should pass on truthy synchronous property 854ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should pass on truthy asynchronous property 793ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should fail on falsy synchronous property 884ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(272619863)\)/
+   × 'it' > should fail on falsy asynchronous property 811ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(343351622)\)/
+   × 'it' > should pass on truthy record-based property 836ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > should fail on falsy record-based property 814ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-2096629522)\)/
+   × 'it' > should fail on falsy record-based property with seed 799ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'it' > should fail with locally requested seed 764ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'it' > should fail with globally requested seed 539ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-?\d+)\)/
+   × 'it' > should fail with seed requested at jest level 532ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(6969)\)/
+   × 'it' > .skip > should never be executed 479ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /Test Suites:\s+1 skipped, 0 of 1 total/
+   × 'it' > .failing > should fail on successful no prop mode 709ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] successful no prop/
+   × 'it' > .failing > should pass on failing no prop mode 715ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .failing > should pass because failing 710ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .failing > should fail because passing 706ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'it' > .concurrent > should pass on truthy property 540ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .concurrent > should fail on falsy property 541ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(1296661417)\)/
+   × 'it' > .concurrent > .failing > should pass because failing 536ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'it' > .concurrent > .failing > should fail because passing 540ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] property fail because passing \(…/
+   × 'it' > timeout > should fail as test takes longer than global Jest timeout 883ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest local timeout 880ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest config timeout 877ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest setTimeout 865ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail as test takes longer than Jest CLI timeout 869ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail but favor local Jest timeout over Jest setTimeout 536ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+   × 'it' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout 541ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to contain 'Property interrupted after 0 tests'
+
+ Test Files  213 failed | 10 passed (223)
+      Tests  143 failed | 114 passed | 2 skipped (259)
+   Start at  17:39:06
+   Duration  40.68s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/array.spec.ts (0 test)
+ ❯ |fast-check| test/unit/arbitrary/base64String.spec.ts (0 test)
+ ❯ |@fast-check/ava| test/main.spec.ts (1 test | 1 failed) 750ms
+   × ava > should pass 750ms
+     → expected '  ⚠ Using configuration from /Users/a…' to match /ok \d+ - should never be executed \(w…/
+ ❯ |@fast-check/vitest| test/vitest-fast-check.spec.ts (20 tests | 1 failed | 2 skipped) 1241ms
+   × 'test' > should support test.prop 1227ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   · 'test' > at depth 1 > should support test.concurrent.prop
+   · 'test' > at depth 1 > should support test.fails.prop
+   ↓ 'test' > at depth 1 > should support test.only.prop
+   · 'test' > at depth 1 > should support test.skip.prop
+   · 'test' > at depth 1 > should support test.todo.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.only.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.skip.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.todo.prop
+   · 'it' > should support it.prop
+   · 'it' > at depth 1 > should support it.concurrent.prop
+   · 'it' > at depth 1 > should support it.fails.prop
+   ↓ 'it' > at depth 1 > should support it.only.prop
+   · 'it' > at depth 1 > should support it.skip.prop
+   · 'it' > at depth 1 > should support it.todo.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.only.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.skip.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.todo.prop
+ ❯ |@fast-check/jest| test/jest-fast-check.spec.ts (130 tests | 5 failed) 1273ms
+   × 'test' > should pass on successful no prop mode 1239ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on failing no prop mode 1250ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test' > should pass on truthy synchronous property 1269ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should pass on truthy asynchronous property 1238ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy synchronous property 1251ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1876011661)\)/
+   · 'test' > should fail on falsy asynchronous property
+   · 'test' > should pass on truthy record-based property
+   · 'test' > should fail on falsy record-based property
+   · 'test' > should fail on falsy record-based property with seed
+   · 'test' > should fail with locally requested seed
+   · 'test' > should fail with globally requested seed
+   · 'test' > should fail with seed requested at jest level
+   · 'test' > .skip > should never be executed
+   · 'test' > .failing > should fail on successful no prop mode
+   · 'test' > .failing > should pass on failing no prop mode
+   · 'test' > .failing > should pass because failing
+   · 'test' > .failing > should fail because passing
+   · 'test' > .concurrent > should pass on truthy property
+   · 'test' > .concurrent > should fail on falsy property
+   · 'test' > .concurrent > .failing > should pass because failing
+   · 'test' > .concurrent > .failing > should fail because passing
+   · 'test' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (worker)' > should pass on successful no prop mode
+   · 'test (worker)' > should fail on failing no prop mode
+   · 'test (worker)' > should fail on property blocking the main thread
+   · 'test (worker)' > should pass on truthy synchronous property
+   · 'test (worker)' > should pass on truthy asynchronous property
+   · 'test (worker)' > should fail on falsy synchronous property
+   · 'test (worker)' > should fail on falsy asynchronous property
+   · 'test (worker)' > should pass on truthy record-based property
+   · 'test (worker)' > should fail on falsy record-based property
+   · 'test (worker)' > should fail on falsy record-based property with seed
+   · 'test (worker)' > should fail with locally requested seed
+   · 'test (worker)' > should fail with globally requested seed
+   · 'test (worker)' > should fail with seed requested at jest level
+   · 'test (worker)' > .skip > should never be executed
+   · 'test (worker)' > .failing > should fail on successful no prop mode
+   · 'test (worker)' > .failing > should pass on failing no prop mode
+   · 'test (worker)' > .failing > should pass because failing
+   · 'test (worker)' > .failing > should fail because passing
+   · 'test (worker)' > .concurrent > should pass on truthy property
+   · 'test (worker)' > .concurrent > should fail on falsy property
+   · 'test (worker)' > .concurrent > .failing > should pass because failing
+   · 'test (worker)' > .concurrent > .failing > should fail because passing
+   · 'test (worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)' > should pass on successful no prop mode
+   · 'test (jasmine)' > should fail on failing no prop mode
+   · 'test (jasmine)' > should pass on truthy synchronous property
+   · 'test (jasmine)' > should pass on truthy asynchronous property
+   · 'test (jasmine)' > should fail on falsy synchronous property
+   · 'test (jasmine)' > should fail on falsy asynchronous property
+   · 'test (jasmine)' > should pass on truthy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)' > should fail with locally requested seed
+   · 'test (jasmine)' > should fail with globally requested seed
+   · 'test (jasmine)' > should fail with seed requested at jest level
+   · 'test (jasmine)' > .skip > should never be executed
+   · 'test (jasmine)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)(worker)' > should pass on successful no prop mode
+   · 'test (jasmine)(worker)' > should fail on failing no prop mode
+   · 'test (jasmine)(worker)' > should fail on property blocking the main thread
+   · 'test (jasmine)(worker)' > should pass on truthy synchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy asynchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy synchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy asynchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)(worker)' > should fail with locally requested seed
+   · 'test (jasmine)(worker)' > should fail with globally requested seed
+   · 'test (jasmine)(worker)' > should fail with seed requested at jest level
+   · 'test (jasmine)(worker)' > .skip > should never be executed
+   · 'test (jasmine)(worker)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)(worker)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'it' > should pass on successful no prop mode
+   · 'it' > should fail on failing no prop mode
+   · 'it' > should pass on truthy synchronous property
+   · 'it' > should pass on truthy asynchronous property
+   · 'it' > should fail on falsy synchronous property
+   · 'it' > should fail on falsy asynchronous property
+   · 'it' > should pass on truthy record-based property
+   · 'it' > should fail on falsy record-based property
+   · 'it' > should fail on falsy record-based property with seed
+   · 'it' > should fail with locally requested seed
+   · 'it' > should fail with globally requested seed
+   · 'it' > should fail with seed requested at jest level
+   · 'it' > .skip > should never be executed
+   · 'it' > .failing > should fail on successful no prop mode
+   · 'it' > .failing > should pass on failing no prop mode
+   · 'it' > .failing > should pass because failing
+   · 'it' > .failing > should fail because passing
+   · 'it' > .concurrent > should pass on truthy property
+   · 'it' > .concurrent > should fail on falsy property
+   · 'it' > .concurrent > .failing > should pass because failing
+   · 'it' > .concurrent > .failing > should fail because passing
+   · 'it' > timeout > should fail as test takes longer than global Jest timeout
+   · 'it' > timeout > should fail as test takes longer than Jest local timeout
+   · 'it' > timeout > should fail as test takes longer than Jest config timeout
+   · 'it' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'it' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'it' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'it' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+
+ Test Files  6 failed (223)
+      Tests  7 failed | 2 skipped (151)
+   Start at  17:40:26
+   Duration  3.30s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |@fast-check/ava| test/main.spec.ts (1 test | 1 failed) 664ms
+   × ava > should pass 664ms
+     → expected '  ⚠ Using configuration from /Users/a…' to match /ok \d+ - should never be executed \(w…/
+ ❯ |@fast-check/vitest| test/vitest-fast-check.spec.ts (20 tests | 1 failed | 2 skipped) 932ms
+   × 'test' > should support test.prop 927ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   · 'test' > at depth 1 > should support test.concurrent.prop
+   · 'test' > at depth 1 > should support test.fails.prop
+   ↓ 'test' > at depth 1 > should support test.only.prop
+   · 'test' > at depth 1 > should support test.skip.prop
+   · 'test' > at depth 1 > should support test.todo.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.only.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.skip.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.todo.prop
+   · 'it' > should support it.prop
+   · 'it' > at depth 1 > should support it.concurrent.prop
+   · 'it' > at depth 1 > should support it.fails.prop
+   ↓ 'it' > at depth 1 > should support it.only.prop
+   · 'it' > at depth 1 > should support it.skip.prop
+   · 'it' > at depth 1 > should support it.todo.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.only.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.skip.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.todo.prop
+ ❯ |@fast-check/jest| test/jest-fast-check.spec.ts (130 tests | 5 failed) 1209ms
+   × 'test' > should pass on successful no prop mode 1196ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on failing no prop mode 1187ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test' > should pass on truthy synchronous property 1187ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should pass on truthy asynchronous property 1205ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy synchronous property 1189ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(-1799580815)\)/
+   · 'test' > should fail on falsy asynchronous property
+   · 'test' > should pass on truthy record-based property
+   · 'test' > should fail on falsy record-based property
+   · 'test' > should fail on falsy record-based property with seed
+   · 'test' > should fail with locally requested seed
+   · 'test' > should fail with globally requested seed
+   · 'test' > should fail with seed requested at jest level
+   · 'test' > .skip > should never be executed
+   · 'test' > .failing > should fail on successful no prop mode
+   · 'test' > .failing > should pass on failing no prop mode
+   · 'test' > .failing > should pass because failing
+   · 'test' > .failing > should fail because passing
+   · 'test' > .concurrent > should pass on truthy property
+   · 'test' > .concurrent > should fail on falsy property
+   · 'test' > .concurrent > .failing > should pass because failing
+   · 'test' > .concurrent > .failing > should fail because passing
+   · 'test' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (worker)' > should pass on successful no prop mode
+   · 'test (worker)' > should fail on failing no prop mode
+   · 'test (worker)' > should fail on property blocking the main thread
+   · 'test (worker)' > should pass on truthy synchronous property
+   · 'test (worker)' > should pass on truthy asynchronous property
+   · 'test (worker)' > should fail on falsy synchronous property
+   · 'test (worker)' > should fail on falsy asynchronous property
+   · 'test (worker)' > should pass on truthy record-based property
+   · 'test (worker)' > should fail on falsy record-based property
+   · 'test (worker)' > should fail on falsy record-based property with seed
+   · 'test (worker)' > should fail with locally requested seed
+   · 'test (worker)' > should fail with globally requested seed
+   · 'test (worker)' > should fail with seed requested at jest level
+   · 'test (worker)' > .skip > should never be executed
+   · 'test (worker)' > .failing > should fail on successful no prop mode
+   · 'test (worker)' > .failing > should pass on failing no prop mode
+   · 'test (worker)' > .failing > should pass because failing
+   · 'test (worker)' > .failing > should fail because passing
+   · 'test (worker)' > .concurrent > should pass on truthy property
+   · 'test (worker)' > .concurrent > should fail on falsy property
+   · 'test (worker)' > .concurrent > .failing > should pass because failing
+   · 'test (worker)' > .concurrent > .failing > should fail because passing
+   · 'test (worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)' > should pass on successful no prop mode
+   · 'test (jasmine)' > should fail on failing no prop mode
+   · 'test (jasmine)' > should pass on truthy synchronous property
+   · 'test (jasmine)' > should pass on truthy asynchronous property
+   · 'test (jasmine)' > should fail on falsy synchronous property
+   · 'test (jasmine)' > should fail on falsy asynchronous property
+   · 'test (jasmine)' > should pass on truthy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)' > should fail with locally requested seed
+   · 'test (jasmine)' > should fail with globally requested seed
+   · 'test (jasmine)' > should fail with seed requested at jest level
+   · 'test (jasmine)' > .skip > should never be executed
+   · 'test (jasmine)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)(worker)' > should pass on successful no prop mode
+   · 'test (jasmine)(worker)' > should fail on failing no prop mode
+   · 'test (jasmine)(worker)' > should fail on property blocking the main thread
+   · 'test (jasmine)(worker)' > should pass on truthy synchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy asynchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy synchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy asynchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)(worker)' > should fail with locally requested seed
+   · 'test (jasmine)(worker)' > should fail with globally requested seed
+   · 'test (jasmine)(worker)' > should fail with seed requested at jest level
+   · 'test (jasmine)(worker)' > .skip > should never be executed
+   · 'test (jasmine)(worker)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)(worker)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'it' > should pass on successful no prop mode
+   · 'it' > should fail on failing no prop mode
+   · 'it' > should pass on truthy synchronous property
+   · 'it' > should pass on truthy asynchronous property
+   · 'it' > should fail on falsy synchronous property
+   · 'it' > should fail on falsy asynchronous property
+   · 'it' > should pass on truthy record-based property
+   · 'it' > should fail on falsy record-based property
+   · 'it' > should fail on falsy record-based property with seed
+   · 'it' > should fail with locally requested seed
+   · 'it' > should fail with globally requested seed
+   · 'it' > should fail with seed requested at jest level
+   · 'it' > .skip > should never be executed
+   · 'it' > .failing > should fail on successful no prop mode
+   · 'it' > .failing > should pass on failing no prop mode
+   · 'it' > .failing > should pass because failing
+   · 'it' > .failing > should fail because passing
+   · 'it' > .concurrent > should pass on truthy property
+   · 'it' > .concurrent > should fail on falsy property
+   · 'it' > .concurrent > .failing > should pass because failing
+   · 'it' > .concurrent > .failing > should fail because passing
+   · 'it' > timeout > should fail as test takes longer than global Jest timeout
+   · 'it' > timeout > should fail as test takes longer than Jest local timeout
+   · 'it' > timeout > should fail as test takes longer than Jest config timeout
+   · 'it' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'it' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'it' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'it' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+
+ Test Files  4 failed (223)
+      Tests  7 failed | 2 skipped (151)
+   Start at  17:40:27
+   Duration  2.83s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |@fast-check/ava| test/main.spec.ts (1 test | 1 failed) 616ms
+   × ava > should pass 615ms
+     → expected '  ⚠ Using configuration from /Users/a…' to match /ok \d+ - should never be executed \(w…/
+ ❯ |@fast-check/vitest| test/vitest-fast-check.spec.ts (20 tests | 1 failed | 2 skipped) 1043ms
+   × 'test' > should support test.prop 1035ms
+     → expected '\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n …' to contain '✓ generated.spec.mjs'
+   · 'test' > at depth 1 > should support test.concurrent.prop
+   · 'test' > at depth 1 > should support test.fails.prop
+   ↓ 'test' > at depth 1 > should support test.only.prop
+   · 'test' > at depth 1 > should support test.skip.prop
+   · 'test' > at depth 1 > should support test.todo.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.only.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.skip.prop
+   · 'test' > at depth strictly above 1 > should support test.concurrent.fails.todo.prop
+   · 'it' > should support it.prop
+   · 'it' > at depth 1 > should support it.concurrent.prop
+   · 'it' > at depth 1 > should support it.fails.prop
+   ↓ 'it' > at depth 1 > should support it.only.prop
+   · 'it' > at depth 1 > should support it.skip.prop
+   · 'it' > at depth 1 > should support it.todo.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.only.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.skip.prop
+   · 'it' > at depth strictly above 1 > should support it.concurrent.fails.todo.prop
+ ❯ |@fast-check/jest| test/jest-fast-check.spec.ts (130 tests | 5 failed) 1247ms
+   × 'test' > should pass on successful no prop mode 1244ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on failing no prop mode 1231ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] failing no prop/
+   × 'test' > should pass on truthy synchronous property 1230ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should pass on truthy asynchronous property 1241ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /PASS .*\/generated.…/generated.spec.cjs
+   × 'test' > should fail on falsy synchronous property 1237ms
+     → expected 'FAIL ./generated.spec.cjs\n  ● Test s…' to match /[×✕] .* \(with seed=(256517398)\)/
+   · 'test' > should fail on falsy asynchronous property
+   · 'test' > should pass on truthy record-based property
+   · 'test' > should fail on falsy record-based property
+   · 'test' > should fail on falsy record-based property with seed
+   · 'test' > should fail with locally requested seed
+   · 'test' > should fail with globally requested seed
+   · 'test' > should fail with seed requested at jest level
+   · 'test' > .skip > should never be executed
+   · 'test' > .failing > should fail on successful no prop mode
+   · 'test' > .failing > should pass on failing no prop mode
+   · 'test' > .failing > should pass because failing
+   · 'test' > .failing > should fail because passing
+   · 'test' > .concurrent > should pass on truthy property
+   · 'test' > .concurrent > should fail on falsy property
+   · 'test' > .concurrent > .failing > should pass because failing
+   · 'test' > .concurrent > .failing > should fail because passing
+   · 'test' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (worker)' > should pass on successful no prop mode
+   · 'test (worker)' > should fail on failing no prop mode
+   · 'test (worker)' > should fail on property blocking the main thread
+   · 'test (worker)' > should pass on truthy synchronous property
+   · 'test (worker)' > should pass on truthy asynchronous property
+   · 'test (worker)' > should fail on falsy synchronous property
+   · 'test (worker)' > should fail on falsy asynchronous property
+   · 'test (worker)' > should pass on truthy record-based property
+   · 'test (worker)' > should fail on falsy record-based property
+   · 'test (worker)' > should fail on falsy record-based property with seed
+   · 'test (worker)' > should fail with locally requested seed
+   · 'test (worker)' > should fail with globally requested seed
+   · 'test (worker)' > should fail with seed requested at jest level
+   · 'test (worker)' > .skip > should never be executed
+   · 'test (worker)' > .failing > should fail on successful no prop mode
+   · 'test (worker)' > .failing > should pass on failing no prop mode
+   · 'test (worker)' > .failing > should pass because failing
+   · 'test (worker)' > .failing > should fail because passing
+   · 'test (worker)' > .concurrent > should pass on truthy property
+   · 'test (worker)' > .concurrent > should fail on falsy property
+   · 'test (worker)' > .concurrent > .failing > should pass because failing
+   · 'test (worker)' > .concurrent > .failing > should fail because passing
+   · 'test (worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)' > should pass on successful no prop mode
+   · 'test (jasmine)' > should fail on failing no prop mode
+   · 'test (jasmine)' > should pass on truthy synchronous property
+   · 'test (jasmine)' > should pass on truthy asynchronous property
+   · 'test (jasmine)' > should fail on falsy synchronous property
+   · 'test (jasmine)' > should fail on falsy asynchronous property
+   · 'test (jasmine)' > should pass on truthy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property
+   · 'test (jasmine)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)' > should fail with locally requested seed
+   · 'test (jasmine)' > should fail with globally requested seed
+   · 'test (jasmine)' > should fail with seed requested at jest level
+   · 'test (jasmine)' > .skip > should never be executed
+   · 'test (jasmine)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'test (jasmine)(worker)' > should pass on successful no prop mode
+   · 'test (jasmine)(worker)' > should fail on failing no prop mode
+   · 'test (jasmine)(worker)' > should fail on property blocking the main thread
+   · 'test (jasmine)(worker)' > should pass on truthy synchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy asynchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy synchronous property
+   · 'test (jasmine)(worker)' > should fail on falsy asynchronous property
+   · 'test (jasmine)(worker)' > should pass on truthy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property
+   · 'test (jasmine)(worker)' > should fail on falsy record-based property with seed
+   · 'test (jasmine)(worker)' > should fail with locally requested seed
+   · 'test (jasmine)(worker)' > should fail with globally requested seed
+   · 'test (jasmine)(worker)' > should fail with seed requested at jest level
+   · 'test (jasmine)(worker)' > .skip > should never be executed
+   · 'test (jasmine)(worker)' > .concurrent > should pass on truthy property
+   · 'test (jasmine)(worker)' > .concurrent > should fail on falsy property
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than global Jest timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest local timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest config timeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'test (jasmine)(worker)' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+   · 'it' > should pass on successful no prop mode
+   · 'it' > should fail on failing no prop mode
+   · 'it' > should pass on truthy synchronous property
+   · 'it' > should pass on truthy asynchronous property
+   · 'it' > should fail on falsy synchronous property
+   · 'it' > should fail on falsy asynchronous property
+   · 'it' > should pass on truthy record-based property
+   · 'it' > should fail on falsy record-based property
+   · 'it' > should fail on falsy record-based property with seed
+   · 'it' > should fail with locally requested seed
+   · 'it' > should fail with globally requested seed
+   · 'it' > should fail with seed requested at jest level
+   · 'it' > .skip > should never be executed
+   · 'it' > .failing > should fail on successful no prop mode
+   · 'it' > .failing > should pass on failing no prop mode
+   · 'it' > .failing > should pass because failing
+   · 'it' > .failing > should fail because passing
+   · 'it' > .concurrent > should pass on truthy property
+   · 'it' > .concurrent > should fail on falsy property
+   · 'it' > .concurrent > .failing > should pass because failing
+   · 'it' > .concurrent > .failing > should fail because passing
+   · 'it' > timeout > should fail as test takes longer than global Jest timeout
+   · 'it' > timeout > should fail as test takes longer than Jest local timeout
+   · 'it' > timeout > should fail as test takes longer than Jest config timeout
+   · 'it' > timeout > should fail as test takes longer than Jest setTimeout
+   · 'it' > timeout > should fail as test takes longer than Jest CLI timeout
+   · 'it' > timeout > should fail but favor local Jest timeout over Jest setTimeout
+   · 'it' > timeout > should fail but favor Jest setTimeout over Jest CLI timeout
+
+ Test Files  4 failed (223)
+      Tests  7 failed | 2 skipped (151)
+   Start at  17:40:30
+   Duration  2.93s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  rerun all tests 
+
+ ❯ |fast-check| test/unit/check/symbols.spec.ts (0 test)
+ ❯ |@fast-check/ava| test/main.spec.ts (1 test | 1 failed) 661ms
+   × ava > should pass 660ms
+     → expected '  ⚠ Using configuration from /Users/a…' to match /ok \d+ - should never be executed \(w…/
+
+ Test Files  2 failed (223)
+      Tests  1 failed | 2 skipped (151)
+     Errors  2 errors
+   Start at  17:40:31
+   Duration  681ms
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+ ELIFECYCLE  Test failed. See above for more details.

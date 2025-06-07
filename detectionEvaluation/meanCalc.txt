@@ -1,0 +1,40 @@
+
+Precision = 0%
+Recall = 0%
+F1 = 0%
+
+Precision = 50%
+Recall = 100%
+F1 = 67%
+
+Precision = 98.8%
+Recall = 66.5%
+F1 = 78.8%
+
+Precision = 100%
+Recall = 25%
+F1 = 40%
+
+Precision = 0%
+Recall = 0%
+F1 = 0%
+
+Precision = 83.3%
+Recall = 96.8%
+F1 = 89.5%
+
+Precision = 17.2%
+Recall = 94.1%
+F1 = 29.1%
+
+Mean
+
+Precision = 49.9%
+Recall = 54.6%
+F1 = 43.5%
+
+Median
+
+Precision = 50%
+Recall = 66.5%
+F1 = 40%

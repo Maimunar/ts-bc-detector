@@ -1,0 +1,62 @@
+[
+  {
+    "file": "foy/v2/src/exec.ts",
+    "declaration": "ShellContext",
+    "description": "Removed Union Member: string"
+  },
+  {
+    "file": "foy/v2/src/index.ts",
+    "declaration": "'./task'",
+    "description": "Removed Export Specifier: Dependency"
+  },
+  {
+    "file": "foy/v2/src/index.ts",
+    "declaration": "'./task'",
+    "description": "Removed Export Specifier: Task"
+  },
+  {
+    "file": "foy/v2/src/index.ts",
+    "declaration": "'./task'",
+    "description": "Removed Export Specifier: TaskFn"
+  },
+  {
+    "file": "foy/v2/src/index.ts",
+    "declaration": "'./task'",
+    "description": "Removed Export Specifier: TaskDep"
+  },
+  {
+    "file": "foy/v2/src/index.ts",
+    "declaration": "'./utils'",
+    "description": "Removed Export Specifier: throttle"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "setOption",
+    "description": "Removed Type Literal Property: loading"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Removed Union Member: Dependency[]"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Removed Union Member: TaskFn<any, any>"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "Is",
+    "description": "Removed Type Literal Property: defed"
+  }
+]

@@ -1,0 +1,479 @@
+   × number > 42 > bigInt > noArgs 0ms
+   × number > 1337 > bigInt > noArgs 2ms
+   × number > 1211 > bigInt > noArgs 0ms
+   × number > random seeded tests for seed 8129225434140899 > bigInt > should throw when min > max 2ms
+   × simpleFaker > should not log anything on startup 4ms
+   × faker > should not log anything on startup 3ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/af_ZA') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/af_ZA') 4ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ar') 3ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ar') 2ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/az') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/az') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/base') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/base') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/bn_BD') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/bn_BD') 1ms
+   × locale imports > should have complete metadata values 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/cs_CZ') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/cs_CZ') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/cy') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/cy') 2ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/da') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/da') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/de') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/de') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/de_AT') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/de_AT') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/de_CH') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/de_CH') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/dv') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/dv') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/el') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/el') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_AU') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_AU') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_AU_ocker') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_AU_ocker') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_BORK') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_BORK') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_CA') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_CA') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_GB') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_GB') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_GH') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_GH') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_HK') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_HK') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_IE') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_IE') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_IN') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_IN') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_NG') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_NG') 2ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_US') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_US') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/en_ZA') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/en_ZA') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/eo') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/eo') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/es') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/es') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/es_MX') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/es_MX') 3ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fa') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fa') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fi') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fi') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fr') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fr') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fr_BE') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fr_BE') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fr_CA') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fr_CA') 3ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fr_CH') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fr_CH') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fr_LU') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fr_LU') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/fr_SN') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/fr_SN') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/he') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/he') 3ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/hr') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/hr') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/hu') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/hu') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/hy') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/hy') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/id_ID') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/id_ID') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/it') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/it') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ja') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ja') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ka_GE') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ka_GE') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ko') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ko') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/lv') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/lv') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/mk') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/mk') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/nb_NO') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/nb_NO') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ne') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ne') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/nl') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/nl') 2ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/nl_BE') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/nl_BE') 18ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/pl') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/pl') 22ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/pt_BR') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/pt_BR') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/pt_PT') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/pt_PT') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ro') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ro') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ro_MD') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ro_MD') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ru') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ru') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/sk') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/sk') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/sr_RS_latin') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/sr_RS_latin') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/sv') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/sv') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ta_IN') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ta_IN') 1ms
+   × locale imports > should have complete metadata values 2ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/th') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/th') 9ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/tr') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/tr') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/uk') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/uk') 2ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/ur') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/ur') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/uz_UZ_latin') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/uz_UZ_latin') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/vi') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/vi') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/yo_NG') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/yo_NG') 3ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/zh_CN') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/zh_CN') 0ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/zh_TW') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/zh_TW') 1ms
+   × locale imports > should be possible to directly require('@faker-js/faker/locale/zu_ZA') 0ms
+   × locale imports > should be possible to directly import('@faker-js/faker/locale/zu_ZA') 0ms
+   × helpers > 42 > fromRegExp > with wildcard character and quantifier 0ms
+   × helpers > 42 > fromRegExp > with wildcard character and min max quantifier 0ms
+   × helpers > 1337 > fromRegExp > with wildcard character and quantifier 0ms
+   × helpers > 1337 > fromRegExp > with wildcard character and min max quantifier 0ms
+   × helpers > 1211 > fromRegExp > with wildcard character and quantifier 4ms
+   × helpers > 1211 > fromRegExp > with wildcard character and min max quantifier 0ms
+   × vehicle > 42 > vehicle 4ms
+   × vehicle > 42 > manufacturer 1ms
+   × vehicle > 1337 > vehicle 1ms
+   × vehicle > 1337 > manufacturer 0ms
+   × finance > 42 > currency 1ms
+   × finance > 42 > transactionDescription 1ms
+   × finance > 42 > creditCardNumber > noArgs 0ms
+   × finance > 1337 > currency 0ms
+   × finance > 1337 > transactionDescription 1ms
+   × finance > 1211 > currency 1ms
+   × finance > 1211 > transactionDescription 5ms
+   × image > 42 > avatar 1ms
+   × image > 42 > urlPlaceholder > noArgs 0ms
+   × image > 42 > urlPlaceholder > with width 0ms
+   × image > 42 > urlPlaceholder > with height 3ms
+   × image > 42 > urlPlaceholder > with backgroundColor 0ms
+   × image > 42 > urlPlaceholder > with textColor 0ms
+   × image > 42 > urlPlaceholder > with format 0ms
+   × image > 42 > urlPlaceholder > with text 0ms
+   × image > 42 > dataUri > with width and height 3ms
+   × image > 1337 > avatar 5ms
+   × image > 1337 > urlPlaceholder > noArgs 0ms
+   × image > 1337 > urlPlaceholder > with width 0ms
+   × image > 1337 > urlPlaceholder > with height 0ms
+   × image > 1337 > urlPlaceholder > with backgroundColor 0ms
+   × image > 1337 > urlPlaceholder > with textColor 1ms
+   × image > 1337 > urlPlaceholder > with format 0ms
+   × image > 1337 > urlPlaceholder > with text 0ms
+   × image > 1337 > dataUri > with width and height 7ms
+   × image > 1337 > dataUri > with color 9ms
+   × image > 1211 > urlPlaceholder > noArgs 0ms
+   × image > 1211 > urlPlaceholder > with width 0ms
+   × image > 1211 > urlPlaceholder > with height 0ms
+   × image > 1211 > urlPlaceholder > with backgroundColor 0ms
+   × image > 1211 > urlPlaceholder > with textColor 0ms
+   × image > 1211 > urlPlaceholder > with format 0ms
+   × image > 1211 > urlPlaceholder > with text 0ms
+   × image > 1211 > dataUri > with width 4ms
+   × image > 1211 > dataUri > with height 3ms
+   × image > 1211 > dataUri > with color 4ms
+   × internet > 42 > ip 0ms
+   × internet > 42 > ipv4 0ms
+   × internet > 42 > userAgent 0ms
+   × internet > 42 > email > noArgs 0ms
+   × internet > 42 > email > with firstName option 0ms
+   × internet > 42 > email > with lastName option 0ms
+   × internet > 42 > email > with allowSpecialCharacters option 0ms
+   × internet > 42 > exampleEmail > noArgs 0ms
+   × internet > 42 > exampleEmail > with firstName option 0ms
+   × internet > 42 > exampleEmail > with lastName option 0ms
+   × internet > 42 > exampleEmail > with allowSpecialCharacters option 0ms
+   × internet > 42 > exampleEmail > with all options 0ms
+   × internet > 42 > emoji > noArgs 0ms
+   × internet > 42 > emoji > with options 0ms
+   × internet > 1337 > domainName 0ms
+   × internet > 1337 > domainSuffix 0ms
+   × internet > 1337 > ip 0ms
+   × internet > 1337 > ipv4 0ms
+   × internet > 1337 > userAgent 1ms
+   × internet > 1337 > exampleEmail > noArgs 0ms
+   × internet > 1337 > exampleEmail > with firstName option 0ms
+   × internet > 1337 > exampleEmail > with lastName option 0ms
+   × internet > 1337 > exampleEmail > with allowSpecialCharacters option 0ms
+   × internet > 1337 > exampleEmail > with all options 0ms
+   × internet > 1337 > emoji > noArgs 0ms
+   × internet > 1337 > emoji > with options 0ms
+   × internet > 1337 > url > with slash appended 0ms
+   × internet > 1337 > url > without slash appended and with http protocol 0ms
+   × internet > 1211 > domainName 0ms
+   × internet > 1211 > ipv4 0ms
+   × internet > 1211 > userAgent 3ms
+   × internet > 1211 > email > noArgs 0ms
+   × internet > 1211 > email > with firstName option 0ms
+   × internet > 1211 > email > with lastName option 0ms
+   × internet > 1211 > email > with allowSpecialCharacters option 0ms
+   × internet > 1211 > exampleEmail > noArgs 0ms
+   × internet > 1211 > exampleEmail > with firstName option 0ms
+   × internet > 1211 > exampleEmail > with lastName option 0ms
+   × internet > 1211 > exampleEmail > with allowSpecialCharacters option 0ms
+   × internet > 1211 > exampleEmail > with all options 0ms
+   × internet > 1211 > emoji > noArgs 0ms
+   × internet > 1211 > emoji > with options 0ms
+   × internet > 1211 > url > with slash appended 0ms
+   × internet > 1211 > url > without slash appended and with http protocol 0ms
+   × internet > random seeded tests for seed 8146585057921271 > userAgent() > should return a valid user-agent 2ms
+   × company > 42 > catchPhrase 0ms
+   × company > 42 > buzzPhrase 0ms
+   × company > 42 > catchPhraseAdjective 0ms
+   × company > 42 > catchPhraseDescriptor 0ms
+   × company > 42 > catchPhraseNoun 0ms
+   × company > 42 > buzzAdjective 0ms
+   × company > 42 > buzzVerb 0ms
+   × company > 42 > buzzNoun 0ms
+   × company > 1337 > catchPhrase 0ms
+   × company > 1337 > buzzPhrase 0ms
+   × company > 1337 > catchPhraseAdjective 0ms
+   × company > 1337 > catchPhraseDescriptor 0ms
+   × company > 1337 > buzzAdjective 0ms
+   × company > 1337 > buzzVerb 0ms
+   × company > 1211 > catchPhrase 0ms
+   × company > 1211 > buzzPhrase 0ms
+   × company > 1211 > catchPhraseAdjective 1ms
+   × company > 1211 > catchPhraseDescriptor 0ms
+   × company > 1211 > buzzAdjective 4ms
+   × commerce > 42 > productMaterial 0ms
+   × commerce > 42 > productDescription 1ms
+   × commerce > 1337 > productName 0ms
+   × commerce > 1337 > productAdjective 1ms
+   × commerce > 1337 > productMaterial 0ms
+   × commerce > 1337 > productDescription 1ms
+   × commerce > 1211 > productMaterial 0ms
+   × commerce > 1211 > productDescription 4ms
+   × commerce > random seeded tests for seed 6253263956610919 > productDescription() > should return random value from product description array 0ms
+   × commerce > random seeded tests for seed 2873208773655564 > productDescription() > should return random value from product description array 1ms
+   × commerce > random seeded tests for seed 2649940779131450 > productDescription() > should return random value from product description array 0ms
+   × commerce > random seeded tests for seed 6082117910474059 > productDescription() > should return random value from product description array 0ms
+   × commerce > random seeded tests for seed 6203236666112989 > productDescription() > should return random value from product description array 5ms
+   × person > 42 > firstName > with sex 0ms
+   × person > 42 > prefix > with sex 0ms
+   × person > 42 > fullName > noArgs 0ms
+   × person > 42 > fullName > with lastName 0ms
+   × person > 42 > fullName > with sex 0ms
+   × person > 1337 > firstName > with sex 0ms
+   × person > 1337 > prefix > with sex 0ms
+   × person > 1337 > fullName > noArgs 0ms
+   × person > 1337 > fullName > with lastName 0ms
+   × person > 1337 > fullName > with sex 0ms
+   × person > 1211 > bio 4ms
+   × person > 1211 > firstName > with sex 0ms
+   × person > 1211 > prefix > with sex 0ms
+   × person > 1211 > fullName > noArgs 0ms
+   × person > 1211 > fullName > with firstName 1ms
+   × person > 1211 > fullName > with lastName 0ms
+   × person > 1211 > fullName > with sex 1ms
+   × airline > 42 > airline 1ms
+   × airline > 1337 > airline 1ms
+   × airline > 1211 > airline 5ms
+   × system > 42 > semver 1ms
+   × system > 1337 > semver 1ms
+   × system > 1211 > semver 4ms
+   × animal > 42 > cow 1ms
+   × animal > 1337 > cow 0ms
+   × animal > 1211 > cow 4ms
+   × git > 42 > commitEntry > with only string refDate 0ms
+   × git > 42 > commitEntry > with only Date refDate 0ms
+   × git > 42 > commitEntry > with only number refDate 0ms
+   × git > 1337 > commitEntry > with only string refDate 0ms
+   × git > 1337 > commitEntry > with only Date refDate 0ms
+   × git > 1337 > commitEntry > with only number refDate 0ms
+   × git > 1211 > commitEntry > with only string refDate 1ms
+   × git > 1211 > commitEntry > with only Date refDate 1ms
+   × git > 1211 > commitEntry > with only number refDate 5ms
+   × internal > bind-this-to-member-functions > should bind this to member functions 5ms
+   × location > random seeded tests for seed 3219390954467578 > zipCode() > should throw when definitions.location.postcode_by_state not set 0ms
+   × location > random seeded tests for seed 5216223671036863 > zipCode() > should throw when definitions.location.postcode_by_state not set 1ms
+   × location > random seeded tests for seed 7553151068228395 > zipCode() > should throw when definitions.location.postcode_by_state not set 1ms
+   × location > random seeded tests for seed 6576447447707595 > zipCode() > should throw when definitions.location.postcode_by_state not set 0ms
+   × number > 42 > bigInt > noArgs 0ms
+   × number > 1337 > bigInt > noArgs 2ms
+   × number > 1211 > bigInt > noArgs 0ms
+   × number > random seeded tests for seed 2491091253720258 > bigInt > should throw when min > max 2ms
+   × helpers > 42 > fromRegExp > with wildcard character and quantifier 0ms
+   × helpers > 42 > fromRegExp > with wildcard character and min max quantifier 0ms
+   × helpers > 1337 > fromRegExp > with wildcard character and quantifier 0ms
+   × helpers > 1337 > fromRegExp > with wildcard character and min max quantifier 0ms
+   × helpers > 1211 > fromRegExp > with wildcard character and quantifier 4ms
+   × helpers > 1211 > fromRegExp > with wildcard character and min max quantifier 0ms
+   × vehicle > 42 > vehicle 4ms
+   × vehicle > 42 > manufacturer 1ms
+   × vehicle > 1337 > vehicle 0ms
+   × vehicle > 1337 > manufacturer 0ms
+   × image > 42 > avatar 0ms
+   × image > 42 > urlPlaceholder > noArgs 0ms
+   × image > 42 > urlPlaceholder > with width 0ms
+   × image > 42 > urlPlaceholder > with height 0ms
+   × image > 42 > urlPlaceholder > with backgroundColor 0ms
+   × image > 42 > urlPlaceholder > with textColor 1ms
+   × image > 42 > urlPlaceholder > with format 0ms
+   × image > 42 > urlPlaceholder > with text 0ms
+   × image > 42 > dataUri > with width and height 4ms
+   × image > 1337 > avatar 3ms
+   × image > 1337 > urlPlaceholder > noArgs 0ms
+   × image > 1337 > urlPlaceholder > with width 0ms
+   × image > 1337 > urlPlaceholder > with height 1ms
+   × image > 1337 > urlPlaceholder > with backgroundColor 0ms
+   × image > 1337 > urlPlaceholder > with textColor 1ms
+   × image > 1337 > urlPlaceholder > with format 0ms
+   × image > 1337 > urlPlaceholder > with text 0ms
+   × image > 1337 > dataUri > with width and height 6ms
+   × image > 1337 > dataUri > with color 9ms
+   × image > 1211 > urlPlaceholder > noArgs 0ms
+   × image > 1211 > urlPlaceholder > with width 0ms
+   × image > 1211 > urlPlaceholder > with height 0ms
+   × image > 1211 > urlPlaceholder > with backgroundColor 0ms
+   × image > 1211 > urlPlaceholder > with textColor 0ms
+   × image > 1211 > urlPlaceholder > with format 0ms
+   × image > 1211 > urlPlaceholder > with text 0ms
+   × image > 1211 > dataUri > with width 4ms
+   × image > 1211 > dataUri > with height 3ms
+   × image > 1211 > dataUri > with color 4ms
+   × finance > 42 > currency 1ms
+   × finance > 42 > transactionDescription 1ms
+   × finance > 42 > creditCardNumber > noArgs 0ms
+   × finance > 1337 > currency 1ms
+   × finance > 1337 > transactionDescription 1ms
+   × finance > 1211 > currency 1ms
+   × finance > 1211 > transactionDescription 7ms
+   × internet > 42 > ip 0ms
+   × internet > 42 > ipv4 0ms
+   × internet > 42 > userAgent 0ms
+   × internet > 42 > email > noArgs 0ms
+   × internet > 42 > email > with firstName option 0ms
+   × internet > 42 > email > with lastName option 0ms
+   × internet > 42 > email > with allowSpecialCharacters option 0ms
+   × internet > 42 > exampleEmail > noArgs 0ms
+   × internet > 42 > exampleEmail > with firstName option 0ms
+   × internet > 42 > exampleEmail > with lastName option 0ms
+   × internet > 42 > exampleEmail > with allowSpecialCharacters option 0ms
+   × internet > 42 > exampleEmail > with all options 0ms
+   × internet > 42 > emoji > noArgs 0ms
+   × internet > 42 > emoji > with options 0ms
+   × internet > 1337 > domainName 0ms
+   × internet > 1337 > domainSuffix 0ms
+   × internet > 1337 > exampleEmail > noArgs 0ms
+   × internet > 1337 > exampleEmail > with firstName option 0ms
+   × internet > 1337 > exampleEmail > with lastName option 0ms
+   × internet > 1337 > exampleEmail > with allowSpecialCharacters option 0ms
+   × internet > 1337 > exampleEmail > with all options 0ms
+   × internet > 1337 > emoji > noArgs 0ms
+   × internet > 1337 > emoji > with options 0ms
+   × internet > 1337 > url > with slash appended 0ms
+   × internet > 1337 > url > without slash appended and with http protocol 0ms
+   × internet > 1211 > domainName 0ms
+   × internet > 1211 > ipv4 0ms
+   × internet > 1211 > userAgent 4ms
+   × internet > 1211 > email > noArgs 0ms
+   × internet > 1211 > email > with firstName option 0ms
+   × internet > 1211 > email > with lastName option 0ms
+   × internet > 1211 > email > with allowSpecialCharacters option 0ms
+   × internet > 1211 > exampleEmail > noArgs 0ms
+   × internet > 1211 > exampleEmail > with firstName option 0ms
+   × internet > 1211 > exampleEmail > with lastName option 0ms
+   × internet > 1211 > exampleEmail > with allowSpecialCharacters option 0ms
+   × internet > 1211 > exampleEmail > with all options 0ms
+   × internet > 1211 > emoji > noArgs 0ms
+   × internet > 1211 > emoji > with options 0ms
+   × internet > 1211 > url > with slash appended 0ms
+   × internet > 1211 > url > without slash appended and with http protocol 0ms
+   × internet > random seeded tests for seed 3614287804168244 > userAgent() > should return a valid user-agent 2ms
+   × company > 42 > catchPhrase 0ms
+   × company > 42 > buzzPhrase 0ms
+   × company > 42 > catchPhraseAdjective 0ms
+   × company > 42 > catchPhraseDescriptor 0ms
+   × company > 42 > catchPhraseNoun 0ms
+   × company > 42 > buzzAdjective 0ms
+   × company > 42 > buzzVerb 0ms
+   × company > 42 > buzzNoun 0ms
+   × company > 1337 > catchPhrase 0ms
+   × company > 1337 > buzzPhrase 0ms
+   × company > 1337 > catchPhraseAdjective 0ms
+   × company > 1337 > catchPhraseDescriptor 0ms
+   × company > 1337 > buzzAdjective 0ms
+   × company > 1337 > buzzVerb 0ms
+   × company > 1211 > catchPhrase 0ms
+   × company > 1211 > buzzPhrase 1ms
+   × company > 1211 > catchPhraseAdjective 1ms
+   × company > 1211 > catchPhraseDescriptor 0ms
+   × company > 1211 > buzzAdjective 4ms
+   × commerce > 42 > productMaterial 0ms
+   × commerce > 42 > productDescription 2ms
+   × commerce > 1337 > productName 0ms
+   × commerce > 1337 > productAdjective 0ms
+   × commerce > 1337 > productMaterial 0ms
+   × commerce > 1337 > productDescription 1ms
+   × commerce > 1211 > productMaterial 0ms
+   × commerce > 1211 > productDescription 4ms
+   × commerce > random seeded tests for seed 8322776385700481 > productDescription() > should return random value from product description array 0ms
+   × commerce > random seeded tests for seed 8584997381221111 > productDescription() > should return random value from product description array 1ms
+   × commerce > random seeded tests for seed 5175523150214639 > productDescription() > should return random value from product description array 0ms
+   × commerce > random seeded tests for seed 4310172678101070 > productDescription() > should return random value from product description array 0ms
+   × commerce > random seeded tests for seed 5533314231764803 > productDescription() > should return random value from product description array 5ms
+   × person > 42 > fullName > with lastName 0ms
+   × person > 42 > fullName > with sex 0ms
+   × person > 1337 > firstName > with sex 0ms
+   × person > 1337 > prefix > with sex 0ms
+   × person > 1337 > fullName > noArgs 0ms
+   × person > 1337 > fullName > with lastName 0ms
+   × person > 1337 > fullName > with sex 0ms
+   × person > 1211 > bio 4ms
+   × person > 1211 > firstName > with sex 0ms
+   × person > 1211 > prefix > with sex 0ms
+   × person > 1211 > fullName > noArgs 0ms
+   × person > 1211 > fullName > with firstName 1ms
+   × person > 1211 > fullName > with lastName 0ms
+   × person > 1211 > fullName > with sex 1ms
+   × airline > 42 > airline 1ms
+   × airline > 1337 > airline 0ms
+   × airline > 1211 > airline 6ms
+   × system > 42 > semver 1ms
+   × system > 1337 > semver 0ms
+   × system > 1211 > semver 4ms
+   × animal > 42 > cow 1ms
+   × animal > 1337 > cow 0ms
+   × animal > 1211 > cow 4ms
+   × git > 42 > commitEntry > with only string refDate 0ms
+   × git > 42 > commitEntry > with only Date refDate 0ms
+   × git > 42 > commitEntry > with only number refDate 0ms
+   × git > 1337 > commitEntry > with only string refDate 0ms
+   × git > 1337 > commitEntry > with only Date refDate 0ms
+   × git > 1337 > commitEntry > with only number refDate 0ms
+   × git > 1211 > commitEntry > with only string refDate 1ms
+   × git > 1211 > commitEntry > with only Date refDate 1ms
+   × git > 1211 > commitEntry > with only number refDate 5ms
+   × internal > bind-this-to-member-functions > should bind this to member functions 5ms
+   × location > random seeded tests for seed 181516571422768 > zipCode() > should throw when definitions.location.postcode_by_state not set 0ms
+   × location > random seeded tests for seed 6631032056631791 > zipCode() > should throw when definitions.location.postcode_by_state not set 1ms
+   × location > random seeded tests for seed 4760596772062573 > zipCode() > should throw when definitions.location.postcode_by_state not set 1ms
+   × location > random seeded tests for seed 3976359417105592 > zipCode() > should throw when definitions.location.postcode_by_state not set 0ms
+   × location > random seeded tests for seed 8995640465517167 > zipCode() > should throw when definitions.location.postcode_by_state not set 5ms
+   × method > processMethodLike(literalUnionParamMethod) 140ms
+   × method > processMethodLike(optionsParamMethod) 3ms

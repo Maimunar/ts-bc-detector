@@ -1,0 +1,7 @@
+[
+  {
+    "file": "fast-check/v2/packages/worker/src/internals/worker-property/WorkerPropertyFromWorker.ts",
+    "declaration": "WorkerPropertyFromWorker",
+    "description": "Removed Parameter: dontRunHook"
+  }
+]

@@ -1,0 +1,3128 @@
+[
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Changed primitive type from 'number' to 'bigint'"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Changed primitive type from 'number' to 'bigint'"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Changed primitive type from 'number' to 'bigint'"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Added Parameter with no special operator: addend"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Added Parameter with no special operator: addend"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Changed primitive type from 'number' to 'bigint'"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Added Parameter with no special operator: addend"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Changed primitive type from 'unknown' to 'bigint'"
+  },
+  {
+    "file": "remeda/v2/src/add.ts",
+    "declaration": "add",
+    "description": "Changed primitive type from 'unknown' to 'bigint'"
+  },
+  {
+    "file": "remeda/v2/src/addProp.ts",
+    "declaration": "addProp",
+    "description": "Added Parameter with no special operator: value"
+  },
+  {
+    "file": "remeda/v2/src/addProp.ts",
+    "declaration": "addProp",
+    "description": "Added Parameter with no special operator: prop"
+  },
+  {
+    "file": "remeda/v2/src/addProp.ts",
+    "declaration": "addProp",
+    "description": "Added Parameter with no special operator: value"
+  },
+  {
+    "file": "remeda/v2/src/addProp.ts",
+    "declaration": "addProp",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/chunk.ts",
+    "declaration": "chunk",
+    "description": "Added Parameter with no special operator: size"
+  },
+  {
+    "file": "remeda/v2/src/chunk.ts",
+    "declaration": "chunk",
+    "description": "Added Parameter with no special operator: size"
+  },
+  {
+    "file": "remeda/v2/src/chunk.ts",
+    "declaration": "chunk",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/clone.ts",
+    "declaration": "clone",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/clone.ts",
+    "declaration": "clone",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/concat.ts",
+    "declaration": "concat",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/concat.ts",
+    "declaration": "concat",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/concat.ts",
+    "declaration": "concat",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/concat.ts",
+    "declaration": "concat",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/concat.ts",
+    "declaration": "concat",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/concat.ts",
+    "declaration": "concat",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Export Modifier"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Export Modifier"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Parameter: case9"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Export Modifier"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/conditional.ts",
+    "declaration": "conditional",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/debounce.ts",
+    "declaration": "debounce",
+    "description": "Removed Union Member: DebounceOptions & { readonly timing: \"both\"; }"
+  },
+  {
+    "file": "remeda/v2/src/debounce.ts",
+    "declaration": "debounce",
+    "description": "Removed Union Member: Omit<DebounceOptions, \"maxWaitMs\"> & { readonly timing: \"leading\"; }"
+  },
+  {
+    "file": "remeda/v2/src/debounce.ts",
+    "declaration": "debounce",
+    "description": "Added Intersection Member: DebounceOptions"
+  },
+  {
+    "file": "remeda/v2/src/debounce.ts",
+    "declaration": "debounce",
+    "description": "Added Intersection Member: { readonly timing?: \"trailing\"; }"
+  },
+  {
+    "file": "remeda/v2/src/debounce.ts",
+    "declaration": "debounce",
+    "description": "Added Intersection Member: { readonly timing?: \"trailing\"; }"
+  },
+  {
+    "file": "remeda/v2/src/difference.ts",
+    "declaration": "difference",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/difference.ts",
+    "declaration": "difference",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/difference.ts",
+    "declaration": "difference",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/difference.ts",
+    "declaration": "difference",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/difference.ts",
+    "declaration": "difference",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/difference.ts",
+    "declaration": "difference",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/difference.ts",
+    "declaration": "difference",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Added Parameter with no special operator: isEquals"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Added Parameter with no special operator: isEquals"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/differenceWith.ts",
+    "declaration": "differenceWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/doNothing.ts",
+    "declaration": "doNothing",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/drop.ts",
+    "declaration": "drop",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/drop.ts",
+    "declaration": "drop",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/drop.ts",
+    "declaration": "drop",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/drop.ts",
+    "declaration": "drop",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Removed Rest Operator from Parameter: rules"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropFirstBy.ts",
+    "declaration": "dropFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/dropLast.ts",
+    "declaration": "dropLast",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Changed type of parameter: item"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/dropLastWhile.ts",
+    "declaration": "dropLastWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Changed type of parameter: item"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/dropWhile.ts",
+    "declaration": "dropWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/entries.ts",
+    "declaration": "entries",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/entries.ts",
+    "declaration": "entries",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/entries.ts",
+    "declaration": "entries",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/entries.ts",
+    "declaration": "entries",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/entries.ts",
+    "declaration": "entries",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/evolve.ts",
+    "declaration": "evolve",
+    "description": "Added Parameter with no special operator: evolver"
+  },
+  {
+    "file": "remeda/v2/src/evolve.ts",
+    "declaration": "evolve",
+    "description": "Added Parameter with no special operator: evolver"
+  },
+  {
+    "file": "remeda/v2/src/evolve.ts",
+    "declaration": "evolve",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Changed type of parameter: value"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Changed type of parameter: value"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/filter.ts",
+    "declaration": "filter",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/find.ts",
+    "declaration": "find",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/findLast.ts",
+    "declaration": "findLast",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/findLastIndex.ts",
+    "declaration": "findLastIndex",
+    "description": "Changed primitive type from 'unknown' to 'number'"
+  },
+  {
+    "file": "remeda/v2/src/first.ts",
+    "declaration": "first",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/first.ts",
+    "declaration": "first",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/firstBy.ts",
+    "declaration": "firstBy",
+    "description": "Removed Parameter: rules"
+  },
+  {
+    "file": "remeda/v2/src/firstBy.ts",
+    "declaration": "firstBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/firstBy.ts",
+    "declaration": "firstBy",
+    "description": "Removed Union Member: T[number]"
+  },
+  {
+    "file": "remeda/v2/src/firstBy.ts",
+    "declaration": "firstBy",
+    "description": "Removed Union Member: T extends readonly [unknown, ...unknown[]] ? never : T extends readonly [...unknown[], unknown] ? never : undefined"
+  },
+  {
+    "file": "remeda/v2/src/firstBy.ts",
+    "declaration": "firstBy",
+    "description": "Removed Union Member: unknown"
+  },
+  {
+    "file": "remeda/v2/src/firstBy.ts",
+    "declaration": "firstBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/flat.ts",
+    "declaration": "flat",
+    "description": "Removed Optional Operator from Parameter: depth"
+  },
+  {
+    "file": "remeda/v2/src/flat.ts",
+    "declaration": "flat",
+    "description": "Removed Optional Operator from Parameter: dataOrDepth"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/flatMap.ts",
+    "declaration": "flatMap",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Changed type of parameter: value"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/forEach.ts",
+    "declaration": "forEach",
+    "description": "Changed primitive type from 'unknown' to 'void'"
+  },
+  {
+    "file": "remeda/v2/src/forEachObj.ts",
+    "declaration": "forEachObj",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/forEachObj.ts",
+    "declaration": "forEachObj",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/forEachObj.ts",
+    "declaration": "forEachObj",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/forEachObj.ts",
+    "declaration": "forEachObj",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/forEachObj.ts",
+    "declaration": "forEachObj",
+    "description": "Changed primitive type from 'unknown' to 'void'"
+  },
+  {
+    "file": "remeda/v2/src/fromEntries.ts",
+    "declaration": "fromEntries",
+    "description": "Added Parameter with no special operator: entries"
+  },
+  {
+    "file": "remeda/v2/src/fromEntries.ts",
+    "declaration": "fromEntries",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/fromKeys.ts",
+    "declaration": "fromKeys",
+    "description": "Added Parameter with no special operator: mapper"
+  },
+  {
+    "file": "remeda/v2/src/fromKeys.ts",
+    "declaration": "fromKeys",
+    "description": "Added Parameter with no special operator: mapper"
+  },
+  {
+    "file": "remeda/v2/src/fromKeys.ts",
+    "declaration": "fromKeys",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/groupBy.ts",
+    "declaration": "groupBy",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/groupBy.ts",
+    "declaration": "groupBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/groupBy.ts",
+    "declaration": "groupBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/groupBy.ts",
+    "declaration": "groupBy",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/groupBy.ts",
+    "declaration": "groupBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/groupBy.ts",
+    "declaration": "groupBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Added Parameter with no special operator: minimum"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Union Member: <T extends IterableContainer>(data: IterableContainer | T) => data is ArraySetRequired<T, N, []>"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Added Parameter with no special operator: minimum"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Union Member: (data: IterableContainer) => boolean"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Added Parameter with no special operator: minimum"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Removed Union Member: unknown"
+  },
+  {
+    "file": "remeda/v2/src/hasAtLeast.ts",
+    "declaration": "hasAtLeast",
+    "description": "Changed primitive type from 'unknown' to 'boolean'"
+  },
+  {
+    "file": "remeda/v2/src/hasSubObject.ts",
+    "declaration": "hasSubObject",
+    "description": "Added Parameter with no special operator: subObject"
+  },
+  {
+    "file": "remeda/v2/src/hasSubObject.ts",
+    "declaration": "hasSubObject",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/hasSubObject.ts",
+    "declaration": "hasSubObject",
+    "description": "Removed Union Member: (data: T) => data is Simplify<S & T>"
+  },
+  {
+    "file": "remeda/v2/src/hasSubObject.ts",
+    "declaration": "hasSubObject",
+    "description": "Added Parameter with no special operator: subObject"
+  },
+  {
+    "file": "remeda/v2/src/hasSubObject.ts",
+    "declaration": "hasSubObject",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/hasSubObject.ts",
+    "declaration": "hasSubObject",
+    "description": "Removed Union Member: unknown"
+  },
+  {
+    "file": "remeda/v2/src/hasSubObject.ts",
+    "declaration": "hasSubObject",
+    "description": "Changed primitive type from 'unknown' to 'boolean'"
+  },
+  {
+    "file": "remeda/v2/src/identity.ts",
+    "declaration": "identity",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/index.ts",
+    "declaration": "\"./takeLast.js\"",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/indexBy.ts",
+    "declaration": "indexBy",
+    "description": "Added Parameter with no special operator: mapper"
+  },
+  {
+    "file": "remeda/v2/src/indexBy.ts",
+    "declaration": "indexBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/indexBy.ts",
+    "declaration": "indexBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/indexBy.ts",
+    "declaration": "indexBy",
+    "description": "Added Parameter with no special operator: mapper"
+  },
+  {
+    "file": "remeda/v2/src/indexBy.ts",
+    "declaration": "indexBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/indexBy.ts",
+    "declaration": "indexBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/internal/withPrecision.ts",
+    "declaration": "withPrecision",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/intersection.ts",
+    "declaration": "intersection",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Added Parameter with no special operator: comparator"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Added Parameter with no special operator: comparator"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/intersectionWith.ts",
+    "declaration": "intersectionWith",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/invert.ts",
+    "declaration": "invert",
+    "description": "Added Parameter with no special operator: object"
+  },
+  {
+    "file": "remeda/v2/src/invert.ts",
+    "declaration": "invert",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Removed Union Member: (data: T) => data is S"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Removed Union Member: <T extends S = S>(data: T) => boolean"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Added Parameter with no special operator: other"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Removed Union Member: unknown"
+  },
+  {
+    "file": "remeda/v2/src/isDeepEqual.ts",
+    "declaration": "isDeepEqual",
+    "description": "Changed primitive type from 'unknown' to 'boolean'"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Added Parameter with no special operator: container"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Union Member: (data: T) => data is S[number]"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Added Parameter with no special operator: container"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Union Member: (data: T) => boolean"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Optional Operator from Parameter: container"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Removed Union Member: unknown"
+  },
+  {
+    "file": "remeda/v2/src/isIncludedIn.ts",
+    "declaration": "isIncludedIn",
+    "description": "Changed primitive type from 'unknown' to 'boolean'"
+  },
+  {
+    "file": "remeda/v2/src/isObjectType.ts",
+    "declaration": "isObjectType",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/join.ts",
+    "declaration": "Joined",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/join.ts",
+    "declaration": "join",
+    "description": "Added Parameter with no special operator: glue"
+  },
+  {
+    "file": "remeda/v2/src/join.ts",
+    "declaration": "join",
+    "description": "Added Parameter with no special operator: glue"
+  },
+  {
+    "file": "remeda/v2/src/join.ts",
+    "declaration": "join",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/keys.ts",
+    "declaration": "keys",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/keys.ts",
+    "declaration": "keys",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/last.ts",
+    "declaration": "last",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/last.ts",
+    "declaration": "last",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/map.ts",
+    "declaration": "map",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/map.ts",
+    "declaration": "map",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/map.ts",
+    "declaration": "map",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/mapKeys.ts",
+    "declaration": "mapKeys",
+    "description": "Added Parameter with no special operator: keyMapper"
+  },
+  {
+    "file": "remeda/v2/src/mapKeys.ts",
+    "declaration": "mapKeys",
+    "description": "Added Parameter with no special operator: keyMapper"
+  },
+  {
+    "file": "remeda/v2/src/mapKeys.ts",
+    "declaration": "mapKeys",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/mapValues.ts",
+    "declaration": "mapValues",
+    "description": "Added Parameter with no special operator: valueMapper"
+  },
+  {
+    "file": "remeda/v2/src/mapValues.ts",
+    "declaration": "mapValues",
+    "description": "Added Parameter with no special operator: valueMapper"
+  },
+  {
+    "file": "remeda/v2/src/mapValues.ts",
+    "declaration": "mapValues",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Added Parameter with no special operator: initialValue"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Added Parameter with no special operator: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Added Parameter with no special operator: initialValue"
+  },
+  {
+    "file": "remeda/v2/src/mapWithFeedback.ts",
+    "declaration": "mapWithFeedback",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Added tuple item(s)"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Removed tuple item(s)"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Removed tuple item(s)"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Removed tuple item(s)"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/mergeAll.ts",
+    "declaration": "mergeAll",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/mergeDeep.ts",
+    "declaration": "mergeDeep",
+    "description": "Added Parameter with no special operator: source"
+  },
+  {
+    "file": "remeda/v2/src/mergeDeep.ts",
+    "declaration": "mergeDeep",
+    "description": "Added Parameter with no special operator: source"
+  },
+  {
+    "file": "remeda/v2/src/mergeDeep.ts",
+    "declaration": "mergeDeep",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/nthBy.ts",
+    "declaration": "nthBy",
+    "description": "Removed Rest Operator from Parameter: rules"
+  },
+  {
+    "file": "remeda/v2/src/nthBy.ts",
+    "declaration": "nthBy",
+    "description": "Removed Union Member: Projection<T[number]>"
+  },
+  {
+    "file": "remeda/v2/src/nthBy.ts",
+    "declaration": "nthBy",
+    "description": "Removed Union Member: readonly [projection: Projection<T[number]>, direction: \"asc\" | \"desc\"]"
+  },
+  {
+    "file": "remeda/v2/src/nthBy.ts",
+    "declaration": "nthBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/nthBy.ts",
+    "declaration": "nthBy",
+    "description": "Added Parameter with no special operator: index"
+  },
+  {
+    "file": "remeda/v2/src/nthBy.ts",
+    "declaration": "nthBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/objOf.ts",
+    "declaration": "objOf",
+    "description": "Added Parameter with no special operator: key"
+  },
+  {
+    "file": "remeda/v2/src/objOf.ts",
+    "declaration": "objOf",
+    "description": "Added Parameter with no special operator: key"
+  },
+  {
+    "file": "remeda/v2/src/objOf.ts",
+    "declaration": "objOf",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/omitBy.ts",
+    "declaration": "omitBy",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/omitBy.ts",
+    "declaration": "omitBy",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/omitBy.ts",
+    "declaration": "omitBy",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/omitBy.ts",
+    "declaration": "omitBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/only.ts",
+    "declaration": "only",
+    "description": "Added Parameter with no special operator: array"
+  },
+  {
+    "file": "remeda/v2/src/only.ts",
+    "declaration": "only",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Changed tuple item type at index 0"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/partition.ts",
+    "declaration": "partition",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "remeda/v2/src/pick.ts",
+    "declaration": "pick",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/pick.ts",
+    "declaration": "pick",
+    "description": "Removed Parameter: names"
+  },
+  {
+    "file": "remeda/v2/src/pick.ts",
+    "declaration": "pick",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/pick.ts",
+    "declaration": "pick",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/pickBy.ts",
+    "declaration": "pickBy",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/pickBy.ts",
+    "declaration": "pickBy",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/pickBy.ts",
+    "declaration": "pickBy",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/pickBy.ts",
+    "declaration": "pickBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "LazyEvaluator",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "LazyResult",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "LazyDefinition",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op3"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op3"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op4"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op3"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op4"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op5"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op3"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op4"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op5"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op6"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op3"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op4"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op5"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op6"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op7"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op3"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op4"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op5"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op6"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op7"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op8"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op1"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op2"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op3"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op4"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op5"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op6"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op7"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op8"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op9"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op01"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op02"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op03"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op04"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op05"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op06"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op07"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op08"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op09"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op10"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op01"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op02"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op03"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op04"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op05"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op06"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op07"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op08"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op09"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op10"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op11"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op01"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op02"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op03"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op04"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op05"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op06"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op07"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op08"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op09"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op10"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op11"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op12"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op01"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op02"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op03"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op04"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op05"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op06"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op07"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op08"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op09"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op10"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op11"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op12"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op13"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op01"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op02"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op03"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op04"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op05"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op06"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op07"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op08"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op09"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op10"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op11"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op12"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op13"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op14"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op01"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op02"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op03"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op04"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op05"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op06"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op07"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op08"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op09"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op10"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op11"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op12"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op13"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op14"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: op15"
+  },
+  {
+    "file": "remeda/v2/src/pipe.ts",
+    "declaration": "pipe",
+    "description": "Removed Parameter: operations"
+  },
+  {
+    "file": "remeda/v2/src/product.ts",
+    "declaration": "product",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/product.ts",
+    "declaration": "product",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/product.ts",
+    "declaration": "product",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/product.ts",
+    "declaration": "product",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/prop.ts",
+    "declaration": "prop",
+    "description": "Added Parameter with no special operator: key"
+  },
+  {
+    "file": "remeda/v2/src/prop.ts",
+    "declaration": "prop",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/prop.ts",
+    "declaration": "prop",
+    "description": "Added Parameter with no special operator: key"
+  },
+  {
+    "file": "remeda/v2/src/prop.ts",
+    "declaration": "prop",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/prop.ts",
+    "declaration": "propImplementation",
+    "description": "Removed Export Modifier"
+  },
+  {
+    "file": "remeda/v2/src/pullObject.ts",
+    "declaration": "pullObject",
+    "description": "Added Parameter with no special operator: valueExtractor"
+  },
+  {
+    "file": "remeda/v2/src/pullObject.ts",
+    "declaration": "pullObject",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "remeda/v2/src/pullObject.ts",
+    "declaration": "pullObject",
+    "description": "Added Parameter with no special operator: keyExtractor"
+  },
+  {
+    "file": "remeda/v2/src/pullObject.ts",
+    "declaration": "pullObject",
+    "description": "Added Parameter with no special operator: valueExtractor"
+  },
+  {
+    "file": "remeda/v2/src/pullObject.ts",
+    "declaration": "pullObject",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/range.ts",
+    "declaration": "range",
+    "description": "Added Parameter with no special operator: end"
+  },
+  {
+    "file": "remeda/v2/src/range.ts",
+    "declaration": "range",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/range.ts",
+    "declaration": "range",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/range.ts",
+    "declaration": "range",
+    "description": "Added Parameter with no special operator: end"
+  },
+  {
+    "file": "remeda/v2/src/range.ts",
+    "declaration": "range",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/range.ts",
+    "declaration": "range",
+    "description": "Changed primitive type from 'unknown' to 'number'"
+  },
+  {
+    "file": "remeda/v2/src/range.ts",
+    "declaration": "range",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Removed Rest Operator from Parameter: rules"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Added Parameter with no special operator: item"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/rankBy.ts",
+    "declaration": "rankBy",
+    "description": "Changed primitive type from 'unknown' to 'number'"
+  },
+  {
+    "file": "remeda/v2/src/reverse.ts",
+    "declaration": "reverse",
+    "description": "Added Parameter with no special operator: array"
+  },
+  {
+    "file": "remeda/v2/src/reverse.ts",
+    "declaration": "reverse",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/reverse.ts",
+    "declaration": "reverse",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/sample.ts",
+    "declaration": "sample",
+    "description": "Added Parameter with no special operator: sampleSize"
+  },
+  {
+    "file": "remeda/v2/src/sample.ts",
+    "declaration": "sample",
+    "description": "Added Parameter with no special operator: sampleSize"
+  },
+  {
+    "file": "remeda/v2/src/sample.ts",
+    "declaration": "sample",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/set.ts",
+    "declaration": "set",
+    "description": "Added Parameter with no special operator: value"
+  },
+  {
+    "file": "remeda/v2/src/set.ts",
+    "declaration": "set",
+    "description": "Added Parameter with no special operator: prop"
+  },
+  {
+    "file": "remeda/v2/src/set.ts",
+    "declaration": "set",
+    "description": "Added Parameter with no special operator: value"
+  },
+  {
+    "file": "remeda/v2/src/set.ts",
+    "declaration": "set",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/setPath.ts",
+    "declaration": "setPath",
+    "description": "Added Parameter with no special operator: value"
+  },
+  {
+    "file": "remeda/v2/src/setPath.ts",
+    "declaration": "setPath",
+    "description": "Added Parameter with no special operator: path"
+  },
+  {
+    "file": "remeda/v2/src/setPath.ts",
+    "declaration": "setPath",
+    "description": "Added Parameter with no special operator: value"
+  },
+  {
+    "file": "remeda/v2/src/setPath.ts",
+    "declaration": "setPath",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/setPath.ts",
+    "declaration": "setPathImplementation",
+    "description": "Removed Export Modifier"
+  },
+  {
+    "file": "remeda/v2/src/shuffle.ts",
+    "declaration": "shuffle",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/shuffle.ts",
+    "declaration": "shuffle",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/shuffle.ts",
+    "declaration": "shuffle",
+    "description": "Added Parameter with no special operator: items"
+  },
+  {
+    "file": "remeda/v2/src/shuffle.ts",
+    "declaration": "shuffle",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/sort.ts",
+    "declaration": "sort",
+    "description": "Added Parameter with no special operator: cmp"
+  },
+  {
+    "file": "remeda/v2/src/sort.ts",
+    "declaration": "sort",
+    "description": "Added Parameter with no special operator: cmp"
+  },
+  {
+    "file": "remeda/v2/src/sort.ts",
+    "declaration": "sort",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/sortBy.ts",
+    "declaration": "sortBy",
+    "description": "Removed Parameter: sortRules"
+  },
+  {
+    "file": "remeda/v2/src/sortBy.ts",
+    "declaration": "sortBy",
+    "description": "Removed Union Member: unknown"
+  },
+  {
+    "file": "remeda/v2/src/sortBy.ts",
+    "declaration": "sortBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Added Parameter with no special operator: replacement"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Added Parameter with no special operator: start"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Added Parameter with no special operator: deleteCount"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Added Parameter with no special operator: replacement"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/splice.ts",
+    "declaration": "splice",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/sum.ts",
+    "declaration": "sum",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/sum.ts",
+    "declaration": "sum",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/sum.ts",
+    "declaration": "sum",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/sum.ts",
+    "declaration": "sum",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Changed type of parameter: value"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Changed type of parameter: items"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Removed Parameter: callbackfn"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/sumBy.ts",
+    "declaration": "sumBy",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/swapIndices.ts",
+    "declaration": "swapIndices",
+    "description": "Added Parameter with no special operator: index2"
+  },
+  {
+    "file": "remeda/v2/src/swapIndices.ts",
+    "declaration": "swapIndices",
+    "description": "Added Parameter with no special operator: index1"
+  },
+  {
+    "file": "remeda/v2/src/swapIndices.ts",
+    "declaration": "swapIndices",
+    "description": "Added Parameter with no special operator: index2"
+  },
+  {
+    "file": "remeda/v2/src/swapIndices.ts",
+    "declaration": "swapIndices",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/swapProps.ts",
+    "declaration": "swapProps",
+    "description": "Added Parameter with no special operator: key2"
+  },
+  {
+    "file": "remeda/v2/src/swapProps.ts",
+    "declaration": "swapProps",
+    "description": "Added Parameter with no special operator: key1"
+  },
+  {
+    "file": "remeda/v2/src/swapProps.ts",
+    "declaration": "swapProps",
+    "description": "Added Parameter with no special operator: key2"
+  },
+  {
+    "file": "remeda/v2/src/swapProps.ts",
+    "declaration": "swapProps",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/take.ts",
+    "declaration": "take",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Removed Rest Operator from Parameter: rules"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeFirstBy.ts",
+    "declaration": "takeFirstBy",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Added Parameter with no special operator: n"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/takeLast.ts",
+    "declaration": "takeLast",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Changed type of parameter: item"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/takeLastWhile.ts",
+    "declaration": "takeLastWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Changed type of parameter: item"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Array Base Type is changed"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Removed Function Type"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Added Parameter with no special operator: predicate"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/takeWhile.ts",
+    "declaration": "takeWhile",
+    "description": "Array Type added"
+  },
+  {
+    "file": "remeda/v2/src/tap.ts",
+    "declaration": "tap",
+    "description": "Added Parameter with no special operator: fn"
+  },
+  {
+    "file": "remeda/v2/src/tap.ts",
+    "declaration": "tap",
+    "description": "Added Parameter with no special operator: fn"
+  },
+  {
+    "file": "remeda/v2/src/tap.ts",
+    "declaration": "tap",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/times.ts",
+    "declaration": "times",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/times.ts",
+    "declaration": "times",
+    "description": "Added Parameter with no special operator: fn"
+  },
+  {
+    "file": "remeda/v2/src/times.ts",
+    "declaration": "times",
+    "description": "Added Parameter with no special operator: fn"
+  },
+  {
+    "file": "remeda/v2/src/times.ts",
+    "declaration": "times",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/unique.ts",
+    "declaration": "unique",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/unique.ts",
+    "declaration": "unique",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/unique.ts",
+    "declaration": "unique",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/unique.ts",
+    "declaration": "unique",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Changed type of parameter: item"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Changed type of parameter: data"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Added Parameter with no special operator: keyFunction"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Added Parameter with no special operator: keyFunction"
+  },
+  {
+    "file": "remeda/v2/src/uniqueBy.ts",
+    "declaration": "uniqueBy",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Added Parameter with no special operator: isEquals"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Added Parameter with no special operator: isEquals"
+  },
+  {
+    "file": "remeda/v2/src/uniqueWith.ts",
+    "declaration": "uniqueWith",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/values.ts",
+    "declaration": "values",
+    "description": "Added Parameter with no special operator: data"
+  },
+  {
+    "file": "remeda/v2/src/values.ts",
+    "declaration": "values",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/zip.ts",
+    "declaration": "zip",
+    "description": "Added Parameter with no special operator: second"
+  },
+  {
+    "file": "remeda/v2/src/zip.ts",
+    "declaration": "zip",
+    "description": "Added Parameter with no special operator: second"
+  },
+  {
+    "file": "remeda/v2/src/zip.ts",
+    "declaration": "zip",
+    "description": "Removed Rest Operator from Parameter: args"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Changed type of parameter: first"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Changed type of parameter: second"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Parameter: fn"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Added required parameter: second"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Changed type of parameter: first"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Parameter: second"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Parameter: fn"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Parameter: arg1"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Removed Parameter: arg2"
+  },
+  {
+    "file": "remeda/v2/src/zipWith.ts",
+    "declaration": "zipWith",
+    "description": "Added Function Type"
+  },
+  {
+    "file": "remeda/v2/vitest.config.ts",
+    "declaration": "defineConfig({\n  test: {\n    globals: true,\n    coverage: {\n      include: [\"src/**\"],\n      exclude: [\"src/index.ts\"],\n    },\n  },\n})",
+    "description": "Removed Declaration"
+  }
+]
+

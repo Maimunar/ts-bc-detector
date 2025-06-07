@@ -1,0 +1,47 @@
+
+> ink@5.2.1 test /Users/aleksandarivanov/tue/masterProject/projects/ink/testingVersion
+> tsc --noEmit && xo && FORCE_COLOR=true ava
+
+
+  src/output.ts:148:7
+  ⚠  148:7   Blocks are nested too deeply (5). Maximum allowed is 4.                                                                          max-depth
+  ⚠  156:7   Blocks are nested too deeply (5). Maximum allowed is 4.                                                                          max-depth
+  ⚠  170:7   Blocks are nested too deeply (5). Maximum allowed is 4.                                                                          max-depth
+  ⚠  182:7   Blocks are nested too deeply (5). Maximum allowed is 4.                                                                          max-depth
+  ⚠  213:7   Blocks are nested too deeply (5). Maximum allowed is 4.                                                                          max-depth
+
+  src/hooks/use-input.ts:159:5
+  ⚠  159:5   Unexpected todo comment: TODO(vadimdemedes): consider removing....                                                               no-warning-comments
+  ⚠  170:4   Unexpected todo comment: TODO(vadimdemedes): remove this in the....                                                              no-warning-comments
+
+  src/reconciler.ts:250:2
+  ⚠  250:2   Method prepareUpdate has too many parameters (5). Maximum allowed is 4.                                                          max-params
+
+  test/focus.tsx:22:8
+  ✖   22:8   Unsafe assignment of an any value.                                                                                               @typescript-eslint/no-unsafe-assignment
+  ✖   23:2   Unsafe call of an any typed value.                                                                                               @typescript-eslint/no-unsafe-call
+  ✖   23:2   Unsafe call of an any typed value.                                                                                               @typescript-eslint/no-unsafe-call
+  ✖   24:2   Unsafe call of an any typed value.                                                                                               @typescript-eslint/no-unsafe-call
+  ✖   24:2   Unsafe call of an any typed value.                                                                                               @typescript-eslint/no-unsafe-call
+  ✖   26:2   Unsafe call of an any typed value.                                                                                               @typescript-eslint/no-unsafe-call
+
+  test/reconciler.tsx:339:17
+  ✖  339:17  Prefer await to then()/catch()/finally().                                                                                        promise/prefer-await-to-then
+  ✖  349:31  @typescript-eslint/no-throw-literal rule is disabled but never reported.                                                         eslint-comments/no-unused-disable
+  ✖  350:9   Expected an error object to be thrown.                                                                                           @typescript-eslint/only-throw-error
+
+  test/hooks.tsx:14:35
+  ⚠   45:4   Unexpected todo comment: TODO: Send a signal from the Ink process....                                                            no-warning-comments
+  ✖   14:35  Promise constructor parameters must be named to match "^_?resolve$"                                                              promise/param-names
+  ✖   14:45  Promise constructor parameters must be named to match "^_?reject$"                                                               promise/param-names
+
+  test/render.tsx:25:35
+  ✖   25:35  Promise constructor parameters must be named to match "^_?resolve$"                                                              promise/param-names
+  ✖   25:45  Promise constructor parameters must be named to match "^_?reject$"                                                               promise/param-names
+
+  src/devtools-window-polyfill.ts:8:1
+  ✖    8:1   The WebSocket is not an experimental feature until Node.js 21.0.0 (backported: ^20.10.0). The configured version range is >=18.  n/no-unsupported-features/node-builtins
+
+  9 warnings
+  14 errors
+ ELIFECYCLE  Test failed. See above for more details.

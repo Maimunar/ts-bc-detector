@@ -1,0 +1,32 @@
+[
+  {
+    "file": "date-fns/v2/src/_lib/normalizeDates/index.ts",
+    "declaration": "normalizeDates",
+    "description": "Added tuple item(s)"
+  },
+  {
+    "file": "date-fns/v2/src/_lib/normalizeDates/index.ts",
+    "declaration": "normalizeDates",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "date-fns/v2/src/_lib/normalizeDates/index.ts",
+    "declaration": "normalizeDates",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "date-fns/v2/src/_lib/normalizeDates/index.ts",
+    "declaration": "normalizeDates",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "date-fns/v2/src/_lib/normalizeDates/index.ts",
+    "declaration": "normalizeDates",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "date-fns/v2/src/_lib/normalizeDates/index.ts",
+    "declaration": "normalFuckingFunction",
+    "description": "Return type of function changed"
+  }
+]

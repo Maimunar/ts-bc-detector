@@ -1,0 +1,859 @@
+
+> zustand@4.5.7 test:spec /Users/aleksandarivanov/tue/masterProject/projects/zustand/testingVersion
+> vitest run
+
+
+ RUN  v2.0.5 /Users/aleksandarivanov/tue/masterProject/projects/zustand/testingVersion
+
+ ✓ |zustand| tests/types.test.tsx  (4 tests) 2ms
+ ❯ |zustand| tests/devtools.test.tsx  (0 test)
+ ❯ |zustand| tests/persistSync.test.tsx  (16 tests | 12 failed) 14ms
+   × persist middleware with sync configuration > can rehydrate state
+     → jest is not defined
+   × persist middleware with sync configuration > can throw rehydrate error
+     → jest is not defined
+   × persist middleware with sync configuration > can persist state
+     → jest is not defined
+   × persist middleware with sync configuration > can migrate persisted state
+     → jest is not defined
+   × persist middleware with sync configuration > can correclty handle a missing migrate function
+     → jest is not defined
+   × persist middleware with sync configuration > can throw migrate error
+     → jest is not defined
+   × persist middleware with sync configuration > gives the merged state to onRehydrateStorage
+     → jest is not defined
+   × persist middleware with sync configuration > can filter the persisted value
+     → jest is not defined
+   × persist middleware with sync configuration > can access the options through the api
+     → jest is not defined
+   × persist middleware with sync configuration > can change the options through the api
+     → jest is not defined
+   × persist middleware with sync configuration > can clear the storage through the api
+     → jest is not defined
+   × persist middleware with sync configuration > can wait for rehydration through the api
+     → jest is not defined
+ ❯ |zustand| tests/middlewareTypes.test.tsx  (23 tests | 18 failed) 12ms
+   × counter state spec (single middleware) > immer
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (single middleware) > redux
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (single middleware) > devtools
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (single middleware) > subscribeWithSelector
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (single middleware) > combine
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (single middleware) > persist
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (single middleware) > persist with partialize
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (single middleware) > persist without custom api (#638)
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (double middleware) > devtools & immer
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (double middleware) > devtools & redux
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (double middleware) > devtools & combine
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (double middleware) > subscribeWithSelector & combine
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (double middleware) > devtools & subscribeWithSelector
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (double middleware) > devtools & persist
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (triple middleware) > devtools & persist & immer
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (triple middleware) > devtools & subscribeWithSelector & combine
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (triple middleware) > devtools & subscribeWithSelector & persist
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+   × counter state spec (quadruple middleware) > devtools & subscribeWithSelector & persist & immer (#616)
+     → __DEV__ is not defined
+     → __DEV__ is not defined
+ ❯ |zustand| tests/persistAsync.test.tsx  (12 tests | 7 failed) 56ms
+   × persist middleware with async configuration > can rehydrate state
+     → jest is not defined
+   × persist middleware with async configuration > can throw rehydrate error
+     → jest is not defined
+   × persist middleware with async configuration > can persist state
+     → jest is not defined
+   × persist middleware with async configuration > can migrate persisted state
+     → jest is not defined
+   × persist middleware with async configuration > can correclty handle a missing migrate function
+     → jest is not defined
+   × persist middleware with async configuration > can throw migrate error
+     → jest is not defined
+   × persist middleware with async configuration > gives the merged state to onRehydrateStorage
+     → jest is not defined
+ ❯ |zustand| tests/context.test.tsx  (5 tests | 1 failed) 45ms
+   × throws error when not using provider
+     → jest is not defined
+ ❯ |zustand| tests/basic.test.tsx  (20 tests | 4 failed) 156ms
+   × creates a store hook and api object
+     → Snapshot `creates a store hook and api object 1` mismatched
+   × re-renders with useLayoutEffect
+     → default.render is not a function
+   × can throw an error in selector
+     → jest is not defined
+   × can throw an error in equality checker
+     → jest is not defined
+ ❯ |zustand| tests/subscribe.test.tsx  (8 tests | 8 failed) 5ms
+   × subscribe() > should not be called if new state identity is the same
+     → jest is not defined
+   × subscribe() > should be called if new state identity is different
+     → jest is not defined
+   × subscribe() > should not be called when state slice is the same
+     → jest is not defined
+   × subscribe() > should be called when state slice changes
+     → jest is not defined
+   × subscribe() > should not be called when equality checker returns true
+     → jest is not defined
+   × subscribe() > should be called when equality checker returns false
+     → jest is not defined
+   × subscribe() > should unsubscribe correctly
+     → jest is not defined
+   × subscribe() > should keep consistent behavior with equality check
+     → jest is not defined
+ ✓ |zustand| tests/shallow.test.tsx  (7 tests) 3ms
+
+  Snapshots  1 failed
+ Test Files  7 failed | 2 passed (9)
+      Tests  50 failed | 45 passed (95)
+   Start at  18:07:49
+   Duration  1.21s (transform 479ms, setup 0ms, collect 1.10s, tests 293ms, environment 2.75s, prepare 737ms)
+
+ ELIFECYCLE  Command failed with exit code 1.
+
+The CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.
+stderr | tests/types.test.tsx > can use exposed types
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/types.test.tsx > should have correct (partial) types for setState
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/types.test.tsx > should allow for different partial keys to be returnable from setState
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/types.test.tsx > state is covariant
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > creates a store hook and api object
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > uses the store with no args
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > uses the store with selectors
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistSync.test.tsx > persist middleware with sync configuration > can custom merge the stored state
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistSync.test.tsx > persist middleware with sync configuration > can merge the state when the storage item doesn't have a version
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistSync.test.tsx > persist middleware with sync configuration > can manually rehydrate through the api
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistSync.test.tsx > persist middleware with sync configuration > can check if the store has been hydrated through the api
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > uses the store with a selector and equality checker
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Use `createWithEqualityFn` instead of `create` or use `useStoreWithEqualityFn` instead of `useStore`. They can be imported from 'zustand/traditional'. https://github.com/pmndrs/zustand/discussions/1937
+
+stderr | tests/middlewareTypes.test.tsx > counter state spec (no middleware) > no middleware
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/middlewareTypes.test.tsx > more complex state spec with subscribeWithSelector > #619, #632
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/middlewareTypes.test.tsx > more complex state spec with subscribeWithSelector > #631
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/middlewareTypes.test.tsx > more complex state spec with subscribeWithSelector > #650
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/middlewareTypes.test.tsx > create with explicitly annotated mutators > subscribeWithSelector & persist
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > only re-renders if selected state has changed
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistAsync.test.tsx > persist middleware with async configuration > can merge partial persisted state
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+
+stderr | tests/basic.test.tsx > re-renders with useLayoutEffect
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can batch updates
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can update the selector
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can update the equality checker
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistAsync.test.tsx > persist middleware with async configuration > can custom merge the stored state
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistAsync.test.tsx > persist middleware with async configuration > can merge the state when the storage item doesn't have a version
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistAsync.test.tsx > persist middleware with async configuration > can manually rehydrate through the api
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can call useBoundStore with progressively more arguments
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/persistAsync.test.tsx > persist middleware with async configuration > can check if the store has been hydrated through the api
+[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/context.test.tsx > creates and uses context store
+[DEPRECATED] `context` will be removed in a future version. Instead use `import { createStore, useStore } from 'zustand'`. See: https://github.com/pmndrs/zustand/discussions/1180.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can get the store
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can set the store
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can set the store without merging
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > can destroy the store
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] The `destroy` method will be unsupported in a future version. Instead use unsubscribe function returned by subscribe. Everything will be garbage-collected if store is garbage-collected.
+
+stderr | tests/basic.test.tsx > only calls selectors when necessary
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/context.test.tsx > uses context store with selectors
+[DEPRECATED] `context` will be removed in a future version. Instead use `import { createStore, useStore } from 'zustand'`. See: https://github.com/pmndrs/zustand/discussions/1180.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/context.test.tsx > uses context store api
+[DEPRECATED] `context` will be removed in a future version. Instead use `import { createStore, useStore } from 'zustand'`. See: https://github.com/pmndrs/zustand/discussions/1180.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] The `destroy` method will be unsupported in a future version. Instead use unsubscribe function returned by subscribe. Everything will be garbage-collected if store is garbage-collected.
+
+stderr | tests/context.test.tsx > useCallback with useStore infers types correctly
+[DEPRECATED] `context` will be removed in a future version. Instead use `import { createStore, useStore } from 'zustand'`. See: https://github.com/pmndrs/zustand/discussions/1180.
+
+stderr | tests/basic.test.tsx > ensures parent components subscribe before children
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > ensures the correct subscriber is removed on unmount
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/basic.test.tsx > ensures a subscriber is not mistakenly overwritten
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/shallow.test.tsx > shallow > compares primitive values
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+
+stderr | tests/shallow.test.tsx > shallow > compares objects
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+
+stderr | tests/shallow.test.tsx > shallow > compares arrays
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+
+stderr | tests/shallow.test.tsx > shallow > compares functions
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+
+stderr | tests/shallow.test.tsx > types > works with useBoundStore and array selector (#1107)
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/shallow.test.tsx > types > works with useBoundStore and string selector (#1107)
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+stderr | tests/shallow.test.tsx > unsupported cases > date
+[DEPRECATED] Default export is deprecated. Instead use `import { shallow } from 'zustand/shallow'`.
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |zustand| tests/devtools.test.tsx [ tests/devtools.test.tsx ]
+ReferenceError: jest is not defined
+ ❯ tests/devtools.test.tsx:6:14
+      4| let extensionSubscriber: ((message: any) => void) | undefined
+      5| const extension = {
+      6|   subscribe: jest.fn((f) => {
+       |              ^
+      7|     extensionSubscriber = f
+      8|     return () => {}
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/69]⎯
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 50 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |zustand| tests/basic.test.tsx > creates a store hook and api object
+Error: Snapshot `creates a store hook and api object 1` mismatched
+
+- Expected
++ Received
+
+@@ -1,11 +1,12 @@
+- Object {
++ {
+-   "params": Array [
++   "params": [
+      [Function],
+      [Function],
+-     Object {
++     {
+        "destroy": [Function],
++       "getInitialState": [Function],
+        "getState": [Function],
+        "setState": [Function],
+        "subscribe": [Function],
+      },
+    ],
+
+ ❯ tests/basic.test.tsx:23:30
+     21|     return { value: null }
+     22|   })
+     23|   expect({ params, result }).toMatchInlineSnapshot(`
+       |                              ^
+     24|     Object {
+     25|       "params": Array [
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/69]⎯
+
+ FAIL  |zustand| tests/basic.test.tsx > re-renders with useLayoutEffect
+TypeError: default.render is not a function
+ ❯ tests/basic.test.tsx:158:12
+    156|
+    157|   const container = document.createElement('div')
+    158|   ReactDOM.render(<Component />, container)
+       |            ^
+    159|   await waitFor(() => {
+    160|     expect(container.innerHTML).toBe('true')
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/69]⎯
+
+ FAIL  |zustand| tests/basic.test.tsx > can throw an error in selector
+ReferenceError: jest is not defined
+ ❯ tests/basic.test.tsx:285:19
+    283|
+    284| it('can throw an error in selector', async () => {
+    285|   console.error = jest.fn()
+       |                   ^
+    286|   type State = { value: string | number }
+    287|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/69]⎯
+
+ FAIL  |zustand| tests/basic.test.tsx > can throw an error in equality checker
+ReferenceError: jest is not defined
+ ❯ tests/basic.test.tsx:330:19
+    328|
+    329| it('can throw an error in equality checker', async () => {
+    330|   console.error = jest.fn()
+       |                   ^
+    331|   type State = { value: string | number }
+    332|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/69]⎯
+
+ FAIL  |zustand| tests/context.test.tsx > throws error when not using provider
+ReferenceError: jest is not defined
+ ❯ tests/context.test.tsx:117:19
+    115|
+    116| it('throws error when not using provider', async () => {
+    117|   console.error = jest.fn()
+       |                   ^
+    118|
+    119|   class ErrorBoundary extends ClassComponent<
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > immer
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > redux
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > devtools
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > subscribeWithSelector
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > persist
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > persist with partialize
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > persist without custom api (#638)
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:39:5
+     37|   let savedDEV: boolean
+     38|   beforeEach(() => {
+     39|     savedDEV = __DEV__
+       |     ^
+     40|   })
+     41|   afterEach(() => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > immer
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > redux
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > devtools
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > subscribeWithSelector
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > persist
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > persist with partialize
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (single middleware) > persist without custom api (#638)
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:42:5
+     40|   })
+     41|   afterEach(() => {
+     42|     __DEV__ = savedDEV
+       |     ^
+     43|   })
+     44|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & immer
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & redux
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > subscribeWithSelector & combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & subscribeWithSelector
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & persist
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:256:5
+    254|   let savedDEV: boolean
+    255|   beforeEach(() => {
+    256|     savedDEV = __DEV__
+       |     ^
+    257|   })
+    258|   afterEach(() => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & immer
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & redux
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > subscribeWithSelector & combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & subscribeWithSelector
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (double middleware) > devtools & persist
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:259:5
+    257|   })
+    258|   afterEach(() => {
+    259|     __DEV__ = savedDEV
+       |     ^
+    260|   })
+    261|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (triple middleware) > devtools & persist & immer
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (triple middleware) > devtools & subscribeWithSelector & combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (triple middleware) > devtools & subscribeWithSelector & persist
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:425:5
+    423|   let savedDEV: boolean
+    424|   beforeEach(() => {
+    425|     savedDEV = __DEV__
+       |     ^
+    426|   })
+    427|   afterEach(() => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (triple middleware) > devtools & persist & immer
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (triple middleware) > devtools & subscribeWithSelector & combine
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (triple middleware) > devtools & subscribeWithSelector & persist
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:428:5
+    426|   })
+    427|   afterEach(() => {
+    428|     __DEV__ = savedDEV
+       |     ^
+    429|   })
+    430|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (quadruple middleware) > devtools & subscribeWithSelector & persist & immer (#616)
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:529:5
+    527|   let savedDEV: boolean
+    528|   beforeEach(() => {
+    529|     savedDEV = __DEV__
+       |     ^
+    530|   })
+    531|   afterEach(() => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/69]⎯
+
+ FAIL  |zustand| tests/middlewareTypes.test.tsx > counter state spec (quadruple middleware) > devtools & subscribeWithSelector & persist & immer (#616)
+ReferenceError: __DEV__ is not defined
+ ❯ tests/middlewareTypes.test.tsx:532:5
+    530|   })
+    531|   afterEach(() => {
+    532|     __DEV__ = savedDEV
+       |     ^
+    533|   })
+    534|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/69]⎯
+
+ FAIL  |zustand| tests/persistAsync.test.tsx > persist middleware with async configuration > can rehydrate state
+ReferenceError: jest is not defined
+ ❯ tests/persistAsync.test.tsx:42:35
+     40|
+     41|   it('can rehydrate state', async () => {
+     42|     const onRehydrateStorageSpy = jest.fn()
+       |                                   ^
+     43|     const storage = {
+     44|       getItem: async (name: string) =>
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/69]⎯
+
+ FAIL  |zustand| tests/persistAsync.test.tsx > persist middleware with async configuration > can throw rehydrate error
+ReferenceError: jest is not defined
+ ❯ tests/persistAsync.test.tsx:87:35
+     85|
+     86|   it('can throw rehydrate error', async () => {
+     87|     const onRehydrateStorageSpy = jest.fn()
+       |                                   ^
+     88|
+     89|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/69]⎯
+
+ FAIL  |zustand| tests/persistAsync.test.tsx > persist middleware with async configuration > can persist state
+ReferenceError: jest is not defined
+ ❯ createPersistantStore tests/persistAsync.test.tsx:23:22
+     21|   }
+     22|
+     23|   const getItemSpy = jest.fn()
+       |                      ^
+     24|   const setItemSpy = jest.fn()
+     25|   const removeItemSpy = jest.fn()
+ ❯ tests/persistAsync.test.tsx:122:37
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/69]⎯
+
+ FAIL  |zustand| tests/persistAsync.test.tsx > persist middleware with async configuration > can migrate persisted state
+ReferenceError: jest is not defined
+ ❯ tests/persistAsync.test.tsx:177:24
+    175|
+    176|   it('can migrate persisted state', async () => {
+    177|     const setItemSpy = jest.fn()
+       |                        ^
+    178|     const onRehydrateStorageSpy = jest.fn()
+    179|     const migrateSpy = jest.fn(() => ({ count: 99 }))
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/69]⎯
+
+ FAIL  |zustand| tests/persistAsync.test.tsx > persist middleware with async configuration > can correclty handle a missing migrate function
+ReferenceError: jest is not defined
+ ❯ tests/persistAsync.test.tsx:278:21
+    276|
+    277|   it('can correclty handle a missing migrate function', async () => {
+    278|     console.error = jest.fn()
+       |                     ^
+    279|     const onRehydrateStorageSpy = jest.fn()
+    280|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/69]⎯
+
+ FAIL  |zustand| tests/persistAsync.test.tsx > persist middleware with async configuration > can throw migrate error
+ReferenceError: jest is not defined
+ ❯ tests/persistAsync.test.tsx:314:21
+    312|
+    313|   it('can throw migrate error', async () => {
+    314|     console.error = jest.fn()
+       |                     ^
+    315|     const onRehydrateStorageSpy = jest.fn()
+    316|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/69]⎯
+
+ FAIL  |zustand| tests/persistAsync.test.tsx > persist middleware with async configuration > gives the merged state to onRehydrateStorage
+ReferenceError: jest is not defined
+ ❯ tests/persistAsync.test.tsx:356:35
+    354|
+    355|   it('gives the merged state to onRehydrateStorage', async () => {
+    356|     const onRehydrateStorageSpy = jest.fn()
+       |                                   ^
+    357|
+    358|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can rehydrate state
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:48:35
+     46|     }
+     47|
+     48|     const onRehydrateStorageSpy = jest.fn()
+       |                                   ^
+     49|     const useBoundStore = create(
+     50|       persist(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can throw rehydrate error
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:82:17
+     80|     }
+     81|
+     82|     const spy = jest.fn()
+       |                 ^
+     83|     create(
+     84|       persist(() => ({ count: 0 }), {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[23/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can persist state
+ReferenceError: jest is not defined
+ ❯ createPersistantStore tests/persistSync.test.tsx:20:22
+     18|   }
+     19|
+     20|   const getItemSpy = jest.fn()
+       |                      ^
+     21|   const setItemSpy = jest.fn()
+     22|   const removeItemSpy = jest.fn()
+ ❯ tests/persistSync.test.tsx:95:37
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[24/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can migrate persisted state
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:133:24
+    131|
+    132|   it('can migrate persisted state', () => {
+    133|     const setItemSpy = jest.fn()
+       |                        ^
+    134|     const onRehydrateStorageSpy = jest.fn()
+    135|     const migrateSpy = jest.fn(() => ({ count: 99 }))
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[25/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can correclty handle a missing migrate function
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:170:21
+    168|
+    169|   it('can correclty handle a missing migrate function', () => {
+    170|     console.error = jest.fn()
+       |                     ^
+    171|     const onRehydrateStorageSpy = jest.fn()
+    172|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[26/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can throw migrate error
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:197:35
+    195|
+    196|   it('can throw migrate error', () => {
+    197|     const onRehydrateStorageSpy = jest.fn()
+       |                                   ^
+    198|
+    199|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > gives the merged state to onRehydrateStorage
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:229:35
+    227|
+    228|   it('gives the merged state to onRehydrateStorage', () => {
+    229|     const onRehydrateStorageSpy = jest.fn()
+       |                                   ^
+    230|
+    231|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can filter the persisted value
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:323:24
+    321|
+    322|   it('can filter the persisted value', () => {
+    323|     const setItemSpy = jest.fn()
+       |                        ^
+    324|
+    325|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[29/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can access the options through the api
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:390:16
+    388|     const storage = {
+    389|       getItem: () => null,
+    390|       setItem: jest.fn(),
+       |                ^
+    391|       removeItem: () => {},
+    392|     }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[30/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can change the options through the api
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:405:24
+    403|
+    404|   it('can change the options through the api', () => {
+    405|     const setItemSpy = jest.fn()
+       |                        ^
+    406|
+    407|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[31/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can clear the storage through the api
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:442:27
+    440|
+    441|   it('can clear the storage through the api', () => {
+    442|     const removeItemSpy = jest.fn()
+       |                           ^
+    443|
+    444|     const storage = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[32/69]⎯
+
+ FAIL  |zustand| tests/persistSync.test.tsx > persist middleware with sync configuration > can wait for rehydration through the api
+ReferenceError: jest is not defined
+ ❯ tests/persistSync.test.tsx:508:27
+    506|     const storageValue2 = '{"state":{"count":2},"version":0}'
+    507|
+    508|     const onHydrateSpy1 = jest.fn()
+       |                           ^
+    509|     const onHydrateSpy2 = jest.fn()
+    510|     const onFinishHydrationSpy1 = jest.fn()
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[33/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should not be called if new state identity is the same
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:6:17
+      4| describe('subscribe()', () => {
+      5|   it('should not be called if new state identity is the same', () => {
+      6|     const spy = jest.fn()
+       |                 ^
+      7|     const initialState = { value: 1, other: 'a' }
+      8|     const { setState, subscribe } = create(() => initialState)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[34/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should be called if new state identity is different
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:16:17
+     14|
+     15|   it('should be called if new state identity is different', () => {
+     16|     const spy = jest.fn()
+       |                 ^
+     17|     const initialState = { value: 1, other: 'a' }
+     18|     const { setState, getState, subscribe } = create(() => initialStat…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[35/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should not be called when state slice is the same
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:26:17
+     24|
+     25|   it('should not be called when state slice is the same', () => {
+     26|     const spy = jest.fn()
+       |                 ^
+     27|     const initialState = { value: 1, other: 'a' }
+     28|     const { setState, subscribe } = create(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[36/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should be called when state slice changes
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:38:17
+     36|
+     37|   it('should be called when state slice changes', () => {
+     38|     const spy = jest.fn()
+       |                 ^
+     39|     const initialState = { value: 1, other: 'a' }
+     40|     const { setState, subscribe } = create(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[37/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should not be called when equality checker returns true
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:51:17
+     49|
+     50|   it('should not be called when equality checker returns true', () => {
+     51|     const spy = jest.fn()
+       |                 ^
+     52|     const initialState = { value: 1, other: 'a' }
+     53|     const { setState, subscribe } = create(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[38/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should be called when equality checker returns false
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:63:17
+     61|
+     62|   it('should be called when equality checker returns false', () => {
+     63|     const spy = jest.fn()
+       |                 ^
+     64|     const initialState = { value: 1, other: 'a' }
+     65|     const { setState, subscribe } = create(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should unsubscribe correctly
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:76:17
+     74|
+     75|   it('should unsubscribe correctly', () => {
+     76|     const spy = jest.fn()
+       |                 ^
+     77|     const initialState = { value: 1, other: 'a' }
+     78|     const { setState, subscribe } = create(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[40/69]⎯
+
+ FAIL  |zustand| tests/subscribe.test.tsx > subscribe() > should keep consistent behavior with equality check
+ReferenceError: jest is not defined
+ ❯ tests/subscribe.test.tsx:93:17
+     91|
+     92|   it('should keep consistent behavior with equality check', () => {
+     93|     const spy = jest.fn()
+       |                 ^
+     94|     const initialState = { value: 1, other: 'a' }
+     95|     const { getState, setState, subscribe } = create(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[41/69]⎯
+

@@ -1,0 +1,142 @@
+[
+  {
+    "file": "foy/v2/src/exec.ts",
+    "declaration": "exec",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "foy/v2/src/exec.ts",
+    "declaration": "ShellContext",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "foy/v2/src/exec.ts",
+    "declaration": "ShellContext",
+    "description": "Removed Parameter: val"
+  },
+  {
+    "file": "foy/v2/src/exec.ts",
+    "declaration": "ShellContext",
+    "description": "Removed Parameter: val"
+  },
+  {
+    "file": "foy/v2/src/index.ts",
+    "declaration": "'./task-manager'",
+    "description": "Added Type Keyword to Export Declaration"
+  },
+  {
+    "file": "foy/v2/src/task-manager.ts",
+    "declaration": "LogOptions",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "foy/v2/src/task-manager.ts",
+    "declaration": "RunDepOptions",
+    "description": "Removed Member: loading"
+  },
+  {
+    "file": "foy/v2/src/task-manager.ts",
+    "declaration": "DepsTree",
+    "description": "Added Required Member: duration"
+  },
+  {
+    "file": "foy/v2/src/task-manager.ts",
+    "declaration": "TaskManager",
+    "description": "Removed Class Member"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "Task",
+    "description": "Removed Member: loading"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Removed Parameter: fn"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Removed Initializer from Parameter: dependencies"
+  },
+  {
+    "file": "foy/v2/src/task.ts",
+    "declaration": "task",
+    "description": "Removed Parameter: fn"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "throttle",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "Is",
+    "description": "Added Required Type Literal Property: defined"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: defaultVal"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: val2"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: defaultVal"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: val2"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: val3"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: defaultVal"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: val2"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: val3"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: val4"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Parameter: defaultVal"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Added Parameter with no special operator: defaultVal"
+  },
+  {
+    "file": "foy/v2/src/utils.ts",
+    "declaration": "defaults",
+    "description": "Removed Rest Operator from Parameter: args"
+  }
+]

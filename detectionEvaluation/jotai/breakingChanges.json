@@ -1,0 +1,342 @@
+[
+  {
+    "file": "jotai/v2/src/index.ts",
+    "declaration": "'jotai/vanilla'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/index.ts",
+    "declaration": "'jotai/react'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react/useAtom.ts",
+    "declaration": "useAtom",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "jotai/v2/src/react/useAtom.ts",
+    "declaration": "useAtom",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "jotai/v2/src/react/utils/useReducerAtom.ts",
+    "declaration": "useReducerAtom",
+    "description": "Changed tuple item type at index 1"
+  },
+  {
+    "file": "jotai/v2/src/react/utils/useReducerAtom.ts",
+    "declaration": "useReducerAtom",
+    "description": "Added Tuple"
+  },
+  {
+    "file": "jotai/v2/src/react/utils/useReducerAtom.ts",
+    "declaration": "useReducerAtom",
+    "description": "Array Type removed"
+  },
+  {
+    "file": "jotai/v2/src/react/utils.ts",
+    "declaration": "'./utils/useResetAtom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react/utils.ts",
+    "declaration": "'./utils/useReducerAtom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react/utils.ts",
+    "declaration": "'./utils/useAtomCallback'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react/utils.ts",
+    "declaration": "'./utils/useHydrateAtoms'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react.ts",
+    "declaration": "'./react/Provider'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react.ts",
+    "declaration": "'./react/useAtomValue'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react.ts",
+    "declaration": "'./react/useSetAtom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/react.ts",
+    "declaration": "'./react/useAtom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/utils.ts",
+    "declaration": "'jotai/vanilla/utils'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/utils.ts",
+    "declaration": "'jotai/react/utils'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Parameter with no special operator: write"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Changed primitive type from 'Atom<Value>' to 'WritableAtom<Value, Args, Result>'"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Generic Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Parameter with no special operator: write"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Generic Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Removed Optional Operator from Parameter: write"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/atom.ts",
+    "declaration": "atom",
+    "description": "Added Generic Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/store.ts",
+    "declaration": "createStore",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/store.ts",
+    "declaration": "getDefaultStore",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomFamily.ts",
+    "declaration": "atomFamily",
+    "description": "Added Generic Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithObservable.ts",
+    "declaration": "atomWithObservable",
+    "description": "Removed Optional Operator from Parameter: options"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithObservable.ts",
+    "declaration": "atomWithObservable",
+    "description": "Removed Optional Operator from Parameter: options"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithObservable.ts",
+    "declaration": "atomWithObservable",
+    "description": "Removed Optional Operator from Parameter: options"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "NO_STORAGE_VALUE",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "AsyncStorage",
+    "description": "Added required parameter: initialValue"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "AsyncStorage",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "AsyncStorage",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "SyncStorage",
+    "description": "Added required parameter: initialValue"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "AsyncStringStorage",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "AsyncStringStorage",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "AsyncStringStorage",
+    "description": "Return type of function changed"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "createJSONStorage",
+    "description": "Removed Parameter: getStringStorage"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "createJSONStorage",
+    "description": "Changed primitive type from 'AsyncStorage<Value>' to 'SyncStorage<Value>'"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "createJSONStorage",
+    "description": "Removed Parameter: getStringStorage"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "createJSONStorage",
+    "description": "Removed Parameter: getStringStorage"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "createJSONStorage",
+    "description": "Removed Union Member: AsyncStorage<Value>"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "createJSONStorage",
+    "description": "Added Generic Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "atomWithStorage",
+    "description": "Removed Initializer from Parameter: storage"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "atomWithStorage",
+    "description": "Removed Union Member: SyncStorage<Value>"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/atomWithStorage.ts",
+    "declaration": "atomWithStorage",
+    "description": "Added Generic Type"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/selectAtom.ts",
+    "declaration": "selectAtom",
+    "description": "Changed type of parameter: v"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/selectAtom.ts",
+    "declaration": "selectAtom",
+    "description": "Changed type of parameter: v"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/selectAtom.ts",
+    "declaration": "selectAtom",
+    "description": "Changed type of parameter: v"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/unwrap.ts",
+    "declaration": "unwrap",
+    "description": "Removed Parameter: fallback"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils/unwrap.ts",
+    "declaration": "unwrap",
+    "description": "Removed Parameter: fallback"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/constants'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/atomWithReset'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/atomWithReducer'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/atomFamily'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/selectAtom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/freezeAtom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/splitAtom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/atomWithDefault'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/atomWithStorage'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/atomWithObservable'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/loadable'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla/utils.ts",
+    "declaration": "'./utils/unwrap'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla.ts",
+    "declaration": "'./vanilla/atom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla.ts",
+    "declaration": "'./vanilla/atom'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla.ts",
+    "declaration": "'./vanilla/store'",
+    "description": "Removed Declaration"
+  },
+  {
+    "file": "jotai/v2/src/vanilla.ts",
+    "declaration": "'./vanilla/typeUtils'",
+    "description": "Removed Declaration"
+  }
+]
