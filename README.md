@@ -1,4 +1,4 @@
-# typescript-breaking-change-detector
+# Typescript Breaking Change Detector
 
 A tool that detects Breaking changes between 2 versions of a Typescript project
 
